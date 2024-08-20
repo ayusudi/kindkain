@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 "use client"
 import { Button } from "flowbite-react";
 import React from 'react';

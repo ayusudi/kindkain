@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 import React from 'react';
 import { Carousel } from "flowbite-react";
@@ -12,7 +13,7 @@ const Component = () => {
       </div>
       <div className='w-full flex md:flex-row flex-col justify-between gap-4'>
         <div className='md:w-[640px] h-[357px] bg-white rounded-lg overflow-hidden'>
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/O46fIcJPlG0?si=yGeJOeRriTGDs722" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/O46fIcJPlG0?si=yGeJOeRriTGDs722" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
         <div className='md:w-[640px] h-[357px]'>
           <Carousel>
