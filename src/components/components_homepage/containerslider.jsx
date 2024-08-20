@@ -34,7 +34,7 @@ const TrendingSlider = () => {
     <div className="px-6 py-10 md:pr-0 md:pl-14 md:py-20 flex flex-col gap-4 md:gap-6 bg-cream">
       <div>
         <p className="text-darkpurple font-quicksand font-bold md:text-xl text-sm">BEST SELLER</p>
-        <p className="text-darktext font-quicksand font-bold md:text-[40px] text-xl w-[88%] md:w-[55%]" style={{ lineHeight: '120%' }}>What&apos;s Trending</p>
+        <p className="text-darktext font-quicksand font-bold md:text-[40px] text-xl w-[88%] md:w-[55%]" style={{ lineHeight: '120%' }}>What&rsquo;s Trending</p>
       </div>
       <div className='w-full trending'>
         <Slider {...settings}>
