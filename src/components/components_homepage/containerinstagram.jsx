@@ -7,9 +7,9 @@ export default function Component() {
         <p className=' m-auto text-center text-gray md:font-2xl font-lg font-nunito md:mb-8'>Here our latest Instagram updates,<br />make sure you are stay informed and in the loop</p>
       </div>
       <div className="flex justify-between items-between ">
-        <iframe className="rounded" width="418" height="640" src="https://www.instagram.com/p/C7n6JGgSODo/embed/" frameBorder="0"></iframe>
-        <iframe className="rounded" width="418" height="640" src="https://www.instagram.com/p/C0F2G6Myn9B/embed/" frameBorder="0"></iframe>
-        <iframe className="rounded" width="418" height="640" src="https://www.instagram.com/p/C7n6JGgSODo/embed/" frameBorder="0"></iframe>
+        <iframe className="rounded" width="418" height="640" src="https://www.instagram.com/p/C7n6JGgSODo/embed/"></iframe>
+        <iframe className="rounded" width="418" height="640" src="https://www.instagram.com/p/C0F2G6Myn9B/embed/"></iframe>
+        <iframe className="rounded" width="418" height="640" src="https://www.instagram.com/p/C7n6JGgSODo/embed/"></iframe>
       </div>
     </div>
 
