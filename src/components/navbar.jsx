@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="h-20 md:h-23 bg-cream shadow-md z-10 sticky top-0 bg-cream py-4 px-8 flex items-center justify-between">
       {/* Left Side - Logo */}
       <div className="flex items-center">
-        <img src="./logo.png" alt="Kindkain Logo" className="h-8 mr-4" />
+        <Image width="100" height="100" src="/logo.png" alt="Kindkain Logo" className="h-8 mr-6 ml-2" />
       </div>
 
       {/* Middle - Navigation Links */}

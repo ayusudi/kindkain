@@ -1,10 +1,13 @@
+import Image from 'next/image';
 import React from 'react';
 
 const CollaborateWithUs = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between bg-cream py-10 px-6 md:px-14 md:py-20">
       <div className="w-full md:w-1/2">
-        <img
+        <Image
+          width="100"
+          height="100"
           src="/product.png"
           alt="Collaboration"
           className="rounded-lg shadow-lg w-full h-auto"

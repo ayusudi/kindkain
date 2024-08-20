@@ -2,6 +2,7 @@
 "use client";
 
 import { Carousel } from "flowbite-react";
+import Image from "next/image";
 
 let object = {
   "root": {
@@ -46,7 +47,7 @@ export default function Component() {
     <div className="h-[calc(100vw/2)] rounded-0">
       <Carousel theme={object} slideInterval={5000}>
         {
-          urls.map(({ id, url }) => <img key={id} src={url} alt={id} />)
+          urls.map(({ id, url }) => <Image width="600" height="600" key={id} src={url} alt={id} />)
         }
       </Carousel>
     </div>
