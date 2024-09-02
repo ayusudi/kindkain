@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 const Navbar = () => {
+
   return (
     <nav className="h-20 md:h-23 bg-cream shadow-md z-10 sticky top-0 bg-cream py-4 px-8 flex items-center justify-between">
       {/* Left Side - Logo */}
@@ -10,10 +11,10 @@ const Navbar = () => {
 
       {/* Middle - Navigation Links */}
       <div className="hidden md:flex space-x-8">
-        <Link href="/about-us" className="text-darktext hover:text-darkpurple font-nunito">About Us</Link>
-        <Link href="/why-menstrual-pads" className="text-darktext hover:text-darkpurple font-nunito">Why Menstrual Pads or Cups?</Link>
-        <Link href="/browse-products" className="text-darktext hover:text-darkpurple font-nunito">Browse Products</Link>
-        <Link href="/partnerships" className="text-darktext hover:text-darkpurple font-nunito">Partnerships</Link>
+        <Link href="/" className="text-darktext hover:text-darkpurple font-nunito">About Us</Link>
+        <Link href="/why-menstrual-pads-or-cups" className="text-darktext hover:text-darkpurple font-nunito">Why Menstrual Pads or Cups?</Link>
+        <Link href="/products" className="text-darktext hover:text-darkpurple font-nunito">Browse Products</Link>
+        <Link href="/product-warranty" className="text-darktext hover:text-darkpurple font-nunito">Product Warranty</Link>
       </div>
 
       {/* Right Side - Language Selector and Shop Button */}

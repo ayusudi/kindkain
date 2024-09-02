@@ -67,15 +67,68 @@ body {
   cursor: pointer;
 }
 
-.slick-next {
+.trending.slick-next {
   margin-top: -32px;
   left: 90vw;
+  right: -25px;
 }
 
-.slick-prev:before {
+.trending.slick-prev:before {
   display: none;
+}
+
+.slick-next {
+  right: 40px !important;
+}
+
+.slick-prev {
+  left: 18px !important;
+  z-index: 100;
 }
 
 .slick-next:before {
   font-size: 48px !important;
+}
+
+.slick-prev:before {
+  font-size: 48px !important;
+}
+
+.accordion-group {
+  border-radius: 4px;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+}
+
+.accordion-toggle {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* .accordion-toggle.active {} */
+
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  /* Smooth transition effect */
+  max-height: 0;
+  /* Hidden by default */
+}
+
+.accordion-content.open {
+  max-height: 1000px;
+  /* Set a large enough max-height to accommodate content */
+}
+
+.accordion-content-inner {
+  padding: 3px;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
