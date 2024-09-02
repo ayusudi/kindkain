@@ -11,10 +11,10 @@ export default function HomePage() {
     <section className='bg-cream'>
       <Navbar />
       <div className='flex justify-center flex-col px-16 pb-20 gap-6'>
-        <Image src="/product-warranty.png" width="300" height="300" className='w-full' />
+        <Image alt='grey' src="/product-warranty.png" width="300" height="300" className='w-full' />
         <div className='py-8 mb-24 text-[24px] m-auto px-10 flex flex-col gap-12 text-gray font-nunito'>
           <p style={{ lineHeight: "120%", textTransform: "capitalize", whiteSpace: "pre-wrap" }} className='font-quicksand font-bold text-darkpurple text-[56px]'>{'Every purchase of KindKain\nmenstrual pad comes with\n1 year of snap button warranty.'}</p>
-          <p style={{ lineHeight: "141%", letterSpacing: 0.96, width: "80%" }}>If your KindKain menstrual pad button is not working properly, and the defect  is not caused by inappropriate use or a product accident that occurred outside of KindKain's control.</p>
+          <p style={{ lineHeight: "141%", letterSpacing: 0.96, width: "80%" }}>If your KindKain menstrual pad button is not working properly, and the defect  is not caused by inappropriate use or a product accident that occurred outside of KindKain&rsquo;s control.</p>
           <div>
             <p className='font-bold mb-1'>You can apply for button repair by:</p>
             <ol className='list-decimal ml-8 flex flex-col gap-1.5' style={{ lineHeight: "141%", letterSpacing: 0.96, width: "80%" }}>

@@ -20,11 +20,11 @@ export default function HomePage() {
     <section className='bg-cream'>
       <Navbar />
       <div className='flex justify-center flex-col px-16 pb-20 gap-6'>
-        <Image src="/product-warranty.png" width="300" height="300" className='w-full' />
+        <Image alt='grey-image' src="/product-warranty.png" width="300" height="300" className='w-full' />
         <div className='w-full py-8 mb-24 text-[24px] m-auto px-10 flex flex-col gap-24 text-gray font-nunito'>
           <div>
             <p style={{ lineHeight: "120%", textTransform: "capitalize", whiteSpace: "pre-wrap" }} className='mb-10 font-quicksand font-bold text-darkpurple text-[56px]'>Main Title Size</p>
-            <Image src="/product-warranty.png" width="300" height="300" className='w-full rounded-lg' />
+            <Image alt='grey-image-alt' src="/product-warranty.png" width="300" height="300" className='w-full rounded-lg' />
           </div>
           <CardComponent button={'Apply As A Reseller'} buttonTo={'/'} title={'Sub-Title Size'} subtitle={'This option is suitable if you have your own online or offline store(s).\nApply through the button below.'} />
           <div className='flex flex-col gap-5 items-start'>

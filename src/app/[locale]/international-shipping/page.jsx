@@ -48,7 +48,7 @@ export default function HomePage() {
     <section className='bg-cream'>
       <Navbar />
       <div className='flex justify-center flex-col px-16 pb-20 gap-6'>
-        <Image src="/product-warranty.png" width="300" height="300" className='w-full' />
+        <Image alt='product-warranty' src="/product-warranty.png" width="300" height="300" className='w-full' />
         <div className='m-auto w-full px-10 py-8 mb-24 text-[24px] flex flex-col gap-12 text-gray font-nunito'>
           <p style={{ lineHeight: "120%", textTransform: "capitalize", whiteSpace: "pre-wrap" }} className='font-quicksand font-bold text-darkpurple text-[56px]'>International Shipping</p>
           <p className='font-quicksand text-darktext text-4xl font-bold' style={{ lineHeight: "141%", letterSpacing: 0.96, whiteSpace: "pre-wrap", textTransform: "capitalize", }}>{"We provide international shipping of our products\nto your country, delivered from our warehouse \nin Jakarta, Indonesia.\n\nSome of the countries we ship most to \nare South East Asian countries. \n\nPlease purchase through our WhatsApp."}</p>

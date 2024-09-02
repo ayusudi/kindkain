@@ -105,12 +105,12 @@ export default function HomePage() {
     <section className='bg-cream'>
       <Navbar />
       <div className='font-nunito flex justify-center flex-col pb-20 gap-6'>
-        <Image src="/banner-why.png" width="900" height="100" className='w-full h-auto' />
+        <Image alt='banner-why' src="/banner-why.png" width="900" height="100" className='w-full h-auto' />
         <div className="mx-auto flex flex-col gap-10 py-12 w-10/12">
           <div className='flex w-full justify-between items-center'>
             <Image src="/cup.png" alt="KindKain" width="555" height="555" className="rounded-lg shadow-md" />
             <div className="w-[300px] md:w-[580px] flex items-start flex-col gap-6">
-              <Image src="/lebih-sehat.png" width="60" height="60" />
+              <Image alt='lebih-sehat' src="/lebih-sehat.png" width="60" height="60" />
               <div className="font-quicksand text-darkpurple  text-5xl font-bold">Lebih Sehat</div>
               <p className="text-[20px] text-gray text-justify mb-2">
                 Penggunaan pembalut kain seperti pembalut KindKain membantu mengurangi drastis dan bahkan menghilangkan total gejala-gejala ketidaknyamanan pada kulit saat menstruasi seperti iritasi, ruam, lecet, gatal, dan juga reaksi alergi lainnya.
@@ -123,7 +123,7 @@ export default function HomePage() {
           <div className='flex w-full justify-between items-center'>
             <Image src="/cup.png" alt="KindKain" width="555" height="555" className="rounded-lg shadow-md" />
             <div className="w-[300px] md:w-[580px] flex items-start flex-col gap-6">
-              <Image src="/lebih-ramah.png" width="60" height="60" />
+              <Image alt='lebih-ramah' src="/lebih-ramah.png" width="60" height="60" />
               <div className="font-quicksand text-darkpurple  text-5xl font-bold">Lebih Ramah Lingkungan</div>
               <p className="text-[20px] text-gray text-justify mb-2">
                 Dari segi lingkungan, pembalut kain dan cawan menstruasi jauh lebih ramah lingkungan karena dapat digunakan berulang kali. Hal ini <span className='text-darkpurple font-bold'>mencegah terbuangnya kurang lebih 11.000 ~ 16.000 pembalut sekali pakai</span> yang dibuang oleh setiap wanita di masa hidupnya.
@@ -131,7 +131,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="text-center flex flex-col gap-8 py-12">
-            <Image className='m-auto' src="/lebih-hemat.png" width="60" height="60" />
+            <Image alt='lebih-hemat' className='m-auto' src="/lebih-hemat.png" width="60" height="60" />
             <div className="flex items-center justify-center space-x-2">
               <div className="text-darkpurple text-5xl font-bold">Lebih Hemat</div>
             </div>
