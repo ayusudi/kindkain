@@ -171,7 +171,6 @@ export default function HomePage() {
           <p className='text-[40px] font-bold text-darkpurple font-quicksand pb-4'>Frequently Asked Question</p>
           <Accordion items={accordionItems} />
         </div>
-
       </div>
       <Footer />
     </section>

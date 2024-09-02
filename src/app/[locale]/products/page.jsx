@@ -4,6 +4,7 @@ import ReachOut from '@/components/reachout';
 import Footer from '@/components/footer';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 function ComponentOption({ name, status, clickMethod }) {
   return (
@@ -21,6 +22,7 @@ function ComponentOption({ name, status, clickMethod }) {
 }
 
 export default function HomePage() {
+  const router = useRouter()
   const t = useTranslations('HomePage');
   const [allCategory, setAllCategory] = useState(true)
   let [categories, setCategories] = useState([
@@ -185,7 +187,7 @@ export default function HomePage() {
           </div>
           {
             new Array(12).fill({}).map((el, i) => (
-              <div key={i} className='mb-3 flex flex-col justify-center items-center '>
+              <div key={i} onClick={() => router.push(`/products/${i + 1}`)} className='cursor-pointer mb-3 flex flex-col justify-center items-center '>
                 <div className='w-[168px] md:w-[300px] flex flex-col gap-2 md:gap-3'>
                   <div className='w-[168px] h-[168px] md:w-[300px] md:h-[300px] bg-grey rounded-xl'>
                   </div>
