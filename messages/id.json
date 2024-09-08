@@ -1,5 +1,10 @@
 {
   "HomePage": {
-    "title": "Hello dunia!"
+    "title": "Hello world!",
+    "aboutus-top": "Kindkain adalah brand yang berspesialisasi di produk kain guna ulang untuk gaya hidup yang lebih sehat, pintar,\n& minim sampah.",
+    "aboutus-mid": "Misi kami adalah membuat gaya hidup berkelanjutan menjadi lebih mudah diterapkan dan membantu mengubah kebiasaan penggunaan produk sekali pakai yang berbahaya bagi diri kita dan lingkungan dengan memberikan pilihan produk pakai ulang yang terbuat dari kain dengan kualitas yang baik, praktis digunakan dan harga yang terjangkau. Produk hasil dari manufaktur lokal kami merupakan solusi yang dapat membantu memenuhi kebutuhan gaya hidup minim dampak.",
+    "aboutus-bottom": "Pembalut kain dan cawan menstruasi kami sudah membantu ribuan wanita untuk mendapatkan menstruasi yang lebih sehat dan nyaman.",
+    "text-category": "Tak hanya produk feminin, pilihan produk kami mencakup berbagai kategori, mulai dari keperluan rumah hingga perjalanan.",
+    "social-media": "Berikut postingan terbaru dari Instagram kami,\npastikan kamu tetap update dan mengikuti informasi terbaru."
   }
 }

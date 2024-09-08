@@ -1,6 +1,4 @@
 "use client"
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
@@ -18,7 +16,6 @@ export default function HomePage() {
 
   return (
     <section className='bg-cream'>
-      <Navbar />
       <div className='flex justify-center flex-col px-16 pb-20 gap-6'>
         <Image alt='grey-image' src="/product-warranty.png" width="300" height="300" className='w-full' />
         <div className='w-full py-8 mb-24 text-[24px] m-auto px-10 flex flex-col gap-24 text-gray font-nunito'>
@@ -36,7 +33,6 @@ export default function HomePage() {
           <CardComponent button={'Chat with our team'} buttonTo={'/'} title={'Have any other inquiries on collaborating\nor doing partnership with KindKain?'} subtitle={"Don't be shy, say hello and chat with us!"} />
         </div>
       </div>
-      <Footer />
     </section>
   )
 }

@@ -1,5 +1,10 @@
 {
   "HomePage": {
-    "title": "Hello world!"
+    "title": "Hello world!",
+    "aboutus-top": "We are the first Indonesian brand focused on reusable cloth products for healthier, smarter, and waste-less living.",
+    "aboutus-mid": "Our mission is to make sustainable living easier, shifting from toxic and disposable culture, by providing high quality yet affordable cloth alternatives to disposable products. Our locally manufactured products are the solution to fill the gap in zero-waste living necessities.",
+    "aboutus-bottom": "Our best selling menstrual pads and menstrual cup products has helped\nthousands of women shift to a healthier, more comfortable period.",
+    "text-category": "Not only feminine products, our product selection ranges across various categories, from home to travel.",
+    "social-media": "Here our latest Instagram updates,\nmake sure you are stay informed and in the loop"
   }
 }

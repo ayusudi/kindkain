@@ -67,13 +67,13 @@ body {
   cursor: pointer;
 }
 
-.trending.slick-next {
-  margin-top: -32px;
-  left: 90vw;
+.trending .slick-next {
+  top: 40%;
+  left: 92.5%;
   right: -25px;
 }
 
-.trending.slick-prev:before {
+.trending .slick-prev:before {
   display: none;
 }
 
@@ -86,13 +86,21 @@ body {
   z-index: 100;
 }
 
+/* Default untuk semua layar */
+.slick-prev:before,
 .slick-next:before {
-  font-size: 48px !important;
+  font-size: 30px !important;
 }
 
-.slick-prev:before {
-  font-size: 48px !important;
+/* Untuk ukuran medium dan ke atas */
+@media (min-width: 768px) {
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 48px !important;
+  }
 }
+
 
 .accordion-group {
   border-radius: 4px;
@@ -131,4 +139,10 @@ body {
   padding: 3px;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }

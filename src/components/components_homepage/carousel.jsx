@@ -26,8 +26,8 @@ let object = {
     }
   },
   "control": {
-    "base": "inline-flex h-14 w-14 items-center justify-center rounded-full bg-white/50 group-hover:bg-white/50  dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-12 sm:w-12",
-    "icon": "h-5 w-5 text-darktext/30 dark:text-gray-800 sm:h-6 sm:w-6"
+    "base": "inline-flex md:h-14 md:w-14 items-center justify-center rounded-full bg-white/50 group-hover:bg-white/50  dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
+    "icon": "h-5 w-5 text-darktext/30 dark:text-gray-800 sm:h-2 sm:w-2"
   },
   "scrollContainer": {
     "base": "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth ",
@@ -47,7 +47,11 @@ export default function Component() {
     <div className="h-[calc(100vw/2)] rounded-0">
       <Carousel theme={object} slideInterval={5000}>
         {
-          urls.map(({ id, url }) => <Image width="600" height="600" key={id} src={url} alt={id} />)
+          urls.map(({ id, url }) => (
+            <div key={id} className="w-full" style={{ aspectRatio: "1440/720" }}>
+              <Image fill src={url} alt={id} />
+            </div>
+          ))
         }
       </Carousel>
     </div>

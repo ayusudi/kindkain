@@ -10,14 +10,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        "2xl": "1440px",
+        "mxl": "1440px"
+      },
       colors: {
         "cream": "#FFF3E9",
         "nude": "#FFE8D3",
         "darktext": "#272525",
         "darkpurple": "#301C51",
+        "purplepale": "#594974",
         "gray": "#707070",
         "grey": "#D9D9D9",
-        "yellow": "#FBE146"
+        "yellow": "#FBE146",
+        "whitegray": "#E2E2E2"
       },
       backgroundImage: {
         "cream": "#FFF3E9",

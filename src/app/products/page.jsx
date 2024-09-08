@@ -1,7 +1,5 @@
 "use client"
-import Navbar from '@/components/navbar';
 import ReachOut from '@/components/reachout';
-import Footer from '@/components/footer';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -146,7 +144,6 @@ export default function HomePage() {
   }
   return (
     <section className='bg-cream'>
-      <Navbar />
       <div className='px-5 hidden md:flex'>
         <p className='px-5 py-5 text-[15px] font-quicksand'>Home  /  <span className='text-darkpurple'>Browse Product</span></p>
 
@@ -203,7 +200,6 @@ export default function HomePage() {
         </div>
       </div>
       <ReachOut />
-      <Footer />
     </section>
   )
 }
