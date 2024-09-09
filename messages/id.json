@@ -6,5 +6,41 @@
     "aboutus-bottom": "Pembalut kain dan cawan menstruasi kami sudah membantu ribuan wanita untuk mendapatkan menstruasi yang lebih sehat dan nyaman.",
     "text-category": "Tak hanya produk feminin, pilihan produk kami mencakup berbagai kategori, mulai dari keperluan rumah hingga perjalanan.",
     "social-media": "Berikut postingan terbaru dari Instagram kami,\npastikan kamu tetap update dan mengikuti informasi terbaru."
+  },
+  "Top5": {
+    "products": [
+      {
+        "id": "4",
+        "category": "Feminine Care",
+        "slug": "kindkain-pembalut-kain-wanita-cuci-pakai-ulang",
+        "title": "KindKain Pembalut Kain Wanita Cuci Pakai Ulang",
+        "photo": "https://drive.usercontent.google.com/download?id=1yJqzOioWqphq9h5trN4uCPBv0T9nz7nD",
+        "price": "200.000"
+      },
+      {
+        "id": "13",
+        "category": "Feminine Care",
+        "slug": "kindkain-cawan-menstruasi-silikon",
+        "title": "KindKain Cawan Menstruasi Silikon",
+        "photo": "https://drive.usercontent.google.com/download?id=1X7QosT0hoYJsOfo3luJ1tZWwXJgeSXVR",
+        "price": "200.000"
+      },
+      {
+        "id": "1",
+        "category": "Bath & Personal Care",
+        "slug": "kindkain-kapas-kain-wajah-cuci-pakai-ulang",
+        "title": "KindKain Kapas Kain Wajah Cuci Pakai Ulang",
+        "photo": "https://drive.usercontent.google.com/download?id=1H864e3aQyzBofuOwYAVJmxSmJjbo7n5k",
+        "price": "200.000"
+      },
+      {
+        "id": "8",
+        "category": "Travel & Grocery",
+        "slug": "kindkain-kantong-wet-bag-waterproof-pakai-ulang",
+        "title": "KindKain Kantong Wet Bag Waterproof Pakai Ulang",
+        "photo": "https://drive.usercontent.google.com/download?id=1zWAfe5X8P3mugW1Uk1ftwRwx6kV6AXni",
+        "price": "200.000"
+      }
+    ]
   }
 }

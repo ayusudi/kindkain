@@ -52,9 +52,9 @@ export default function Component() {
             <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
               <div className="flex flex-col gap-1 md:gap-3 mb-8 md:mb-0">
                 <Footer.Brand
-                  href="https://flowbite.com"
+                  href="https://kindkain.vercel.app"
                   src="/logo-white.png"
-                  alt="Flowbite Logo"
+                  alt="Kindkain"
                 />
                 <p className="text-md max-w-[310px] md:max-w-[280px] md:text-xl font-quicksand whitespace-pre-wrap tracking-wider leading-7">{'Reusable Cloth Products for healthier, smarter, waste-less living.'}</p>
                 <div className="flex md:hidden flex-col mt-2">

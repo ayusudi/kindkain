@@ -32,6 +32,7 @@ module.exports = {
         "darktext": "#301C51",
         "gray": "#707070",
         "yellow": "#FBE146",
+        "ig": 'linear-gradient(315deg, #FBE18A 0.96%, #FCBB45 21.96%, #F75274 38.96%, #D53692 52.96%, #8F39CE 74.96%, #5B4FE9 100.96%)',
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

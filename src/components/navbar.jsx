@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Navbar, Dropdown } from "flowbite-react";
 import { useState } from "react";
 import Modal from "@/components/modal"
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 
 const intl = {
   "arrowIcon": "ml-2 h-4 w-4",
@@ -116,6 +116,7 @@ const object = {
 
 export function Component({ locale }) {
   const router = useRouter()
+  const pathname = usePathname()
   const [ads, setAds] = useState(true)
   const [openModal, setOpenModal] = useState(false);
   let data = [
@@ -142,9 +143,16 @@ export function Component({ locale }) {
 
   const changeLang = async (e) => {
     if (e.toUpperCase() !== locale.toUpperCase()) {
+      if (pathname.startsWith("/products/") && pathname.length > 10) {
+        let response = await fetch("/api/set-locale?locale=" + e.toLowerCase())
+        await response.json()
+        let slug = localStorage.getItem('alternative_slug')
+        router.push(`/products/${slug}`)
+        return router.refresh()
+      }
       let response = await fetch("/api/set-locale?locale=" + e.toLowerCase())
       await response.json()
-      router.fastRefresh()
+      return router.fastRefresh()
     }
   }
 
@@ -168,7 +176,7 @@ export function Component({ locale }) {
       <div className="h-fit w-full bg-cream shadow-md z-10 sticky top-0 ">
         <Navbar theme={object} fluid className="max-w-[1440px] bg-cream  m-auto">
           <Navbar.Toggle />
-          <Navbar.Brand as={Link} href="https://flowbite-react.com">
+          <Navbar.Brand as={Link} href="https://kindkain.vercel.app">
             <Image sizes="(max-width: 154px)" fill src="/logo.png" alt="Kindkain Logo" className="h-8 mr-6 ml-2 2xl:ml-0" />
           </Navbar.Brand>
           <div onClick={openNow} className="p-2 flex md:hidden">

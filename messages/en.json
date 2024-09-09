@@ -6,5 +6,41 @@
     "aboutus-bottom": "Our best selling menstrual pads and menstrual cup products has helped\nthousands of women shift to a healthier, more comfortable period.",
     "text-category": "Not only feminine products, our product selection ranges across various categories, from home to travel.",
     "social-media": "Here our latest Instagram updates,\nmake sure you are stay informed and in the loop"
+  },
+  "Top5": {
+    "products": [
+      {
+        "id": "4",
+        "category": "Feminine Care",
+        "slug": "kindkain-menstrual-pad",
+        "title": "KindKain Menstrual Pad",
+        "photo": "https://drive.usercontent.google.com/download?id=1yJqzOioWqphq9h5trN4uCPBv0T9nz7nD",
+        "price": "200.000"
+      },
+      {
+        "id": "13",
+        "category": "Feminine Care",
+        "slug": "kindkain-silicone-menstrual-cup",
+        "title": "Kindkain Silicone Menstrual Cup",
+        "photo": "https://drive.usercontent.google.com/download?id=1X7QosT0hoYJsOfo3luJ1tZWwXJgeSXVR",
+        "price": "200.000"
+      },
+      {
+        "id": "1",
+        "category": "Bath & Personal Care",
+        "slug": "kindkain-reusable-face-pad",
+        "title": "KindKain Reusable Face Pad",
+        "photo": "https://drive.usercontent.google.com/download?id=1H864e3aQyzBofuOwYAVJmxSmJjbo7n5k",
+        "price": "200.000"
+      },
+      {
+        "id": "8",
+        "category": "Travel & Grocery",
+        "slug": "kindkain-reusable-waterproof-wet-bag",
+        "title": "Kindkain Reusable Waterproof Wet Bag",
+        "photo": "https://drive.usercontent.google.com/download?id=1zWAfe5X8P3mugW1Uk1ftwRwx6kV6AXni",
+        "price": "200.000"
+      }
+    ]
   }
 }
