@@ -7,7 +7,7 @@ import { cookies } from 'next/headers'
 export default async function HomePage() {
   const cookieStore = cookies()
   const locale = cookieStore.get('locale')?.value || 'id';
-  const res = await fetch(`http://localhost:3000/api/products`, {
+  const res = await fetch(`https://kindkain.vercel.app/api/products`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

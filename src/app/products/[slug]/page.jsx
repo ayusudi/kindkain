@@ -7,7 +7,7 @@ import Slider from "@/components/components_productpage/slider";
 
 export default async function HomePage({ params }) {
   const { slug } = params;
-  const res = await fetch(`http://localhost:3000/api/products/${slug}`, {
+  const res = await fetch(`https://kindkain.vercel.app/api/products/${slug}`, {
     next: { revalidate: 10 }, // Adjust the cache revalidation as needed
   });
   if (!res.ok) {
