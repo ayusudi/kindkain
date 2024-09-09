@@ -49,7 +49,7 @@ export default function Component() {
         {
           urls.map(({ id, url }) => (
             <div key={id} className="w-full" style={{ aspectRatio: "1440/720" }}>
-              <Image fill src={url} alt={id} />
+              <Image sizes='(max-width: 100vw) 100vw' fill src={url} alt={id} />
             </div>
           ))
         }

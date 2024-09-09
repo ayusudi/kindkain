@@ -1,4 +1,3 @@
-import { getLocale } from 'next-intl/server';
 import { NextResponse } from 'next/server';
 import dataRaw from '@/data/browse-product.json'
 

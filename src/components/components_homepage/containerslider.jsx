@@ -42,7 +42,7 @@ const TrendingSlider = () => {
               return (
                 <div onClick={() => router.push(`/products/${slug}`)} key={i} className="cursor-pointer trending-slider__item w-[150px] h-[150px] mx-auto pr-3 md:pr-12">
                   <div style={{ position: 'relative', aspectRatio: "1/1" }} className='flex w-[150px] h-[150px] md:w-[300px] md:h-[300px]'>
-                    <Image fill className='rounded-lg' src={photo} alt={t(`${i}.title`)} />
+                    <Image fill sizes='(max-width: 300px) 100vw' className='rounded-lg' src={photo} alt={t(`${i}.title`)} />
                   </div>
                   <p style={{ lineHeight: "145%", letterSpacing: 0.33 }} className="h-[58px] text-md line-clamp-3 md:text-xl md:line-clamp-2 font-bold my-2 md:my-4 text-sm font-nunito text-darktext">{t(`${i}.title`)}</p>
                   <p className="font-nunito text-sm md:text-xl self-end justify-self-end">IDR {t(`${i}.price`)}</p>

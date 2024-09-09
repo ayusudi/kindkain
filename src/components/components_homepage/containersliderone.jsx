@@ -96,7 +96,7 @@ const Component = () => {
             {images.map((el, i) => {
               return (
                 <div key={i} className='w-full h-auto' style={{ aspectRatio: "1/1" }}>
-                  <Image fill src={el} alt={i} />
+                  <Image fill sizes='(max-width:100vw) 100vw' src={el} alt={i} />
                 </div>
               )
             })}
