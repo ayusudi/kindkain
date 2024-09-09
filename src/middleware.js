@@ -1,9 +1,10 @@
 import { NextResponse } from 'next/server';
-import { cookies } from 'next/headers';
 
 export function middleware(request) {
-  const cookieStore = cookies();
-  const locale = cookieStore.get('locale')?.value || 'id'; // default to 'id'
+  const locale = request.cookies.get('locale')?.value || 'id'; // Default locale is 'id'
+
+  const response = NextResponse.next();
+
   // Set cookie if not present
   if (!request.cookies.get('locale')) {
     response.cookies.set('locale', locale, {
@@ -12,7 +13,7 @@ export function middleware(request) {
     });
   }
 
-  return NextResponse.next();
+  return response;
 }
 
 // Specify paths where middleware should run
