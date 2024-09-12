@@ -9,14 +9,13 @@ import { useRouter } from 'next/navigation';
 const Component = () => {
   const router = useRouter()
   let images = [
-    "https://drive.usercontent.google.com/download?id=1yJqzOioWqphq9h5trN4uCPBv0T9nz7nD",
-    "https://drive.usercontent.google.com/download?id=1RkUHdUcQQQvtwQwQmt0q9fmUvfgIyX0x",
-    "https://drive.usercontent.google.com/download?id=1aoZne1W5kUUXtTKm9u7o-Q1bg0dv-hnc",
-    "https://drive.usercontent.google.com/download?id=1X6lpf9DpNhsqQj2GWDV0muxDTxDYTwYF",
-    "https://drive.usercontent.google.com/download?id=1PtzBmaKGr0lvB62qJb4KVtiBw5sQ43Oo",
-    "https://drive.usercontent.google.com/download?id=1iDCLDOFZSPpyd-yWrLlje24fRecP98q-",
-    "https://drive.usercontent.google.com/download?id=1qMBHJk9HrL-E3c3aQd2IFAF58OteSJv_",
-    "https://drive.usercontent.google.com/download?id=1-PX0_qNgLq3FxwQ_aoX7Oc37NO9uSSDg"
+    "/slide-pads/1.jpg",
+    "/slide-pads/2.jpg",
+    "/slide-pads/3.jpg",
+    "/slide-pads/4.jpg",
+    "/slide-pads/5.jpg",
+    "/slide-pads/6.jpg",
+    "/slide-pads/7.jpg"
   ]
   return (
     <div className='bg-cream'>

@@ -5,13 +5,12 @@ const CollaborateWithUs = () => {
   return (
     <div className="bg-cream">
       <div className='max-w-screen-2xl m-auto flex flex-col md:flex-row items-center justify-between py-10 px-6 md:px-14 md:py-24'>
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 relative h-[300px] md:h-[334px]" >
           <Image
-            width="100"
-            height="100"
-            src="/product.png"
+            fill
+            src="/product.jpg"
             alt="Collaboration"
-            className="rounded-lg shadow-lg w-full h-auto"
+            className="rounded-lg object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 mt-6 md:mt-0 md:ml-12 flex flex-col py-2 md:py-0">
