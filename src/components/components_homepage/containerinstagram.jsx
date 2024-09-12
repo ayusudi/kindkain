@@ -8,8 +8,8 @@ export default function Component() {
     <div className="bg-nude">
       <div className="max-w-screen-2xl m-auto hidden p-6 md:px-14 md:py-16  md:flex flex-col gap-4">
         <div className="m-auto">
-          <p style={{ lineHeight: "120%" }} className='md:text-4xl text-center text-2xl font-quicksand font-bold text-darktext mb-1.5'>Keep Updated With Us</p>
-          <p className="m-auto text-gray font-nunito md:text-xl text-sm text-center py-3" style={{ letterSpacing: 0.8, lineHeight: "150%", whiteSpace: 'pre-wrap' }}>{t('social-media')}</p>
+          <p style={{ lineHeight: "120%" }} className='md:text-4xl text-center text-2xl font-quicksand font-bold text-darktext mb-1.5'>{t('socialmedia')}</p>
+          <p className="m-auto text-gray font-nunito md:text-xl text-sm text-center py-3" style={{ letterSpacing: 0.8, lineHeight: "150%", whiteSpace: 'pre-wrap' }}>{t('socialmedia-subtitle')}</p>
         </div>
         <div className="flex justify-between items-between mt-2">
           <iframe className="rounded" width="418" height="640" src="https://www.instagram.com/p/C7n6JGgSODo/embed/"></iframe>

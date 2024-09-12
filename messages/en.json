@@ -5,7 +5,10 @@
     "aboutus-mid": "Our mission is to make sustainable living easier, shifting from toxic and disposable culture, by providing high quality yet affordable cloth alternatives to disposable products. Our locally manufactured products are the solution to fill the gap in zero-waste living necessities.",
     "aboutus-bottom": "Our best selling menstrual pads and menstrual cup products has helped\nthousands of women shift to a healthier, more comfortable period.",
     "text-category": "Not only feminine products, our product selection ranges across various categories, from home to travel.",
-    "social-media": "Here our latest Instagram updates,\nmake sure you are stay informed and in the loop"
+    "socialmedia": "Keep Updated With Us",
+    "socialmedia-subtitle": "Follow our Instagram to receive updates and our latest news.",
+    "testimonial": "What Our Customers Say",
+    "testimonial-subtitle": "Whether you use our products for health or environmental reasons, there are so many benefits of switching to reusables."
   },
   "Top5": {
     "products": [
@@ -55,5 +58,48 @@
     "q4": "Have any other inquiries on collaborating or doing partnership with KindKain?",
     "a4": "Don't be shy, say hello and chat with us!",
     "b4": "Chat with our team"
+  },
+  "FAQPage": {
+    "q1": "What materials are KindKain cloth pads made of?",
+    "a1": "It is made of water-repellent material on the outside which makes it leak-proof, microfleece on the inside which is comfortable and safe for women's sensitive parts, and microfiber in the middle for high absorbency.",
+    "q2": "Can KindKain cloth pads leak?",
+    "a2": "KindKain cloth pads are safe to use and do not leak due to the water repellent coating. We recommend changing cloth pads every 4-6 hours depending on menstrual flow. For women whose menstrual flow is heavier than the average woman, it is recommended to change cloth pads more regularly and/or add cloth insert(s) to the inside of the cloth pads to increase absorption capacity.",
+    "q3": "How are KindKain cloth pads worn?",
+    "a3": "It is very similar to disposable cloth pads. The difference is in the fastening part; disposable cloth pads use glue/tape, while KindKain pads use snap buttons. Use underwear that is not too loose so that the cloth pads can stick well to the body's curves.\n\nThe steps are as follows:\n1. Open the cloth pads from the fold and attach it to the center of the underwear, the part of the cloth pad that has an opening is recommended to face forward.\n2. Fold the wings of the cloth pad to the bottom of the pants.\n3. Attach the wing snap button and the cloth pad is ready to use.",
+    "q4": "How many times can KindKain cloth pads be used?",
+    "a4": "Each KindKain pads of any size can be used more than 100 times, with a usage period of more than 3 years. Washing and maintenance are quite important to make the cloth pads more hygienic and durable.",
+    "q5": "How to wash KindKain cloth pads?",
+    "a5": "1. Cloth pads are not recommended to be washed using a washing machine, coarse brush, softener, or bleach. If you want to brush, use a soft brush (like a toothbrush).\n2. Clean with running cold water and squeeze the menstrual blood out of the pads.\n3. After most of the blood has been washed out by water, on a flat surface, rub a bar of laundry soap to the pad until it foams, and lightly scrub until the stain disappears. Make sure the pad is clean inside and out.\n4. Wring and air dry in a breezy, well-ventilated area (can be dried indoors or outdoors).\n5. Allow it to dry, usually for 12-24 hours. It can be reused once it has dried.\n6. No ironing required. For machine drying, set it to a low temperature and use a laundry bag.\n7. When the menstrual cycle is over, fold the pads and store them in a clean place.",
+    "q6": "Who is suitable to use KindKain cloth pads?",
+    "a6": "Suitable for women of all ages who are actively menstruating; from the age of first menstruation (teenager) up until menopause phase. KindKain pads are also free sized and can be used up to 100KG+ body weight.\n\nThe use of KindKain pads are suitable for those who have symptoms of irritation, rashes, blisters, itching, and other allergic skin reactions. In addition, it can also be used to help reduce the symptoms of vaginal discharge from chemical exposure that comes from frequent use of disposable liners. Cloth pads will also result in a more airy feeling which can reduce unpleasant odors.",
+    "q7": "What is the absorption capacity of KindKain pads?",
+    "a7": "45 ml for Maxi size, 35 ml for Night size, 25 ml for Day size, 15 ml for Mini size, and 10 ml for Pantyliner size.",
+    "q8": "How do I choose the right size of KindKain cloth pads?",
+    "a8": "The easiest way is to look at your current sanitary pads, then choose KindKain cloth pads with the same/similar length. Generally, every woman will need almost all or all of the available size variants, so that it can be adjusted to different menstrual flows and days.",
+    "q9": "How many KindKain pads do I need?",
+    "a9": "Generally, any woman with standard menstrual flow requires 8-12 cloth pads (mixed sizes) that can be rotated every month (wash-dry-use). If your menstrual flow is heavy, or the frequency of washing pads cannot be too frequent, then it is advisable to have more pads.\n\nWe also have various cloth pad packages to suit your menstrual flow:\n- Starter Set (starter pack)\n- All Size Sampler Package (all sizes of cloth pads)\n- Early Period Kit (early teenage period)\n- Light Flow Kit (light period flow)\n- Regular Flow Kit (medium period flow)\n- Heavy Flow Kit (heavy period flow)",
+    "q10": "What if I'm on my period, but still need to have activities outside of my home?",
+    "a10": "Used pads can be folded and stored in a pouch or wet bag, and you can wash them when you get home. The pads will still be easy to clean even if they are not washed immediately. Our small sized wet bags have 2 compartments: one for storing clean cloth pads, and the other for storing used cloth pads. The wet bag also has a hanger strap to make changing pads easier when in public restrooms.",
+    "q11": "Can KindKain pads be used for those with urinary incontinence?",
+    "a11": "Absolutely! Please choose the appropriate size of pads. However, KindKain pads are not suitable for use as adult diapers because the capacity of urine liquid is much larger than menstrual blood.",
+    "q12": "Can KindKain pads be used for postpartum period?",
+    "a12": "Absolutely! Use KindKain pads during the postpartum period to make your postpartum recovery much more comfortable and healthier. Especially if you went through a normal delivery and have stitched wounds.",
+    "q13": "How are KindKain cloth pads different from other brands?",
+    "a13": "KindKain pads are not too thick (2-4mm in thickness), and are made with flexible material that follows the curves of the body. The fabric used is very soft and absorbent, very washable, and quick drying. KindKain cloth pads also have an opening at the front so that when washing, you can easily check the cleanliness inside and out.",
+    "q14": "Why are KindKain cloth pads produced using light-colored fabric?",
+    "a14": "Although dark-colored cloth can make blood stains invisible, we recommend using light-colored cloth pads to ensure cleanliness during washing.",
+    "table": {
+      "q": "What size variants do KindKain pads come in?",
+      "theads": {
+        "variant": "Variant",
+        "length": "Length",
+        "description": "Description"
+      },
+      "maxi": "For hefty menstrual flow, or during the night. Also suitable for postpartum period.",
+      "night": "For heavy menstrual flow, or during the night. Also suitable for postpartum period.",
+      "day": "For moderate menstrual flow, and comfortable all day activities.",
+      "mini": "For mild menstrual flow, and also suitable for early menstruating teenagers (menarche).",
+      "pantyliner": "With a dry-fit material that is thinner and keeps moisture at bay, it's perfect for the end of your period or during periods of vaginal discharge."
+    }
   }
 }

@@ -5,7 +5,10 @@
     "aboutus-mid": "Misi kami adalah membuat gaya hidup berkelanjutan menjadi lebih mudah diterapkan dan membantu mengubah kebiasaan penggunaan produk sekali pakai yang berbahaya bagi diri kita dan lingkungan dengan memberikan pilihan produk pakai ulang yang terbuat dari kain dengan kualitas yang baik, praktis digunakan dan harga yang terjangkau. Produk hasil dari manufaktur lokal kami merupakan solusi yang dapat membantu memenuhi kebutuhan gaya hidup minim dampak.",
     "aboutus-bottom": "Pembalut kain dan cawan menstruasi kami sudah membantu ribuan wanita untuk mendapatkan menstruasi yang lebih sehat dan nyaman.",
     "text-category": "Tak hanya produk feminin, pilihan produk kami mencakup berbagai kategori, mulai dari keperluan rumah hingga perjalanan.",
-    "social-media": "Berikut postingan terbaru dari Instagram kami,\npastikan kamu tetap update dan mengikuti informasi terbaru."
+    "socialmedia": "Dapat Berita Terbaru Dari Kami",
+    "socialmedia-subtitle": "Follow Instagram KindKain untuk mendapatkan postingan terbaru dari kami",
+    "testimonial": "Apa Kata Pengguna Kami",
+    "testimonial-subtitle": "Baik Anda menggunakan produk kami untuk alasan kesehatan atau lingkungan, ada banyak sekali manfaat beralih ke produk pakai ulang."
   },
   "Top5": {
     "products": [
@@ -55,5 +58,48 @@
     "q4": "Punya pertanyaan lain seputar kolaborasi atau kerjasama dengan KindKain?",
     "a4": "Sapa dan mulai obrolan dengan kami!",
     "b4": "Kontak team kami"
+  },
+  "FAQPage": {
+    "q1": "Pembalut KindKain terbuat dari bahan apa?",
+    "a1": "Terbuat dari bahan anti air di bagian luar yang menjadikannya anti-bocor, microfleece di bagian dalam yang nyaman dan aman untuk bagian sensitif wanita, dan microfiber di bagian tengah untuk daya serap yang tinggi.",
+    "q2": "Apakah pembalut KindKain bisa bocor/rembes?",
+    "a2": "Pembalut KindKain aman digunakan dan tidak bocor dikarenakan ada lapisan anti-air. Rekomendasi penggantian pembalut di setiap 4-6 jam sekali tergantung flow haid. Bagi wanita yang flow haid nya sangat deras melebihi wanita pada umumnya, disarankan dapat mengganti pembalut lebih rutin.",
+    "q3": "Bagaimana cara pemasangan pembalut KindKain?",
+    "a3": "Sangat mirip seperti pembalut sekali pakai. Perbedaan nya ada di bagian pengerat nya; pembalut sekali pakai menggunakan lem/tape, sedangkan pembalut KindKain menggunakan kancing. Gunakan celana dalam yang tidak terlalu longgar agar pembalut dapat menempel dengan baik mengikuti lekuk tubuh.\n\nLangkah nya sebagai berikut:\n1. Buka pembalut dari lipatan dan pasang di bagian tengah celana dalam, bagian pembalut yang ada bukaan nya disarankan menghadap ke depan.\n2. Lipat bagian sayap pembalut ke bagian bawah celana.\n3. Pasang kancing pengait sayap dan pembalut siap digunakan.",
+    "q4": "Pembalut KindKain dapat digunakan berapa kali?",
+    "a4": "Setiap pembalut KindKain ukuran apapun dapat digunakan lebih dari 100 kali, dengan masa pemakaian lebih dari 3 tahun. Pencucian dan perawatan cukup penting agar pembalut lebih higienis dan awet.",
+    "q5": "Bagamaina cara mencuci pembalut KindKain?",
+    "a5": "1. Pembalut kain tidak disarankan untuk dicuci menggunakan mesin cuci, sikat kasar, pelembut ataupun pemutih. Jika ingin menyikat, gunakan sikat halus (seperti sikat gigi).\n2. Bersihkan dengan air (suhu dingin) bersih mengalir, dan peras darah haid hingga habis.\n3. Di atas permukaan yang rata, usapkan sabun cuci batang ke pembalut sampai berbusa, dan kucek ringan sampai noda hilang. Pastikan luar dan dalam pembalut sudah bersih.\n4. Peras, keringkan, dan jemur di tempat yang berangin dan memiliki ventilasi yang baik (dapat dijemur secara indoor atau outdoor).\n5. Biarkan kering, biasanya selama 12-24 jam. Dapat digunakan kembali setelah sudah kering.\n6. Tidak perlu disetrika. Untuk pengeringan menggunakan mesin, setting di suhu rendah dan gunakan laundry bag.\n7. Ketika siklus haid sudah selesai, lipat pembalut dan simpan di tempat yang bersih.",
+    "q6": "Siapa saja yang cocok menggunakan pembalut KindKain?",
+    "a6": "Cocok digunakan untuk segala usia yang produktif menstruasi; dari umur awal mengalami menstruasi hingga mencapai fase menopause. Pembalut KindKain juga free size, dapat digunakan hingga berat badan 100KG+.\n\nPenggunaan pembalut KindKain sangat cocok untuk yang memiliki gejala iritasi, ruam, lecet, gatal, dan juga reaksi alergi kulit lainnya. Selain itu, juga dapat digunakan untuk membantu mengurangi gejala keputihan dari paparan kimia pembalut sekali pakai. Saat menggunakan pembalut kain juga tidak mudah 'pengap' sehingga dapat mengurangi bau tidak sedap.",
+    "q7": "Berapakah daya tampung cairan pembalut KindKain?",
+    "a7": "45 ml untuk ukuran Maxi, 35 ml untuk ukuran Night, 25 ml untuk ukuran Day, 15 ml untuk ukuran Mini, dan 10 ml untuk ukuran Pantyliner.",
+    "q8": "Bagaimana cara saya memilih ukuran pembalut KindKain yang tepat?",
+    "a8": "Cara paling mudah adalah dengan melihat pembalut yang sekarang sudah digunakan, lalu pilihlah pembalut KindKain yang ukuran panjang nya sama/mirip. Umumnya, setiap wanita pasti membutuhkan hampir semua atau semua varian ukuran yang tersedia, agar dapat disesuaikan dengan flow dan hari-hari menstruasi yang berbeda.",
+    "q9": "Berapa banyak pembalut KindKain yang saya perlukan?",
+    "a9": "Umumnya untuk wanita dengan flow haid yang standar, memerlukan 8-12 pembalut (campur ukuran) yang dapat di rotasi setiap bulan nya (cuci-kering-pakai). Jika flow haid Anda tergolong yang deras, ataupun frekuensi pencucian pembalut tidak bisa terlalu sering, maka disarankan untuk memiliki pembalut lebih.\n\nKami juga memiliki berbagai paket pembalut yang sesuai dengan flow haid:\n- Paket Starter Set (paket pemula)\n- Paket All Size Sampler (dapat semua size pembalut)\n- Paket Early Period Kit (haid awal remaja)\n- Paket Light Flow Kit (haid ringan)\n- Paket Regular Flow Kit (haid sedang)\n- Paket Heavy Flow Kit (haid deras)",
+    "q10": "Bagaimana jika saya sedang haid, namun harus tetap beraktivitas di luar rumah?",
+    "a10": "Pembalut bekas dapat dilipat dan disimpan di dalam pouch ataupun wetbag, dan dicuci setelah sampai di rumah. Pembalut masih akan tetap mudah dibersihkan walaupun tidak langsung dicuci. Wetbag memiliki 2 kompartemen; satu untuk menyimpan pembalut bersih, dan satunya lagi untuk menyimpan pembalut bekas. Wetbag juga memiliki tali gantungan untuk mempermudah penggantian pembalut saat berada di toilet umum.",
+    "q11": "Apakah pembalut KindKain dapat digunakan untuk yang mengalami inkontinensia urin?",
+    "a11": "Tentu saja! Silahkan pilih ukuran pembalut yang sesuai. Namun pembalut KindKain tidak cocok digunakan sebagai popok dewasa karena kapasitas cairan urin jauh lebih besar daripada darah haid.",
+    "q12": "Apakah pembalut KindKain dapat digunakan untuk masa nifas?",
+    "a12": "Tentu saja! Gunakan pembalut KindKain selama masa nifas agar pemulihan post-partum Anda jauh lebih nyaman dan sehat. Khususnya jika anda melalui proses lahiran normal dan memiliki luka jahitan.",
+    "q13": "Apa perbedaan pembalut kain KindKain dibandingkan dengan merk lainnya?",
+    "a13": "Pembalut KindKain tidak terlalu tebal, juga tidak kaku dengan bahan yang sangat fleksibel mengikuti lekuk tubuh. Bahan kain yang digunakan sangat lembut dan menyerap dengan baik, sangat mudah dicuci serta cepat kering. Pembalut KindKain juga memiliki bukaan di depan agar ketika mencuci dapat dengan mudah mengecek kebersihan nya luar dan dalam.",
+    "q14": "Mengapa pembalut KindKain diproduksi menggunakan kain berwarna terang?",
+    "a14": "Walaupun kain berwarna gelap dapat menutupi noda darah, kami menyarankan penggunaan pembalut kain warna terang agar dapat dipastikan kebersihannya pada saat pencucian.",
+    "table": {
+      "q": "Pembalut KindKain memiliki varian ukuran apa saja?",
+      "theads": {
+        "variant": "Varian",
+        "length": "Panjang",
+        "description": "Keterangan"
+      },
+      "maxi": "Untuk flow haid sangat deras, atau pada saat malam hari. Cocok untuk masa nifas.",
+      "night": "Untuk flow haid banyak, atau pada saat malam hari. Cocok untuk masa nifas.",
+      "day": "Untuk flow haid sedang, tetap nyaman selama beraktivitas sepanjang hari.",
+      "mini": "Untuk flow haid ringan, dan cocok untuk remaja awal haid.",
+      "pantyliner": "Dengan bahan dri-fit yang lebih tipis dan menjaga agar tidak lembab, cocok untuk di akhir periode haid, ataupun masa keputihan."
+    }
   }
 }
