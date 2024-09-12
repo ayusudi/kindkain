@@ -3,8 +3,6 @@ import { NextResponse } from 'next/server';
 import data from "@/data/products.json"
 export async function GET(request) {
   let { url } = request
-  console.log(url, "CSDCSCDS");
-
   let locale = ''
   let params = url.split("api/products/")
   let input = params[params.length - 1]
@@ -44,7 +42,5 @@ export async function GET(request) {
     lazada,
     alternative_slug: locale === 'id' ? result.slug_en : result.slug_id
   }
-  console.log(product.photo, "<<<<");
-
   return NextResponse.json(product);
 }

@@ -42,5 +42,18 @@
         "price": "200.000"
       }
     ]
+  },
+  "PartnershipPage": {
+    "q1": "Interested to become our stockist / reseller?",
+    "a1": "This option is suitable if you have your own online or offline store(s). Apply through the button below.",
+    "b1": "Apply as a reseller",
+    "q2": "Want to be KindKain affiliators on the marketplace?",
+    "a2": "This option is suitable for fellow creators who are active in social media and live streaming.\n\nWe have open affiliate programs in both Shopee and TikTok Shop, feel free to connect your account with our products.",
+    "q3": "In need of our products for wedding or corporate souvenirs, hampers, or event merchandise?",
+    "a3": "We have in house manufacturing for our products, bulk / custom order starting from 60pcs is available. Contact us with your requirements.",
+    "b3": "Consult with us",
+    "q4": "Have any other inquiries on collaborating or doing partnership with KindKain?",
+    "a4": "Don't be shy, say hello and chat with us!",
+    "b4": "Chat with our team"
   }
 }

@@ -194,8 +194,8 @@ export function Component({ locale }) {
             <Navbar.Link as={Link} href="/products">
               <p className="text-center font-nunito">Browse Products</p>
             </Navbar.Link>
-            <Navbar.Link as={Link} href="/product-warranty">
-              <p className="text-center font-nunito">Product Warranty</p>
+            <Navbar.Link as={Link} href="/partnership">
+              <p className="text-center font-nunito">Partnership</p>
             </Navbar.Link>
           </Navbar.Collapse>
           <div className="hidden xl:flex items-center gap-3">

@@ -42,5 +42,18 @@
         "price": "200.000"
       }
     ]
+  },
+  "PartnershipPage": {
+    "q1": "Tertarik untuk menjadi stockist atau reseller kami?",
+    "a1": "Opsi ini cocok jika Anda memiliki toko online atau offline Anda sendiri. Silahkan mendaftar melalui tombol di bawah.",
+    "b1": "Daftar sebagai reseller",
+    "q2": "Ingin menjual produk KindKain melalui program afiliasi di marketplace?",
+    "a2": "Opsi ini cocok untuk para kreator yang aktif di media sosial dan live streaming.\n\nKami memiliki program afiliasi terbuka yang bisa Anda temukan di Shopee dan TikTok, silahkan menautkan produk kami ke akun Anda.",
+    "q3": "Sedang memiliki kebutuhan souvenir pernikahan, souvenir perusahaan, bingkisan, atau merchandise lainnya?",
+    "a3": "Kami memiliki fasilitas produksi sendiri yang memungkinkan untuk Anda memesan produk custom dimulai dari 60pcs. Silahkan menghubungi kami untuk keperluan Anda.",
+    "b3": "Konsultasi dengan kami",
+    "q4": "Punya pertanyaan lain seputar kolaborasi atau kerjasama dengan KindKain?",
+    "a4": "Sapa dan mulai obrolan dengan kami!",
+    "b4": "Kontak team kami"
   }
 }
