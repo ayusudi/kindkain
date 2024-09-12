@@ -152,7 +152,7 @@ export function Component({ locale }) {
       }
       let response = await fetch("/api/set-locale?locale=" + e.toLowerCase())
       await response.json()
-      return router.fastRefresh()
+      return router.refresh()
     }
   }
 
