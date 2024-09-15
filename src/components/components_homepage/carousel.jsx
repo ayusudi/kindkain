@@ -12,8 +12,8 @@ let object = {
   },
   "indicators": {
     "active": {
-      "off": "bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800",
-      "on": "bg-white dark:bg-gray-800"
+      "off": "bg-white/50 hover:bg-white ",
+      "on": "bg-white "
     },
     "base": "h-3 w-3 rounded-full",
     "wrapper": "absolute bottom-5 left-1/2 flex -translate-x-1/2 space-x-3"
@@ -26,8 +26,8 @@ let object = {
     }
   },
   "control": {
-    "base": "inline-flex md:h-14 md:w-14 items-center justify-center rounded-full bg-white/50 group-hover:bg-white/50  dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
-    "icon": "h-5 w-5 text-darktext/30 dark:text-gray-800 sm:h-2 sm:w-2"
+    "base": "inline-flex md:h-14 md:w-14 items-center justify-center rounded-full bg-white/50 group-hover:bg-white/50  sm:h-10 sm:w-10",
+    "icon": "h-5 w-5 text-darktext/30 sm:h-2 sm:w-2"
   },
   "scrollContainer": {
     "base": "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth ",

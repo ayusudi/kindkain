@@ -24,12 +24,12 @@ const accordion = {
     "base": "flex w-full items-center justify-between py-5 px-1 text-left font-medium text-gray-500 text-base md:text-[22px]",
     "flush": {
       "off": "hover:bg-gray-100 focus:ring-none border-0 border-b-[1px]",
-      "on": "bg-transparent dark:bg-transparent "
+      "on": "bg-transparent "
     },
     "heading": "font-[600]",
     "open": {
       "off": "",
-      "on": "bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white border-0"
+      "on": "bg-gray-100 text-gray-900  border-0"
     }
   }
 }
@@ -45,7 +45,7 @@ export default function Component({ product }) {
       <Accordion.Panel theme={accordion}>
         <Accordion.Title theme={accordion.title}>Materials & Dimensions</Accordion.Title>
         <Accordion.Content theme={accordion.content}>
-          <p className="whitespace-pre-wrap mb-2 text-gray-500 dark:text-gray-400">
+          <p className="whitespace-pre-wrap mb-2 text-gray-500 ">
             {product.material_size}
           </p>
         </Accordion.Content>
@@ -53,7 +53,7 @@ export default function Component({ product }) {
       <Accordion.Panel theme={accordion}>
         <Accordion.Title theme={accordion.title}>How To Use</Accordion.Title>
         <Accordion.Content theme={accordion.content}>
-          <p className="whitespace-pre-wrap mb-2 text-gray-500 dark:text-gray-400">
+          <p className="whitespace-pre-wrap mb-2 text-gray-500 ">
             {product.how_to_use}
           </p>
         </Accordion.Content>
@@ -61,7 +61,7 @@ export default function Component({ product }) {
       <Accordion.Panel theme={accordion}>
         <Accordion.Title theme={accordion.title}>How To Wash</Accordion.Title>
         <Accordion.Content theme={accordion.content}>
-          <p className="whitespace-pre-wrap mb-2 text-gray-500 dark:text-gray-400">
+          <p className="whitespace-pre-wrap mb-2 text-gray-500 ">
             {product.how_to_wash}
           </p>
         </Accordion.Content>

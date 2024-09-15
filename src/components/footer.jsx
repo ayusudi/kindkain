@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const object = {
   "root": {
-    "base": "max-w-screen-2xl m-auto  rounded-lg dark:bg-gray-800 md:flex md:items-center md:justify-between",
+    "base": "max-w-screen-2xl m-auto  rounded-lg  md:flex md:items-center md:justify-between",
     "container": "max-w-screen-2xl m-auto py-6 pt-[52px] px-5 md:px-14 2xl:px-0",
     "bgDark": "bg-gray-800"
   },
@@ -29,7 +29,7 @@ const object = {
     "base": "my-6 w-full border-gray-700 sm:mx-auto lg:my-8"
   },
   "copyright": {
-    "base": "text-sm text-gray-500 dark:text-gray-400 sm:text-center",
+    "base": "text-sm text-gray-500 sm:text-center",
     "href": "ml-1 hover:underline",
     "span": "ml-1"
   },

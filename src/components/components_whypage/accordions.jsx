@@ -23,13 +23,13 @@ const accordion = {
     },
     "base": "flex w-full items-center justify-between py-5 px-1 text-left font-medium text-gray-500",
     "flush": {
-      "off": "hover:bg-gray-100 dark:hover:bg-gray-800 border-b-[1px]",
-      "on": "bg-transparent dark:bg-transparent"
+      "off": "hover:bg-gray-100  border-b-[1px]",
+      "on": "bg-transparent "
     },
     "heading": "font-[600]",
     "open": {
       "off": "",
-      "on": "bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white border-transparent"
+      "on": "bg-gray-100 text-gray-900 border-transparent"
     }
   }
 }

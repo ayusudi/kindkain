@@ -46,7 +46,7 @@ const object = {
     "base": "flex items-start justify-between rounded-t",
     "popup": "border-b-0 p-4",
     "close": {
-      "base": "focus:outline-none focus:ring-none ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white",
+      "base": "focus:outline-none focus:ring-none ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 ",
       "icon": "h-4 w-4 mx-2 mt-2"
     }
   }
