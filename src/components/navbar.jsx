@@ -122,19 +122,23 @@ export function Component({ locale }) {
   let data = [
     {
       name: "Shopee",
-      link: ""
+      img: "/ecommerce/shopee.jpg",
+      link: "https://shopee.co.id/kindkain"
     },
     {
       name: "Tokopedia",
-      link: ""
-    },
-    {
-      name: "Lazada",
-      link: ""
+      img: "/ecommerce/tokopedia.jpg",
+      link: "https://www.tokopedia.com/kindkain"
     },
     {
       name: "Tiktok Shop",
-      link: ""
+      img: "/ecommerce/tiktok.jpg",
+      link: "https://www.tiktok.com/@kindkain.id"
+    },
+    {
+      name: "Lazada",
+      img: "/ecommerce/lazada.png",
+      link: "https://www.lazada.co.id/shop/kindkain"
     }
   ]
   const openNow = () => {
@@ -213,8 +217,8 @@ export function Component({ locale }) {
               {
                 data.map(el => {
                   return (
-                    <Dropdown.Item className="flex gap-4 w-full p-4 items-center" key={el.name}>
-                      <Image src="/rectangle.png" width="41" height="41" alt="toko" className="rounded" />
+                    <Dropdown.Item target="_blank" rel="noopener noreferrer" href={el.link} className="flex gap-4 w-full p-4 items-center" key={el.name}>
+                      <Image src={el.img} width="41" height="41" alt="toko" className="rounded" />
                       <div className="flex-grow flex flex-col items-start">
                         <p className="font-quicksand text-sm">Shop At</p>
                         <p className="font-quicksand font-semibold text-base">{el.name}</p>
