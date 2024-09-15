@@ -50,7 +50,7 @@ export default function Component() {
   const movePage = (title) => {
     axios({
       method: "POST",
-      url: "http://localhost:3000/api/categories",
+      url: "https://kindkain.vercel.app/api/categories",
       data: {
         categories: [title]
       }
