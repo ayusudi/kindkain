@@ -1,5 +1,7 @@
 "use client"
+import axios from "axios";
 import { Flowbite, Footer } from "flowbite-react";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const object = {
@@ -38,12 +40,24 @@ const object = {
   }
 }
 export default function Component() {
+  const router = useRouter()
   const [first, setFirst] = useState(true)
   useEffect(() => {
     if (first) {
       setFirst(false)
     }
   }, [])
+  const movePage = (title) => {
+    axios({
+      method: "POST",
+      url: "http://localhost:3000/api/categories",
+      data: {
+        categories: [title]
+      }
+    })
+      .then((data) => router.push(`/products`))
+  }
+
   return (
     <div className="w-full bg-darkpurple text-white">
       <Flowbite theme={{ theme: { footer: object } }}>
@@ -76,7 +90,7 @@ export default function Component() {
                       </div>
                     </Footer.Link>
                     <div className="flex gap-2.5 mt-1">
-                      <div className="w-10 h-10 bg-purplepale flex justify-center items-center rounded-full">
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/kindkain.id/" className="cursor-pointer w-10 h-10 bg-purplepale flex justify-center items-center rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
                           <g clipPath="url(#clip0_211_1038)">
                             <path d="M8.54031 2.04709C10.8028 2.04709 11.0707 2.05737 11.9605 2.09848C12.7874 2.13616 13.234 2.28005 13.5317 2.39995C13.9253 2.55754 14.2097 2.74939 14.5041 3.05429C14.8018 3.36261 14.9837 3.65381 15.1359 4.06148C15.2517 4.36981 15.3906 4.83572 15.427 5.68876C15.4667 6.61374 15.4766 6.89123 15.4766 9.23108C15.4766 11.5744 15.4667 11.8519 15.427 12.7734C15.3906 13.6299 15.2517 14.0924 15.1359 14.4007C14.9837 14.8084 14.7985 15.103 14.5041 15.4079C14.2064 15.7162 13.9253 15.9046 13.5317 16.0622C13.234 16.1821 12.7841 16.326 11.9605 16.3637C11.0674 16.4048 10.7995 16.4151 8.54031 16.4151C6.27784 16.4151 6.00991 16.4048 5.12014 16.3637C4.29321 16.326 3.84667 16.1821 3.54898 16.0622C3.15536 15.9046 2.87089 15.7128 2.57651 15.4079C2.27881 15.0996 2.09689 14.8084 1.94474 14.4007C1.82897 14.0924 1.69004 13.6264 1.65366 12.7734C1.61396 11.8484 1.60404 11.5709 1.60404 9.23108C1.60404 6.88781 1.61396 6.61031 1.65366 5.68876C1.69004 4.8323 1.82897 4.36981 1.94474 4.06148C2.09689 3.65381 2.28212 3.35919 2.57651 3.05429C2.8742 2.74596 3.15536 2.55754 3.54898 2.39995C3.84667 2.28005 4.29652 2.13616 5.12014 2.09848C6.00991 2.05737 6.27784 2.04709 8.54031 2.04709ZM8.54031 0.467773C6.24145 0.467773 5.95368 0.478051 5.05068 0.519161C4.15098 0.560271 3.53244 0.711008 2.99659 0.926837C2.43758 1.15294 1.96458 1.45099 1.49489 1.94089C1.02188 2.42736 0.734113 2.91725 0.515804 3.49279C0.307418 4.05121 0.161879 4.68841 0.122186 5.62024C0.0824939 6.55892 0.0725708 6.85697 0.0725708 9.23794C0.0725708 11.6189 0.0824939 11.9169 0.122186 12.8522C0.161879 13.784 0.307418 14.4247 0.515804 14.9797C0.734113 15.5586 1.02188 16.0485 1.49489 16.535C1.96458 17.0215 2.43758 17.3229 2.99328 17.5456C3.53244 17.7614 4.14767 17.9122 5.04737 17.9533C5.95037 17.9944 6.23815 18.0047 8.53701 18.0047C10.8359 18.0047 11.1236 17.9944 12.0266 17.9533C12.9263 17.9122 13.5449 17.7614 14.0807 17.5456C14.6364 17.3229 15.1094 17.0215 15.5791 16.535C16.0488 16.0485 16.3399 15.5586 16.5549 14.9831C16.7633 14.4247 16.9088 13.7875 16.9485 12.8556C16.9882 11.9204 16.9981 11.6223 16.9981 9.24136C16.9981 6.8604 16.9882 6.56235 16.9485 5.6271C16.9088 4.69527 16.7633 4.05463 16.5549 3.49965C16.3465 2.91725 16.0587 2.42736 15.5857 1.94089C15.116 1.45442 14.643 1.15294 14.0873 0.930262C13.5482 0.714434 12.933 0.563697 12.0333 0.522587C11.1269 0.478051 10.8392 0.467773 8.54031 0.467773Z" fill="white" />
@@ -89,12 +103,12 @@ export default function Component() {
                             </clipPath>
                           </defs>
                         </svg>
-                      </div>
-                      <div className="w-10 h-10 bg-purplepale flex justify-center items-center rounded-full">
+                      </a>
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@kindkain.id" className="cursor-pointer w-10 h-10 bg-purplepale flex justify-center items-center rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
                           <path d="M11.2709 0.467773H8.28746V12.4155C8.28746 13.8391 7.14002 15.0085 5.71207 15.0085C4.28411 15.0085 3.13666 13.8391 3.13666 12.4155C3.13666 11.0174 4.25862 9.87343 5.63559 9.82261V6.82297C2.60117 6.87379 0.153259 9.33962 0.153259 12.4155C0.153259 15.5169 2.65217 18.0081 5.73758 18.0081C8.82294 18.0081 11.3218 15.4914 11.3218 12.4155V6.28911C12.4438 7.1026 13.8208 7.58559 15.2742 7.61102V4.61136C13.0303 4.5351 11.2709 2.7048 11.2709 0.467773Z" fill="white" />
                         </svg>
-                      </div>
+                      </a>
                     </div>
                   </Footer.LinkGroup>
                 </div>
@@ -103,22 +117,22 @@ export default function Component() {
                 <div>
                   <Footer.Title title="Need Help?" />
                   <Footer.LinkGroup col>
-                    <Footer.Link href="#">FAQ</Footer.Link>
-                    <Footer.Link href="#">Partnership</Footer.Link>
-                    <Footer.Link href="#">International Shipping</Footer.Link>
-                    <Footer.Link href="#">Product Warranty</Footer.Link>
+                    <Footer.Link href="/why-menstrual-pads-or-cups#faq">FAQ</Footer.Link>
+                    <Footer.Link href="/partnership">Partnership</Footer.Link>
+                    <Footer.Link href="/international-shipping">International Shipping</Footer.Link>
+                    <Footer.Link href="/product-warranty">Product Warranty</Footer.Link>
                     <Footer.Link href="#">Sustainability</Footer.Link>
                   </Footer.LinkGroup>
                 </div>
                 <div>
                   <Footer.Title title="Our Products" />
                   <Footer.LinkGroup col>
-                    <Footer.Link href="#">Feminine Care</Footer.Link>
-                    <Footer.Link href="#">Bath & Personal Care</Footer.Link>
-                    <Footer.Link href="#">Home & Living</Footer.Link>
-                    <Footer.Link href="#">Hobbies & Accessories</Footer.Link>
-                    <Footer.Link href="#">Kitchen & Dining</Footer.Link>
-                    <Footer.Link href="#">Travel & Grocery</Footer.Link>
+                    <p className="cursor-pointer me-4 last:mr-0 md:mr-6 font-nunito text-sm md:text-lg" onClick={() => movePage("Feminine Care")}>Feminine Care</p>
+                    <p className="cursor-pointer me-4 last:mr-0 md:mr-6 font-nunito text-sm md:text-lg" onClick={() => movePage("Bath & Personal Care")}>Bath & Personal Care</p>
+                    <p className="cursor-pointer me-4 last:mr-0 md:mr-6 font-nunito text-sm md:text-lg" onClick={() => movePage("Home & Living")}>Home & Living</p>
+                    <p className="cursor-pointer me-4 last:mr-0 md:mr-6 font-nunito text-sm md:text-lg" onClick={() => movePage("Hobbies & Accessories")}>Hobbies & Accessories</p>
+                    <p className="cursor-pointer me-4 last:mr-0 md:mr-6 font-nunito text-sm md:text-lg" onClick={() => movePage("Kitchen & Dining")}>Kitchen & Dining</p>
+                    <p className="cursor-pointer me-4 last:mr-0 md:mr-6 font-nunito text-sm md:text-lg" onClick={() => movePage("Travel & Grocery")}>Travel & Grocery</p>
                   </Footer.LinkGroup>
                 </div>
                 <div className="hidden md:flex flex-col ">
@@ -141,7 +155,7 @@ export default function Component() {
                       </div>
                     </Footer.Link>
                     <div className="flex gap-2.5 mt-2">
-                      <div className="w-14 h-14 bg-purplepale flex justify-center items-center rounded-full">
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/kindkain.id/" className="cursor-pointer w-14 h-14 bg-purplepale flex justify-center items-center rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
                           <g clipPath="url(#clip0_211_182)">
                             <path d="M14 2.61113C17.7406 2.61113 18.1836 2.62812 19.6547 2.69609C21.0219 2.7584 21.7602 2.99629 22.2523 3.19453C22.9031 3.45508 23.3734 3.77227 23.8602 4.27637C24.3523 4.78613 24.6531 5.26758 24.9047 5.9416C25.0961 6.45137 25.3258 7.22168 25.3859 8.63203C25.4516 10.1613 25.468 10.6201 25.468 14.4887C25.468 18.3629 25.4516 18.8217 25.3859 20.3453C25.3258 21.7613 25.0961 22.526 24.9047 23.0357C24.6531 23.7098 24.3469 24.1969 23.8602 24.701C23.368 25.2107 22.9031 25.5223 22.2523 25.7828C21.7602 25.9811 21.0164 26.2189 19.6547 26.2812C18.1781 26.3492 17.7352 26.3662 14 26.3662C10.2594 26.3662 9.81641 26.3492 8.34531 26.2812C6.97813 26.2189 6.23984 25.9811 5.74766 25.7828C5.09688 25.5223 4.62656 25.2051 4.13984 24.701C3.64766 24.1912 3.34687 23.7098 3.09531 23.0357C2.90391 22.526 2.67422 21.7557 2.61406 20.3453C2.54844 18.816 2.53203 18.3572 2.53203 14.4887C2.53203 10.6145 2.54844 10.1557 2.61406 8.63203C2.67422 7.21602 2.90391 6.45137 3.09531 5.9416C3.34687 5.26758 3.65313 4.78047 4.13984 4.27637C4.63203 3.7666 5.09688 3.45508 5.74766 3.19453C6.23984 2.99629 6.98359 2.7584 8.34531 2.69609C9.81641 2.62812 10.2594 2.61113 14 2.61113ZM14 0C10.1992 0 9.72344 0.0169922 8.23047 0.0849609C6.74297 0.15293 5.72031 0.402148 4.83437 0.758984C3.91016 1.13281 3.12813 1.62559 2.35156 2.43555C1.56953 3.23984 1.09375 4.04981 0.732812 5.00137C0.388281 5.92461 0.147656 6.97812 0.0820313 8.51875C0.0164063 10.0707 0 10.5635 0 14.5C0 18.4365 0.0164063 18.9293 0.0820313 20.4756C0.147656 22.0162 0.388281 23.0754 0.732812 23.993C1.09375 24.9502 1.56953 25.7602 2.35156 26.5645C3.12813 27.3688 3.91016 27.8672 4.82891 28.2354C5.72031 28.5922 6.7375 28.8414 8.225 28.9094C9.71797 28.9773 10.1937 28.9943 13.9945 28.9943C17.7953 28.9943 18.2711 28.9773 19.7641 28.9094C21.2516 28.8414 22.2742 28.5922 23.1602 28.2354C24.0789 27.8672 24.8609 27.3688 25.6375 26.5645C26.4141 25.7602 26.8953 24.9502 27.2508 23.9986C27.5953 23.0754 27.8359 22.0219 27.9016 20.4813C27.9672 18.935 27.9836 18.4422 27.9836 14.5057C27.9836 10.5691 27.9672 10.0764 27.9016 8.53008C27.8359 6.98945 27.5953 5.93027 27.2508 5.0127C26.9062 4.0498 26.4305 3.23984 25.6484 2.43555C24.8719 1.63125 24.0898 1.13281 23.1711 0.764648C22.2797 0.407812 21.2625 0.158594 19.775 0.090625C18.2766 0.0169922 17.8008 0 14 0Z" fill="white" />
@@ -154,12 +168,12 @@ export default function Component() {
                             </clipPath>
                           </defs>
                         </svg>
-                      </div>
-                      <div className="w-14 h-14 bg-purplepale flex justify-center items-center rounded-full">
+                      </a>
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@kindkain.id" className="cursor-pointer w-14 h-14 bg-purplepale flex justify-center items-center rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="29" viewBox="0 0 25 29" fill="none">
                           <path d="M18.3811 0H13.4485V19.7536C13.4485 22.1073 11.5515 24.0406 9.19057 24.0406C6.82968 24.0406 4.93255 22.1073 4.93255 19.7536C4.93255 17.4421 6.78752 15.5507 9.06411 15.4667V10.5073C4.04722 10.5913 0 14.6681 0 19.7536C0 24.8812 4.13153 29 9.23274 29C14.3339 29 18.4654 24.8391 18.4654 19.7536V9.62462C20.3204 10.9696 22.5969 11.7681 25 11.8102V6.85073C21.2901 6.72464 18.3811 3.69855 18.3811 0Z" fill="white" />
                         </svg>
-                      </div>
+                      </a>
                     </div>
                   </Footer.LinkGroup>
                 </div>

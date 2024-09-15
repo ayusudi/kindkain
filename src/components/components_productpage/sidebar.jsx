@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react';
+import axios from "axios"
 function ComponentOption({ name, status, clickMethod }) {
   return (
     <div className="flex items-center gap-2">
@@ -15,50 +16,21 @@ function ComponentOption({ name, status, clickMethod }) {
   )
 }
 
-export default function Component() {
-  const [allCategory, setAllCategory] = useState(true)
-  let [categories, setCategories] = useState([
-    {
-      name: "Feminime Care",
-      status: false
-    },
-    {
-      name: "Bath & Personal Care",
-      status: false
-    },
-    {
-      name: "Home & Living",
-      status: false
-    },
-    {
-      name: "Hobbies & Accessories",
-      status: false
-    },
-    {
-      name: "Kitchen & Dining",
-      status: false
-    },
-    {
-      name: "Travel & Grocery",
-      status: false
-    }
-  ])
+export default function Component({ categoriesFilter, data, setData }) {
+  let [categories, setCategories] = useState(categoriesFilter)
   const [allSortBy, setAllSortBy] = useState(true)
   const [sortBy, setSortBy] = useState([
     { name: "Best Selling", status: false },
     { name: "Alphabetically, A-Z", status: false },
     { name: "Alphabetically, Z-A", status: false },
     { name: "Price, low to high", status: false },
-    { name: "Price, high to low", status: false },
-    { name: "Date, old to new", status: false },
-    { name: "Date, new to old", status: false },
+    { name: "Price, high to low", status: false }
   ])
-  const clickStatusCategory = (name) => {
+  const clickStatusCategory = async (name) => {
     if (name === "All") {
-      setAllCategory(true)
       setCategories([
         {
-          name: "Feminime Care",
+          name: "Feminine Care",
           status: false
         },
         {
@@ -82,61 +54,95 @@ export default function Component() {
           status: false
         }
       ])
+      await axios({
+        method: "POST",
+        url: "http://localhost:3000/api/categories",
+        data: {
+          categories: []
+        }
+      })
     } else {
       let temp = [...categories]
       let choosen = temp.find(el => el.name === name)
       choosen.status = !choosen.status
-      let isTrue = temp.find((el) => el.status === true)
-      if (isTrue) setAllCategory(false)
-      else setAllCategory(true)
+      let categoriesTemp = temp.filter(({ status }) => status).map(el => el.name)
+      await axios({
+        method: "POST",
+        url: "http://localhost:3000/api/categories",
+        data: {
+          categories: categoriesTemp
+        }
+      })
       setCategories(temp)
     }
   }
 
-  const clickSortBy = (name) => {
+  const clickSortBy = async (name) => {
     let temp = [...sortBy]
+    let tempData = [...data]
+    console.log(name);
     if (name === "All") {
+      const resetSortBy = temp.map(option => ({ ...option, status: false }));
+      tempData.sort((a, b) => +a.id - +b.id)
+      console.log(tempData);
+
       setAllSortBy(true)
-      setSortBy([
-        { name: "Best Selling", status: false },
-        { name: "Alphabetically, A-Z", status: false },
-        { name: "Alphabetically, Z-A", status: false },
-        { name: "Price, low to high", status: false },
-        { name: "Price, high to low", status: false },
-        { name: "Date, old to new", status: false },
-        { name: "Date, new to old", status: false },
-      ])
-    } else {
-      if (name === "Best Selling") temp[0].status = !temp[0].status
-      else if (name === "Alphabetically, A-Z" && !temp[1].status) {
-        temp[1].status = true
-        temp[2].status = false
-      }
-      else if (name === "Alphabetically, Z-A" && !temp[2].status) {
-        temp[2].status = true
-        temp[1].status = false
-      } else if (name === "Price, low to high" && !temp[3].status) {
-        temp[3].status = true
-        temp[4].status = false
-      } else if (name === "Price, high to low" && !temp[4].status) {
-        temp[4].status = true
-        temp[3].status = false
-      } else if (name === "Date, old to new" && !temp[5].status) {
-        temp[5].status = true
-        temp[6].status = false
-      } else if (name === "Date, new to old" && !temp[6].status) {
-        temp[6].status = true
-        temp[5].status = false
-      } else {
-        let findIt = temp.find(el => el.name === name)
-        findIt.status = !findIt.status
-      }
-      setAllSortBy(false)
-      setSortBy(temp)
+      setSortBy(resetSortBy)
+      setData(tempData)
+      return
     }
+
+    // Toggle the selected option's status
+    const toggleStatus = (name) => {
+      let selectedOption = temp.find(el => el.name === name)
+      if (!selectedOption.status) {
+        if (name === "Alphabetically, A-Z") {
+          temp[2].status = false
+        } else if (name === "Alphabetically, Z-A") {
+          temp[1].status = false
+        } else if (name === "Price, low to high") {
+          temp[4].status = false
+        } else if (name === "Price, high to low") {
+          temp[3].status = false
+        }
+      }
+      selectedOption.status = !selectedOption.status
+    }
+
+    const applySort = () => {
+      const activeSorts = temp.filter(option => option.status)
+
+      // Apply sorting based on active options
+      activeSorts.forEach(option => {
+        switch (option.name) {
+          case "Alphabetically, A-Z":
+            tempData.sort((a, b) => a.title.localeCompare(b.title, "fr", { ignorePunctuation: true }))
+            break
+          case "Alphabetically, Z-A":
+            tempData.sort((a, b) => b.title.localeCompare(a.title, "fr", { ignorePunctuation: true }))
+            break
+          case "Price, low to high":
+            tempData.sort((a, b) => a.startPrice - b.startPrice)
+            break
+          case "Price, high to low":
+            tempData.sort((a, b) => b.startPrice - a.startPrice)
+            break
+          default:
+            break
+        }
+      })
+    }
+
+    toggleStatus(name)
+    applySort()
+
+    setData(tempData)
+    setAllSortBy(false)
+    setSortBy(temp)
   }
+
   return (
-    <div className='w-[270px] hidden md:flex md:flex-col'>
+    <div className='w-[300px] hidden md:flex md:flex-col'>
       <div className='flex flex-col md:gap-8 px-5 border-r-[1px] border-[#CCC2BA] my-3'>
         <div >
           <div className='flex justify-between items-center mb-3'>
@@ -146,7 +152,7 @@ export default function Component() {
             </svg>
           </div>
           <div className='flex flex-col gap-3'>
-            <ComponentOption clickMethod={clickStatusCategory} name={"All"} status={allCategory} />
+            <ComponentOption clickMethod={clickStatusCategory} name={"All"} status={!categories.find(({ status }) => status === true)} />
             {categories.map((el, i) => <ComponentOption clickMethod={clickStatusCategory} key={i} name={el.name} status={el.status} />)}
           </div>
         </div>

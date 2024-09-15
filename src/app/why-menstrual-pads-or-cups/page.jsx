@@ -133,7 +133,7 @@ export default function HomePage() {
 
 
       </div>
-      <div className='bg-nude'>
+      <div className='bg-nude' id="faq">
         <div className='max-w-screen-2xl m-auto flex flex-col py-20 '>
           <div className='w-10/12 mx-auto'>
             <p className='w-full text-[40px] font-bold text-darkpurple font-quicksand pb-4'>Frequently Asked Question</p>

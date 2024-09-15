@@ -56,19 +56,23 @@ export default function Component({ openModal, setOpenModal }) {
   let data = [
     {
       name: "Shopee",
-      link: ""
+      img: "/ecommerce/shopee.jpg",
+      link: "https://shopee.co.id/kindkain"
     },
     {
       name: "Tokopedia",
-      link: ""
-    },
-    {
-      name: "Lazada",
-      link: ""
+      img: "/ecommerce/tokopedia.jpg",
+      link: "https://www.tokopedia.com/kindkain"
     },
     {
       name: "Tiktok Shop",
-      link: ""
+      img: "/ecommerce/tiktok.jpg",
+      link: "https://www.tiktok.com/@kindkain.id"
+    },
+    {
+      name: "Lazada",
+      img: "/ecommerce/lazada.png",
+      link: "https://www.lazada.co.id/shop/kindkain"
     }
   ]
 
@@ -87,13 +91,13 @@ export default function Component({ openModal, setOpenModal }) {
               {
                 data.map(el => {
                   return (
-                    <div className="flex gap-3 w-64 border border-1 border-gray rounded-lg p-3 items-center" key={el.name}>
-                      <Image src="/rectangle.png" width="41" height="41" alt="toko" className="rounded" />
+                    <a target="_blank" rel="noopener noreferrer" href={el.link} className="cursor-pointer flex gap-3 w-64 border border-1 border-gray rounded-lg p-3 items-center hover:bg-darkpurple hover:text-white" key={el.name}>
+                      <Image src={el.img} width="41" height="41" alt="toko" className="rounded" />
                       <div className="flex-grow">
                         <p className="font-quicksand text-xs">Shop At</p>
                         <p className="font-quicksand font-bold text-sm">{el.name}</p>
                       </div>
-                    </div>
+                    </a>
                   )
                 })
               }

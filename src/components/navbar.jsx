@@ -144,13 +144,13 @@ export function Component({ locale }) {
   const changeLang = async (e) => {
     if (e.toUpperCase() !== locale.toUpperCase()) {
       if (pathname.startsWith("/products/") && pathname.length > 10) {
-        let response = await fetch("/api/set-locale?locale=" + e.toLowerCase())
+        let response = await fetch("http://localhost:3000/api/set-locale?locale=" + e.toLowerCase())
         await response.json()
         let slug = localStorage.getItem('alternative_slug')
         router.push(`/products/${slug}`)
         return router.refresh()
       }
-      let response = await fetch("/api/set-locale?locale=" + e.toLowerCase())
+      let response = await fetch("http://localhost:3000/api/set-locale?locale=" + e.toLowerCase())
       await response.json()
       return router.refresh()
     }

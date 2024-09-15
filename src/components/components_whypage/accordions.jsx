@@ -55,6 +55,47 @@ export default function Component() {
         </Accordion.Content>
       </Accordion.Panel>
       <Accordion.Panel theme={accordion}>
+        <Accordion.Title theme={accordion.title}>{t('table.q')}</Accordion.Title>
+        <Accordion.Content theme={accordion.content}>
+          <table className="w-full border-collapse border border-gray-300">
+            <thead>
+              <tr className="bg-nude">
+                <th className="border border-gray-300 px-4 py-2 w-1/6 text-center">{t('table.theads.variant')}</th>
+                <th className="border border-gray-300 px-4 py-2 w-1/6 text-center">{t('table.theads.length')}</th>
+                <th className="border border-gray-300 px-4 py-2 w-4/6 text-center">{t('table.theads.description')}</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray">
+              <tr className="">
+                <td className="border border-gray-300 px-4 py-3 text-center">Maxi</td>
+                <td className="border border-gray-300 px-4 py-3 text-center">42 cm</td>
+                <td className="border border-gray-300 px-4 py-3">{t('table.maxi')}</td>
+              </tr>
+              <tr className="">
+                <td className="border border-gray-300 px-4 py-3 text-center">Night</td>
+                <td className="border border-gray-300 px-4 py-3 text-center">35 cm</td>
+                <td className="border border-gray-300 px-4 py-3">{t('table.night')}</td>
+              </tr>
+              <tr className="">
+                <td className="border border-gray-300 px-4 py-3 text-center">Day</td>
+                <td className="border border-gray-300 px-4 py-3 text-center">28 cm</td>
+                <td className="border border-gray-300 px-4 py-3">{t('table.day')}</td>
+              </tr>
+              <tr className="">
+                <td className="border border-gray-300 px-4 py-3 text-center">Mini</td>
+                <td className="border border-gray-300 px-4 py-3 text-center">23 cm</td>
+                <td className="border border-gray-300 px-4 py-3">{t('table.mini')}</td>
+              </tr>
+              <tr className="">
+                <td className="border border-gray-300 px-4 py-3 text-center">Pantyliner</td>
+                <td className="border border-gray-300 px-4 py-3 text-center">18 cm</td>
+                <td className="border border-gray-300 px-4 py-3">{t('table.pantyliner')}</td>
+              </tr>
+            </tbody>
+          </table>
+        </Accordion.Content>
+      </Accordion.Panel>
+      <Accordion.Panel theme={accordion}>
         <Accordion.Title theme={accordion.title}>{t('q3')}</Accordion.Title>
         <Accordion.Content theme={accordion.content}>
           <p className="whitespace-pre-wrap mb-2 text-gray">
@@ -150,47 +191,7 @@ export default function Component() {
           </p>
         </Accordion.Content>
       </Accordion.Panel>
-      <Accordion.Panel theme={accordion}>
-        <Accordion.Title theme={accordion.title}>{t('table.q')}</Accordion.Title>
-        <Accordion.Content theme={accordion.content}>
-          <table className="w-full border-collapse border border-gray-300">
-            <thead>
-              <tr className="bg-nude">
-                <th className="border border-gray-300 px-4 py-2 w-1/6 text-center">{t('table.theads.variant')}</th>
-                <th className="border border-gray-300 px-4 py-2 w-1/6 text-center">{t('table.theads.length')}</th>
-                <th className="border border-gray-300 px-4 py-2 w-4/6 text-center">{t('table.theads.description')}</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray">
-              <tr className="">
-                <td className="border border-gray-300 px-4 py-3 text-center">Maxi</td>
-                <td className="border border-gray-300 px-4 py-3 text-center">42 cm</td>
-                <td className="border border-gray-300 px-4 py-3">{t('table.maxi')}</td>
-              </tr>
-              <tr className="">
-                <td className="border border-gray-300 px-4 py-3 text-center">Night</td>
-                <td className="border border-gray-300 px-4 py-3 text-center">35 cm</td>
-                <td className="border border-gray-300 px-4 py-3">{t('table.night')}</td>
-              </tr>
-              <tr className="">
-                <td className="border border-gray-300 px-4 py-3 text-center">Day</td>
-                <td className="border border-gray-300 px-4 py-3 text-center">28 cm</td>
-                <td className="border border-gray-300 px-4 py-3">{t('table.day')}</td>
-              </tr>
-              <tr className="">
-                <td className="border border-gray-300 px-4 py-3 text-center">Mini</td>
-                <td className="border border-gray-300 px-4 py-3 text-center">23 cm</td>
-                <td className="border border-gray-300 px-4 py-3">{t('table.mini')}</td>
-              </tr>
-              <tr className="">
-                <td className="border border-gray-300 px-4 py-3 text-center">Pantyliner</td>
-                <td className="border border-gray-300 px-4 py-3 text-center">18 cm</td>
-                <td className="border border-gray-300 px-4 py-3">{t('table.pantyliner')}</td>
-              </tr>
-            </tbody>
-          </table>
-        </Accordion.Content>
-      </Accordion.Panel>
+
     </Accordion>
 
   );

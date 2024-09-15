@@ -8,7 +8,6 @@ import ContainerVideo from "@/components/components_homepage/containervideo"
 import ContainerInstagram from "@/components/components_homepage/containerinstagram"
 import ContainerCollaborate from '@/components/components_homepage/containercollaborate';
 import ReachOut from '@/components/reachout';
-
 export default function HomePage(locale) {
   return (
     <section>

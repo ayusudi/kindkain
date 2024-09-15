@@ -2,18 +2,44 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import axios from "axios"
+
 
 const Component = () => {
   const t = useTranslations("HomePage")
   const router = useRouter()
+
   const items = [
-    { title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit...', price: 'IDR 200.000' },
-    { title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit...', price: 'IDR 200.000' },
-    { title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit...', price: 'IDR 200.000' },
-    { title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit...', price: 'IDR 200.000' },
-    { title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit...', price: 'IDR 200.000' },
-    { title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit...', price: 'IDR 200.000' },
+    {
+      title: 'Feminine Care', img: '/categories/feminim-care.jpg'
+    },
+    {
+      title: 'Bath & Personal Care', img: '/categories/bath-personal.jpg'
+    },
+    {
+      title: 'Home & Living', img: '/categories/home-living.jpg'
+    },
+    {
+      title: 'Kitchen & Dining', img: '/categories/kitchen-dining.jpg'
+    },
+    {
+      title: 'Travel & Grocery', img: '/categories/travel-grocery.jpg'
+    },
+    {
+      title: 'Hobbies & Accessories', img: '/categories/hobbies-accessories.jpg'
+    },
   ];
+  const movePage = async (el) => {
+    await axios({
+      method: "POST",
+      url: "http://localhost:3000/api/categories",
+      data: {
+        categories: [el.title]
+      }
+    })
+    router.push(`/products`)
+  }
 
   return (
     <div className="bg-cream">
@@ -28,7 +54,9 @@ const Component = () => {
         <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
           {
             items.map((el, i) => (
-              <div key={i} className='h-40 w-40 md:h-64 md:w-64 rounded-lg bg-[#D9D9D9]'></div>
+              <div onClick={() => movePage(el)} key={el.title} className='cursor-pointer relative h-40 w-40 md:h-64 md:w-64 rounded-lg'>
+                <Image alt={el.title} fill src={el.img} className='rounded-lg' />
+              </div>
             ))
           }
         </div>
