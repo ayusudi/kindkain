@@ -74,7 +74,7 @@ export default function HomePage(value) {
               data.filter((el, i) => i < index).map((el, i) => (
                 <Link href={'/products/' + el.slug} key={i} className='cursor-pointer mb-3 flex flex-col items-center '>
                   <div className='w-[168px] md:w-[300px] flex flex-col gap-2 md:gap-3'>
-                    <div className='relative w-[168px] h-[168px] md:w-[300px] md:h-[300px] bg-grey rounded-xl' style={{ aspectRatio: '1/1' }}>
+                    <div className='relative w-[168px] h-[168px] md:w-[300px] md:h-[300px] animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400 rounded-xl' style={{ aspectRatio: '1/1' }}>
                       <Image alt={i + 'photo'} sizes='(max-width:300px) 100vw' fill className='rounded-lg' src={el.photo} />
                     </div>
                     <p className='pl-1 font-nunito font-bold text-[16px] md:text-[21px] h-[70px] md:h-[64px] line-clamp-2 text-[#282525]' >{el.title}</p>

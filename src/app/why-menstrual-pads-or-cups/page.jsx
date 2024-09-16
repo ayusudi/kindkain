@@ -16,7 +16,7 @@ export default function HomePage() {
           <div className="m-auto flex flex-col gap-10 md:py-12  w-10/12 ">
             <div className='flex flex-col md:flex-row w-full justify-between items-center gap-6'>
               <div style={{ aspectRatio: "1/1" }} className='relative md:w-[555px] w-full h-auto'>
-                <Image sizes='(max-width: 555px) 100vw' fill src="/infographic/1.jpg" alt="KindKain" className="rounded-lg shadow-md" />
+                <Image sizes='(max-width: 555px) 100vw' fill src="/infographic/1.jpg" alt="KindKain" className="rounded-lg shadow-md animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400" />
               </div>
               <div className="w-[300px] md:w-[580px] flex items-center md:items-start flex-col gap-6">
                 <Image alt='lebih-sehat' src="/lebih-sehat.png" width="60" height="60" />
@@ -28,7 +28,7 @@ export default function HomePage() {
             </div>
             <div className='flex flex-col md:flex-row w-full justify-between items-center gap-6 mt-4 md:mt-0'>
               <div style={{ aspectRatio: "1/1" }} className='relative  w-full md:w-[555px] h-auto'>
-                <Image sizes='(max-width: 555px) 100vw' fill src="/infographic/2.jpg" alt="KindKain" className="rounded-lg shadow-md" />
+                <Image sizes='(max-width: 555px) 100vw' fill src="/infographic/2.jpg" alt="KindKain" className="rounded-lg shadow-md animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400" />
               </div>
               <div className="w-[300px] md:w-[580px] flex items-center md:items-start flex-col gap-6">
                 <Image alt='lebih-ramah' src="/lebih-ramah.png" width="60" height="60" />

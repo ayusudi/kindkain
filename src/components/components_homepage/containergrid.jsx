@@ -47,7 +47,7 @@ const Component = () => {
         <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
           {
             items.map((el, i) => (
-              <div onClick={() => movePage(el)} key={el.title} className='cursor-pointer relative h-40 w-40 md:h-64 md:w-64 rounded-lg'>
+              <div onClick={() => movePage(el)} key={el.title} className='cursor-pointer relative h-40 w-40 md:h-64 md:w-64 rounded-lg animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400'>
                 <Image alt={el.title} fill src={el.img} className='rounded-lg' />
               </div>
             ))

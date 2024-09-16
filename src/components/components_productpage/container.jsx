@@ -18,7 +18,7 @@ export default function Component() {
             let photo = t(`${i}.photo`).toString()
             return (
               <div key={i} onClick={() => router.push(`/products/${slug}`)} className='cursor-pointer w-[150px] md:w-[300px] mb-2 md:mb-0'>
-                <div style={{ position: 'relative', aspectRatio: "1/1" }} className='flex w-[150px] h-[150px] md:w-[300px] md:h-[300px]'>
+                <div style={{ position: 'relative', aspectRatio: "1/1" }} className='flex w-[150px] h-[150px] md:w-[300px] md:h-[300px] animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400'>
                   <Image fill sizes='(max-width: 300px) 100vw' className='rounded-lg' src={photo} alt={title} />
                 </div>
                 <p style={{ lineHeight: "145%", letterSpacing: 0.33 }} className="p-1 md:p-0 font-bold my-2 md:my-4 text-md md:text-[21px] font-nunito text-darktext">{title}</p>

@@ -55,7 +55,7 @@ export default function RootLayout({ params }) {
         <div className='w-5/6 md:w-full m-auto md:m-0 flex md:px-5 flex-col md:flex-row py-5 md:py-0 items-center md:items-start'>
           <div className='flex flex-col'>
             <div className='aspect-square md:w-[725px] md:h-[725px] md:p-4'>
-              <div className='w-full h-full relative rounded-lg'>
+              <div className='w-full h-full relative rounded-lg animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400'>
                 <Image sizes='(max-width: 300px) 100vw' src={product.photo} alt='product' fill className="aspect-square w-full h-full rounded-lg" />
               </div>
             </div>
