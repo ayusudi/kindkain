@@ -83,7 +83,7 @@ export default function HomePage(value) {
               ))
             }
             {
-              index < data.length ? (<div onClick={() => setIndex(index + 6)} className='h-12 col-span-2 md:col-span-3 pl-6 text-[24px] text-center border border-1 rounded-full py-1.5 font-quicksand text-gray mb-6 mt-10'>
+              index < data.length ? (<div onClick={() => setIndex(index + 6)} className='cursor-pointer hover:bg-darkpurple hover:text-white h-12 col-span-2 md:col-span-3 pl-6 text-[24px] text-center border border-1 rounded-full py-1.5 font-quicksand text-gray mb-6 mt-10'>
                 <p>Load More</p>
               </div>) : <></>
             }

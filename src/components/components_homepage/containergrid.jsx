@@ -33,7 +33,7 @@ const Component = () => {
   const movePage = async (el) => {
     await axios({
       method: "POST",
-      url: "https://kindkain.vercel.app/api/categories",
+      url: "http://localhost:3000/api/categories",
       data: {
         categories: [el.title]
       }

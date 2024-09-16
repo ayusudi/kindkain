@@ -56,7 +56,7 @@ export default function Component({ categoriesFilter, data, setData }) {
       ])
       await axios({
         method: "POST",
-        url: "https://kindkain.vercel.app/api/categories",
+        url: "http://localhost:3000/api/categories",
         data: {
           categories: []
         }
@@ -68,7 +68,7 @@ export default function Component({ categoriesFilter, data, setData }) {
       let categoriesTemp = temp.filter(({ status }) => status).map(el => el.name)
       await axios({
         method: "POST",
-        url: "https://kindkain.vercel.app/api/categories",
+        url: "http://localhost:3000/api/categories",
         data: {
           categories: categoriesTemp
         }

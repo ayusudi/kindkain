@@ -3,6 +3,7 @@
 
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 let object = {
   "root": {
@@ -27,7 +28,7 @@ let object = {
   },
   "control": {
     "base": "inline-flex md:h-14 md:w-14 items-center justify-center rounded-full bg-white/50 group-hover:bg-white/50  sm:h-10 sm:w-10",
-    "icon": "h-5 w-5 text-darktext/30 sm:h-2 sm:w-2"
+    "icon": "!h-5 !w-5 text-darktext/30 sm:h-2 sm:w-2"
   },
   "scrollContainer": {
     "base": "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth ",
@@ -37,18 +38,20 @@ let object = {
 
 
 export default function Component() {
+  const router = useRouter()
   let urls = [
-    { id: 1, url: "/banners/banner-1.png" },
-    { id: 2, url: "/banners/banner-2.png" },
-    { id: 3, url: "/banners/banner-3.png" },
-    { id: 4, url: "/banners/banner-4.png" }
+    { id: 1, url: "/banners/banner-1.jpg" },
+    { id: 2, url: "/banners/banner-2.jpg" },
+    { id: 3, url: "/banners/banner-3.jpg" },
+    { id: 4, url: "/banners/banner-4.jpg" },
+    { id: 5, url: "/banners/banner-5.jpg" }
   ]
   return (
     <div className="h-[calc(100vw/2)] rounded-0">
       <Carousel theme={object} slideInterval={5000}>
         {
           urls.map(({ id, url }) => (
-            <div key={id} className="w-full" style={{ aspectRatio: "1440/720" }}>
+            <div onClick={() => router.push("/products")} key={id} className="w-full" style={{ aspectRatio: "1440/720" }}>
               <Image sizes='(max-width: 100vw) 100vw' fill src={url} alt={id} />
             </div>
           ))

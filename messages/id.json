@@ -101,5 +101,27 @@
       "mini": "Untuk flow haid ringan, dan cocok untuk remaja awal haid.",
       "pantyliner": "Dengan bahan dri-fit yang lebih tipis dan menjaga agar tidak lembab, cocok untuk di akhir periode haid, ataupun masa keputihan."
     }
+  },
+  "WhyPage": {
+    "healthier": "Lebih Sehat",
+    "healthier-text": "Penggunaan pembalut kain seperti pembalut KindKain membantu mengurangi drastis dan bahkan menghilangkan total gejala-gejala ketidaknyamanan pada kulit saat menstruasi seperti iritasi, ruam, lecet, gatal, dan juga reaksi alergi lainnya.\n\nPembalut KindKain juga lebih sehat karena tidak mengandung pemutih, dioksin, parfum sintetis, maupun residu pestisida dari kapas, sehingga mengurangi paparan kimia yang dapat mendisrupsi hormon. Hal yang sama berlaku untuk cawan menstruasi.",
+    "environmentally": "Lebih Ramah Lingkungan",
+    "environmentally-text1": "Dari segi lingkungan, pembalut kain dan cawan menstruasi jauh lebih ramah lingkungan karena dapat digunakan berulang kali. Hal ini ",
+    "environmentally-textbold": "mencegah terbuang nya kurang lebih 11.000 ~ 16.000 pembalut sekali pakai ",
+    "environmentally-text2": "yang dibuang oleh setiap wanita di masa hidup nya.",
+    "economical": "Lebih Hemat",
+    "economical-text1": "Dari segi harga, penggunaan ",
+    "economical-textbold1": "pembalut KindKain 5-10x lebih hemat ",
+    "economical-text2": "daripada pembalut sekali pakai.",
+    "economical-text3": "Sedangkan untuk ",
+    "economical-textbold2": "cawan menstruasi 20-30x lebih hemat",
+    "economical-text4": " daripada pembalut sekali pakai.",
+    "disposable-bold": "Pembalut Sekali Pakai",
+    "disposable": "(dengan klaim bebas klorin & dioksin)",
+    "peruse": "Per Pemakaian",
+    "clothpad": "Pembalut KindKain",
+    "menstrualcup": "Cawan Menstruasi\nKindKain",
+    "link-clothpad": "/products/kindkain-pembalut-kain-wanita-cuci-pakai-ulang",
+    "link-menstrualcup": "/products/kindkain-cawan-menstruasi-silikon"
   }
 }

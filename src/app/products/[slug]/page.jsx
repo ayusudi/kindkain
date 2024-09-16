@@ -39,7 +39,7 @@ export default function RootLayout({ params }) {
   const movePage = async (title) => {
     await axios({
       method: "POST",
-      url: "https://kindkain.vercel.app/api/categories",
+      url: "http://localhost:3000/api/categories",
       data: {
         categories: [title]
       }

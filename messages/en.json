@@ -101,5 +101,27 @@
       "mini": "For mild menstrual flow, and also suitable for early menstruating teenagers (menarche).",
       "pantyliner": "With a dry-fit material that is thinner and keeps moisture at bay, it's perfect for the end of your period or during periods of vaginal discharge."
     }
+  },
+  "WhyPage": {
+    "healthier": "Healthier",
+    "healthier-text": "The use of cloth menstrual pads such as KindKain pads helps to drastically reduce and even eliminate the symptoms of skin discomfort during menstruation such as irritation, rashes, blisters, itching, and other allergic reactions.\n\nKindKain pads are also healthier because they do not contain chlorine, dioxins, synthetic perfumes, or pesticide residues from cotton, thus reducing chemical exposure that can disrupt hormones. The same goes for menstrual cups.",
+    "environmentally": "More Environmentally Friendly",
+    "environmentally-text1": "In terms of the environment, cloth pads and menstrual cups are much more environmentally friendly as they can be used repeatedly. This prevents ",
+    "environmentally-textbold": "the waste of approximately 11,000 ~ 16,000 disposable pads ",
+    "environmentally-text2": " that are discarded by every woman in her lifetime.",
+    "economical": "More Economical",
+    "economical-text1": "In terms of price, the use of ",
+    "economical-textbold1": "KindKain cloth pads is 5-10x cheaper ",
+    "economical-text2": "than disposable sanitary pads.",
+    "economical-text3": "As for ",
+    "economical-textbold2": "menstrual cup, it is 20-30x cheaper ",
+    "economical-text4": "than disposable sanitary pads.",
+    "disposable-bold": "Disposable Sanitary Pads",
+    "disposable": "(with chlorine & dioxin free claims)",
+    "peruse": "Per Use",
+    "clothpad": "KindKain Cloth Pad",
+    "menstrualcup": "Menstrual Cup",
+    "link-clothpad": "/products/kindkain-menstrual-pad",
+    "link-menstrualcup": "/products/kindkain-silicone-menstrual-cup"
   }
 }

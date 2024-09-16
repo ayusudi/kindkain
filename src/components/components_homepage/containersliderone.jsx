@@ -79,7 +79,7 @@ const Component = () => {
             </div>
             <div className='flex gap-3.5 items-center mt-4'>
               <button onClick={() => router.push(`/products`)} className='bg-darkpurple text-yellow font-2xl rounded-full px-5 py-3 '>Shop Now</button>
-              <div className='flex gap-1.5 items-center'>
+              <div onClick={() => router.push(`/why-menstrual-pads-or-cups`)} className='cursor-pointer flex gap-1.5 items-center'>
                 <p className='text-darkpurple font-2xl'>Learn More</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
                   <path d="M1 1L7 8L0.999999 15" fill="#301C51" />
