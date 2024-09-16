@@ -15,7 +15,7 @@ export default function ProductWarrantyPage() {
             <div>
               <p className='font-bold mb-1'>{t('title')}</p>
               <ol className='list-decimal ml-8 flex flex-col gap-1.5 md:w-[80%]' style={{ lineHeight: "141%", letterSpacing: 0.96 }}>
-                <li>{t('bullet1')} WhatsApp.</li>
+                <li>{t('bullet1')} <a className='underline' href='https://wa.me/628111329911'>WhatsApp</a>.</li>
                 <li className='whitespace-pre-wrap'>{t('bullet2')}{t('bullet2itallic')}</li>
                 <li className='text-justify'>{t('bullet3')}</li>
                 <li className='text-justify'>{t('bullet4')}</li>
