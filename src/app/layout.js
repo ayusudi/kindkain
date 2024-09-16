@@ -34,9 +34,9 @@ export default async function RootLayout({ children }) {
     <html lang={locale}>
       <body className={`${quicksand.variable} ${nunito.variable} font-sans`} cz-shortcut-listen="false">
         <Navbar locale={locale.toUpperCase()} />
-        <AnimatedButton />
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
+          <AnimatedButton />
         </NextIntlClientProvider>
         <Footer />
       </body>

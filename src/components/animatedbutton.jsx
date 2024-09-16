@@ -1,8 +1,10 @@
 'use client'
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 const AnimatedButton = () => {
   const [isActive, setIsActive] = useState(false);
+  const t = useTranslations("WAPage")
 
   const handleClick = () => {
     setIsActive(!isActive);
@@ -20,7 +22,7 @@ const AnimatedButton = () => {
             Chat via WhatsApp
           </div>
         </div>
-        <a href="https:/api.whatsapp.com/send?phone=+6212312341234&text=Hello%20kindkain" className="w-[60px] h-[60px] left-[160px] top-0 absolute  flex-col justify-start items-start inline-flex">
+        <a href={`https://wa.me/628111329911?text=${t('text')}`} className="w-[60px] h-[60px] left-[160px] top-0 absolute  flex-col justify-start items-start inline-flex">
           <div className="w-[60px] h-[60px] bg-[#00d95f] rounded-full shadow flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
               <path d="M0.00012207 30.8892L2.15255 22.886C0.416671 19.7683 -0.134836 16.1302 0.599235 12.6394C1.33331 9.1485 3.30371 6.039 6.14889 3.88146C8.99406 1.72391 12.5231 0.663053 16.0886 0.893543C19.654 1.12403 23.0165 2.63041 25.5592 5.13626C28.1019 7.64211 29.6542 10.9793 29.9312 14.5356C30.2082 18.0918 29.1913 21.6285 27.0672 24.4966C24.9431 27.3647 21.8542 29.372 18.3673 30.1499C14.8804 30.9279 11.2295 30.4244 8.08445 28.7319L0.00012207 30.8892ZM8.47426 25.737L8.97424 26.0331C11.2523 27.3811 13.913 27.9389 16.5417 27.6197C19.1704 27.3004 21.6195 26.1219 23.5074 24.268C25.3952 22.414 26.6157 19.9886 26.9787 17.3699C27.3417 14.7511 26.8267 12.086 25.5141 9.78989C24.2015 7.49379 22.1649 5.69567 19.7218 4.67574C17.2787 3.65581 14.5662 3.47136 12.0072 4.15114C9.44808 4.83092 7.18612 6.33674 5.57377 8.43394C3.96142 10.5311 3.08925 13.1019 3.09318 15.7456C3.09104 17.9377 3.69829 20.0874 4.84733 21.9554L5.16087 22.4714L3.95755 26.9383L8.47426 25.737Z" fill="white" />

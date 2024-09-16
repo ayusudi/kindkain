@@ -1,6 +1,8 @@
 "use client"
 import { useState } from 'react';
 import axios from "axios"
+import { useCookies } from 'react-cookie';
+
 function ComponentOption({ name, status, clickMethod }) {
   return (
     <div className="flex items-center gap-2">
@@ -17,6 +19,7 @@ function ComponentOption({ name, status, clickMethod }) {
 }
 
 export default function Component({ categoriesFilter, data, setData }) {
+  const [_, setCookie] = useCookies()
   let [categories, setCategories] = useState(categoriesFilter)
   const [allSortBy, setAllSortBy] = useState(true)
   const [sortBy, setSortBy] = useState([
@@ -54,25 +57,13 @@ export default function Component({ categoriesFilter, data, setData }) {
           status: false
         }
       ])
-      await axios({
-        method: "POST",
-        url: "http://localhost:3000/api/categories",
-        data: {
-          categories: []
-        }
-      })
+      setCookie('categories', "")
     } else {
       let temp = [...categories]
       let choosen = temp.find(el => el.name === name)
       choosen.status = !choosen.status
       let categoriesTemp = temp.filter(({ status }) => status).map(el => el.name)
-      await axios({
-        method: "POST",
-        url: "http://localhost:3000/api/categories",
-        data: {
-          categories: categoriesTemp
-        }
-      })
+      setCookie('categories', categoriesTemp.join(','))
       setCategories(temp)
     }
   }

@@ -24,13 +24,13 @@ export default function HomePage() {
               <p style={{ lineHeight: "120%", textTransform: "capitalize", whiteSpace: "pre-wrap" }} className='mb-4 md:mb-10 font-quicksand font-bold text-darkpurple text-3xl md:text-[56px]'>Partnership</p>
               <Image alt='grey-image-alt' src="/product-warranty.png" width="300" height="300" className='w-full rounded-lg' />
             </div>
-            <CardComponent button={t('b1')} buttonTo={'/'} title={t('q1')} subtitle={t('a1')} />
+            <CardComponent button={t('b1')} buttonTo={'https://wa.me/628111329911'} title={t('q1')} subtitle={t('a1')} />
             <div className='flex flex-col gap-5 items-start'>
               <p style={{ whiteSpace: 'pre-wrap', textTransform: 'capitalize' }} className='text-darktext font-quicksand font-bold text-xl md:text-4xl'>{t('q2')}</p>
               <p className='text-base md:text-2xl' style={{ whiteSpace: "pre-wrap" }}>{t('a2')}</p>
             </div>
-            <CardComponent button={t('b3')} buttonTo={'/'} title={t('q3')} subtitle={t('a3')} />
-            <CardComponent button={t('b4')} buttonTo={'/'} title={t('q4')} subtitle={t('a4')} />
+            <CardComponent button={t('b3')} buttonTo={'https://wa.me/628111329911'} title={t('q3')} subtitle={t('a3')} />
+            <CardComponent button={t('b4')} buttonTo={'https://wa.me/628111329911'} title={t('q4')} subtitle={t('a4')} />
           </div>
         </div>
       </div>

@@ -45,7 +45,7 @@ const TrendingSlider = () => {
                     <Image fill sizes='(max-width: 300px) 100vw' className='rounded-lg' src={photo} alt={t(`${i}.title`)} />
                   </div>
                   <p style={{ lineHeight: "145%", letterSpacing: 0.33 }} className="h-[58px] text-md line-clamp-3 md:text-xl md:line-clamp-2 font-bold my-2 md:my-4 text-sm font-nunito text-darktext">{t(`${i}.title`)}</p>
-                  <p className="font-nunito text-sm md:text-xl self-end justify-self-end">IDR {t(`${i}.price`)}</p>
+                  <p className="font-nunito text-sm md:text-xl self-end justify-self-end dark:text-[#000000] text-[#000000]">IDR {t(`${i}.price`)}</p>
                 </div>
               )
             })}

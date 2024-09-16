@@ -10,8 +10,7 @@ import getProducts from './getProducts';
 export default function HomePage(value) {
   const [cookies] = useCookies();
   const [index, setIndex] = useState(6)
-  const { locale, categories } = cookies
-  const [data, setData] = useState(getProducts(locale, categories))
+  const [data, setData] = useState([])
   let [categoriesFilter, setCategoriesFilter] = useState([
     {
       name: "Feminine Care",
@@ -38,23 +37,24 @@ export default function HomePage(value) {
       status: false
     }
   ])
-  const fetchData = (list = categories) => {
-    let result = getProducts(locale, list)
+  const fetchData = () => {
+    let result = getProducts(cookies)
     setData(result)
   }
   useEffect(() => {
     let temp = [...categoriesFilter]
-    if (categories?.length) {
+    if (cookies.categories?.length) {
+      let ctg = cookies.categories.split(',')
       temp.forEach(el => {
         el.status = false
-        if (categories.includes(el.name)) {
+        if (ctg.includes(el.name)) {
           el.status = true
         }
       })
       setCategoriesFilter(temp)
     }
     fetchData()
-  }, [locale, categories])
+  }, [cookies])
 
   return (
     <section className='bg-cream'>
@@ -76,8 +76,8 @@ export default function HomePage(value) {
                     <div className='relative w-[168px] h-[168px] md:w-[300px] md:h-[300px] bg-grey rounded-xl' style={{ aspectRatio: '1/1' }}>
                       <Image alt={i + 'photo'} sizes='(max-width:300px) 100vw' fill className='rounded-lg' src={el.photo} />
                     </div>
-                    <p className='pl-1 font-nunito font-bold text-[16px] md:text-[21px] h-[70px] md:h-[64px] line-clamp-2' >{el.title}</p>
-                    <p className='pl-1 font-quicksand text-[16px]'>{el.price}</p>
+                    <p className='pl-1 font-nunito font-bold text-[16px] md:text-[21px] h-[70px] md:h-[64px] line-clamp-2 text-[#282525]' >{el.title}</p>
+                    <p className='pl-1 font-quicksand text-[16px] text-[#000000]'>{el.price}</p>
                   </div>
                 </Link>
               ))

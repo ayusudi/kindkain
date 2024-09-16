@@ -3,13 +3,12 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import axios from "axios"
-
+import { useCookies } from 'react-cookie';
 
 const Component = () => {
   const t = useTranslations("HomePage")
   const router = useRouter()
-
+  const [cookies, setCookie] = useCookies();
   const items = [
     {
       title: 'Feminine Care', img: '/categories/feminim-care.jpg'
@@ -31,13 +30,7 @@ const Component = () => {
     },
   ];
   const movePage = async (el) => {
-    await axios({
-      method: "POST",
-      url: "http://localhost:3000/api/categories",
-      data: {
-        categories: [el.title]
-      }
-    })
+    setCookie("categories", el.title)
     router.push(`/products`)
   }
 

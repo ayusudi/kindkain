@@ -9,10 +9,12 @@ import searchBySlug from './searchBySlug';
 import Modal from '@/components/components_productpage/modal'
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
+import { useCookies } from 'react-cookie';
 
 
 
 export default function RootLayout({ params }) {
+  const [cookies, setCookie] = useCookies()
   const router = useRouter()
   const { slug } = params;
   const [product, setProduct] = useState(searchBySlug(slug))
@@ -37,13 +39,7 @@ export default function RootLayout({ params }) {
   };
 
   const movePage = async (title) => {
-    await axios({
-      method: "POST",
-      url: "http://localhost:3000/api/categories",
-      data: {
-        categories: [title]
-      }
-    })
+    setCookie("categories", title)
     router.push(`/products`)
   }
 

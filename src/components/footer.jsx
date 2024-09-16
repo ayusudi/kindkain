@@ -3,6 +3,7 @@ import axios from "axios";
 import { Flowbite, Footer } from "flowbite-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useCookies } from "react-cookie";
 
 const object = {
   "root": {
@@ -40,6 +41,7 @@ const object = {
   }
 }
 export default function Component() {
+  const [cookies, setCookie] = useCookies()
   const router = useRouter()
   const [first, setFirst] = useState(true)
   useEffect(() => {
@@ -48,14 +50,8 @@ export default function Component() {
     }
   }, [])
   const movePage = (title) => {
-    axios({
-      method: "POST",
-      url: "http://localhost:3000/api/categories",
-      data: {
-        categories: [title]
-      }
-    })
-      .then((data) => router.push(`/products`))
+    setCookie("categories", title)
+    router.push(`/products`)
   }
 
   return (
@@ -73,20 +69,20 @@ export default function Component() {
                 <p className="text-md max-w-[310px] md:max-w-[280px] md:text-xl font-quicksand whitespace-pre-wrap tracking-wider leading-7">{'Reusable Cloth Products for healthier, smarter, waste-less living.'}</p>
                 <div className="flex md:hidden flex-col mt-2">
                   <Footer.LinkGroup col>
-                    <Footer.Link href="#">
+                    <Footer.Link href="https://mail.google.com/mail/?view=cm&fs=1&to=kindkain.id@gmail.com&su=Subject&body=Message" target="_blank">
                       <div className="flex gap-3 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M13.3333 2.66663H2.66665C1.93331 2.66663 1.33331 3.26663 1.33331 3.99996V12C1.33331 12.7333 1.93331 13.3333 2.66665 13.3333H13.3333C14.0666 13.3333 14.6666 12.7333 14.6666 12V3.99996C14.6666 3.26663 14.0666 2.66663 13.3333 2.66663ZM13.0666 5.49996L8.70665 8.22663C8.27331 8.49996 7.72665 8.49996 7.29331 8.22663L2.93331 5.49996C2.86646 5.46243 2.80793 5.41173 2.76124 5.35093C2.71455 5.29012 2.68069 5.22048 2.6617 5.14621C2.64271 5.07194 2.63898 4.99458 2.65075 4.91883C2.66252 4.84308 2.68954 4.7705 2.73017 4.70549C2.7708 4.64048 2.8242 4.5844 2.88713 4.54062C2.95006 4.49685 3.02123 4.4663 3.09631 4.45083C3.17139 4.43535 3.24883 4.43527 3.32395 4.45059C3.39906 4.46591 3.47029 4.49631 3.53331 4.53996L7.99998 7.33329L12.4666 4.53996C12.5297 4.49631 12.6009 4.46591 12.676 4.45059C12.7511 4.43527 12.8286 4.43535 12.9036 4.45083C12.9787 4.4663 13.0499 4.49685 13.1128 4.54062C13.1758 4.5844 13.2292 4.64048 13.2698 4.70549C13.3104 4.7705 13.3374 4.84308 13.3492 4.91883C13.361 4.99458 13.3573 5.07194 13.3383 5.14621C13.3193 5.22048 13.2854 5.29012 13.2387 5.35093C13.192 5.41173 13.1335 5.46243 13.0666 5.49996Z" fill="white" />
                         </svg>
-                        <p className="me-4 last:mr-0 md:mr-6 font-nunito text-lg">kindkain@email.com</p>
+                        <p className="me-4 last:mr-0 md:mr-6 font-nunito text-lg">kindkain.id@gmail.com</p>
                       </div>
                     </Footer.Link>
-                    <Footer.Link href="#">
-                      <div className="flex gap-3  items-center">
+                    <Footer.Link className="group" href="https://wa.me/628111329911" target="_blank">
+                      <div className=" flex gap-3  items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                           <path d="M13.4938 3.4778C12.8444 2.82183 12.0709 2.30173 11.2184 1.94783C10.3659 1.59394 9.45144 1.41333 8.5284 1.41655C4.6609 1.41655 1.50882 4.56863 1.50882 8.43613C1.50882 9.67571 1.83465 10.8799 2.44382 11.9424L1.45215 15.5832L5.1709 14.6057C6.19798 15.1653 7.35256 15.4628 8.5284 15.4628C12.3959 15.4628 15.548 12.3107 15.548 8.44321C15.548 6.56613 14.8184 4.80238 13.4938 3.4778ZM8.5284 14.2728C7.48006 14.2728 6.45298 13.9895 5.5534 13.4582L5.3409 13.3307L3.1309 13.9115L3.71882 11.7582L3.57715 11.5386C2.99472 10.6086 2.68546 9.53351 2.68465 8.43613C2.68465 5.2203 5.30548 2.59946 8.52131 2.59946C10.0796 2.59946 11.5459 3.20863 12.6438 4.31363C13.1874 4.85477 13.6183 5.49843 13.9113 6.20731C14.2043 6.91618 14.3538 7.67617 14.3509 8.44321C14.3651 11.659 11.7442 14.2728 8.5284 14.2728ZM11.7301 9.90946C11.553 9.82446 10.6888 9.39946 10.533 9.33571C10.3701 9.27905 10.2567 9.25071 10.1363 9.42071C10.0159 9.5978 9.68298 9.99446 9.58381 10.1078C9.48465 10.2282 9.3784 10.2424 9.20131 10.1503C9.02423 10.0653 8.45756 9.87405 7.79173 9.27905C7.26756 8.81155 6.92048 8.2378 6.81423 8.06071C6.71506 7.88363 6.80006 7.79155 6.89215 7.69946C6.97006 7.62155 7.06923 7.49405 7.15423 7.39488C7.23923 7.29571 7.27465 7.2178 7.33132 7.10446C7.38798 6.98405 7.35965 6.88488 7.31715 6.79988C7.27465 6.71488 6.92048 5.85071 6.77881 5.49655C6.63715 5.15655 6.4884 5.19905 6.38215 5.19196H6.04215C5.92173 5.19196 5.73756 5.23446 5.57465 5.41155C5.41881 5.58863 4.96548 6.01363 4.96548 6.8778C4.96548 7.74196 5.5959 8.5778 5.6809 8.69113C5.7659 8.81155 6.92048 10.5824 8.67715 11.3403C9.09506 11.5245 9.4209 11.6307 9.6759 11.7086C10.0938 11.8432 10.4763 11.822 10.7809 11.7795C11.1209 11.7299 11.8221 11.3545 11.9638 10.9436C12.1126 10.5328 12.1126 10.1857 12.063 10.1078C12.0134 10.0299 11.9071 9.99446 11.7301 9.90946Z" fill="white" />
                         </svg>
-                        <p className="me-4 last:mr-0 md:mr-6 font-nunito text-lg">+62 123-1234-1234</p>
+                        <p className="group-hover:underline me-4 last:mr-0 md:mr-6 font-nunito text-lg">+62 811-132-9911</p>
                       </div>
                     </Footer.Link>
                     <div className="flex gap-2.5 mt-1">
@@ -138,20 +134,20 @@ export default function Component() {
                 <div className="hidden md:flex flex-col ">
                   <Footer.Title title="Reach Us Out At" />
                   <Footer.LinkGroup col>
-                    <Footer.Link href="#">
+                    <Footer.Link href="https://mail.google.com/mail/?view=cm&fs=1&to=kindkain.id@gmail.com&su=Subject&body=Message" target="_blank">
                       <div className="flex gap-3 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                           <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM19.6 8.25L13.06 12.34C12.41 12.75 11.59 12.75 10.94 12.34L4.4 8.25C4.29973 8.19371 4.21192 8.11766 4.14189 8.02645C4.07186 7.93525 4.02106 7.83078 3.99258 7.71937C3.96409 7.60796 3.9585 7.49194 3.97616 7.37831C3.99381 7.26468 4.03434 7.15581 4.09528 7.0583C4.15623 6.96079 4.23632 6.87666 4.33073 6.811C4.42513 6.74533 4.53187 6.69951 4.6445 6.6763C4.75712 6.65309 4.87328 6.65297 4.98595 6.67595C5.09863 6.69893 5.20546 6.74453 5.3 6.81L12 11L18.7 6.81C18.7945 6.74453 18.9014 6.69893 19.014 6.67595C19.1267 6.65297 19.2429 6.65309 19.3555 6.6763C19.4681 6.69951 19.5749 6.74533 19.6693 6.811C19.7637 6.87666 19.8438 6.96079 19.9047 7.0583C19.9657 7.15581 20.0062 7.26468 20.0238 7.37831C20.0415 7.49194 20.0359 7.60796 20.0074 7.71937C19.9789 7.83078 19.9281 7.93525 19.8581 8.02645C19.7881 8.11766 19.7003 8.19371 19.6 8.25Z" fill="white" />
                         </svg>
-                        <p className="me-4 last:mr-0 md:mr-6 font-nunito text-lg">kindkain@email.com</p>
+                        <p className="me-4 last:mr-0 md:mr-6 font-nunito text-lg">kindkain.id@gmail.com</p>
                       </div>
                     </Footer.Link>
-                    <Footer.Link href="#">
+                    <Footer.Link className="group" href="https://wa.me/628111329911" target="_blank">
                       <div className="flex gap-3  items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                           <path d="M19.8438 5.11432C18.8888 4.14966 17.7513 3.38481 16.4976 2.86437C15.2439 2.34394 13.8992 2.07834 12.5417 2.08307C6.85425 2.08307 2.21883 6.71849 2.21883 12.406C2.21883 14.2289 2.698 15.9997 3.59383 17.5622L2.1355 22.9164L7.60425 21.4789C9.11466 22.3018 10.8126 22.7393 12.5417 22.7393C18.2292 22.7393 22.8647 18.1039 22.8647 12.4164C22.8647 9.65599 21.7917 7.06224 19.8438 5.11432ZM12.5417 20.9893C11.0001 20.9893 9.48966 20.5727 8.16675 19.7914L7.85425 19.6039L4.60425 20.4581L5.46883 17.2914L5.2605 16.9685C4.40398 15.6007 3.94919 14.0198 3.948 12.406C3.948 7.67682 7.80216 3.82265 12.5313 3.82265C14.823 3.82265 16.9792 4.71849 18.5938 6.34349C19.3933 7.13928 20.0269 8.08584 20.4578 9.1283C20.8887 10.1708 21.1084 11.2884 21.1042 12.4164C21.1251 17.1456 17.2709 20.9893 12.5417 20.9893ZM17.2501 14.5727C16.9897 14.4477 15.7188 13.8227 15.4897 13.7289C15.2501 13.6456 15.0834 13.6039 14.9063 13.8539C14.7292 14.1143 14.2397 14.6977 14.0938 14.8643C13.948 15.0414 13.7917 15.0622 13.5313 14.9268C13.2709 14.8018 12.4376 14.5206 11.4584 13.6456C10.6876 12.9581 10.1772 12.1143 10.0209 11.8539C9.87508 11.5935 10.0001 11.4581 10.1355 11.3227C10.2501 11.2081 10.3959 11.0206 10.5209 10.8747C10.6459 10.7289 10.698 10.6143 10.7813 10.4477C10.8647 10.2706 10.823 10.1247 10.7605 9.99974C10.698 9.87474 10.1772 8.6039 9.96883 8.08307C9.7605 7.58307 9.54175 7.64557 9.3855 7.63515H8.8855C8.70841 7.63515 8.43758 7.69765 8.198 7.95807C7.96883 8.21849 7.30216 8.84349 7.30216 10.1143C7.30216 11.3852 8.22925 12.6143 8.35425 12.781C8.47925 12.9581 10.1772 15.5622 12.7605 16.6768C13.3751 16.9477 13.8542 17.1039 14.2292 17.2185C14.8438 17.4164 15.4063 17.3852 15.8542 17.3227C16.3542 17.2497 17.3855 16.6977 17.5938 16.0935C17.8126 15.4893 17.8126 14.9789 17.7397 14.8643C17.6667 14.7497 17.5105 14.6977 17.2501 14.5727Z" fill="white" />
                         </svg>
-                        <p className="me-4 last:mr-0 md:mr-6 font-nunito text-lg">+62 123-1234-1234</p>
+                        <p className="group-hover:underline me-4 last:mr-0 md:mr-6 font-nunito text-lg">+62 811-132-9911</p>
                       </div>
                     </Footer.Link>
                     <div className="flex gap-2.5 mt-2">
@@ -181,7 +177,7 @@ export default function Component() {
             </div>
             <Footer.Divider />
             <div className="w-full flex items-center justify-center">
-              <Footer.Copyright className="text-whitegray font-quicksand text-sm md:text-xl text-center mb-4 md:mb-0" href="#" by="KindKain All rights reserved.™" year={2024} />
+              <Footer.Copyright className="text-whitegray font-quicksand text-sm md:text-xl text-center mb-4 md:mb-0" by="KindKain All rights reserved.™" year={2024} />
             </div>
           </div>
         </Footer>

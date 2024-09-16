@@ -5,6 +5,7 @@ import { Navbar, Dropdown } from "flowbite-react";
 import { useState } from "react";
 import Modal from "@/components/modal"
 import { useRouter, usePathname } from 'next/navigation';
+import { useCookies } from "react-cookie";
 
 const intl = {
   "arrowIcon": "ml-2 h-4 w-4",
@@ -59,10 +60,10 @@ const shop = {
     "hidden": "invisible opacity-0",
     "item": {
       "base": "hover:bg-darkpurple  hover:text-white flex w-full cursor-pointer items-center justify-start px-4 py-2 text-sm text-gray-700 focus:outline-none ",
-      "icon": "mr-2 h-4 w-4"
+      "icon": "mr-2 h-4 w-4 "
     },
     "style": {
-      "dark": "bg-cream text-white",
+      "dark": "bg-cream text-gray-900",
       "light": " bg-cream text-gray-900",
       "auto": "bg-cream text-gray-900"
     },
@@ -101,7 +102,7 @@ const object = {
     }
   },
   "link": {
-    "base": "block py-2 pl-3 pr-4 md:p-0 font-nunito text-base",
+    "base": "cursor-pointer block py-2 pl-3 pr-4 md:p-0 font-nunito text-base",
     "active": {
       "on": "",
       "off": "text-gray-700 hover:bg-gray-50 "
@@ -110,11 +111,12 @@ const object = {
   },
   "toggle": {
     "base": "inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-none md:hidden",
-    "icon": "h-6 w-6 shrink-0"
+    "icon": "h-6 w-6 shrink-0 !text-darkpurple dark:text-darkpurple"
   }
 }
 
 export function Component({ locale }) {
+  const [cookies, setCookie] = useCookies(['locale'])
   const router = useRouter()
   const pathname = usePathname()
   const [ads, setAds] = useState(true)
@@ -146,18 +148,21 @@ export function Component({ locale }) {
   }
 
   const changeLang = async (e) => {
-    if (e.toUpperCase() !== locale.toUpperCase()) {
+    if (e.toUpperCase() !== cookies.locale.toUpperCase()) {
       if (pathname.startsWith("/products/") && pathname.length > 10) {
-        let response = await fetch("http://localhost:3000/api/set-locale?locale=" + e.toLowerCase())
-        await response.json()
+        setCookie("locale", e.toLowerCase())
         let slug = localStorage.getItem('alternative_slug')
         router.push(`/products/${slug}`)
         return router.refresh()
       }
-      let response = await fetch("http://localhost:3000/api/set-locale?locale=" + e.toLowerCase())
-      await response.json()
+      setCookie("locale", e.toLowerCase())
       return router.refresh()
     }
+  }
+
+  const toBrowseProduct = () => {
+    setCookie("categories", '')
+    router.push("/products")
   }
 
   return (
@@ -195,7 +200,7 @@ export function Component({ locale }) {
             <Navbar.Link as={Link} href="/why-menstrual-pads-or-cups">
               <p className="text-center font-nunito">Why Menstrual Pads or Cups?</p>
             </Navbar.Link>
-            <Navbar.Link as={Link} href="/products">
+            <Navbar.Link className="cursor-pointer" onClick={toBrowseProduct}>
               <p className="text-center font-nunito">Browse Products</p>
             </Navbar.Link>
             <Navbar.Link as={Link} href="/partnership">
