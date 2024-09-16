@@ -123,5 +123,20 @@
     "menstrualcup": "Menstrual Cup",
     "link-clothpad": "/products/kindkain-menstrual-pad",
     "link-menstrualcup": "/products/kindkain-silicone-menstrual-cup"
+  },
+  "IntlPage": {
+    "textbold": "We provide international shipping of our products to your country, delivered from our warehouse in Jakarta, Indonesia.\n\nSome of the countries we ship most to are South East Asian countries.\n\nPlease purchase through our WhatsApp.",
+    "text": "Below is our current delivery pricelist as per 2024. Prices may change, please confirm with us prior to your purchase.",
+    "days": "days",
+    "textcolab": "We collaborate with Rayspeed delivery service.\nFor shipping to other countries, please contact us for the pricing.",
+    "note": "Note :",
+    "West Malaysia": "West Malaysia",
+    "East Malaysia": "East Malaysia",
+    "country": "Country",
+    "price": "Price",
+    "duration": "Duration",
+    "postcode": "Post Code",
+    "bullet1": "For international shipping, depending on the country, certain legal documents will be needed such as personal identity card, passport, citizenship visa/permit, etc.",
+    "bullet2": "Payments using currencies other than IDR (rupiah) can be made through international remmitance service such as TopRemit and Flip."
   }
 }
