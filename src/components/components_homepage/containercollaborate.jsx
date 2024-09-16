@@ -17,7 +17,7 @@ const CollaborateWithUs = () => {
           <p className="text-darkpurple font-quicksand font-bold text-sm md:text-xl mb-2 pl-1">LOVE OUR PRODUCT?</p>
           <h2 className="text-darktext font-quicksand font-bold text-2xl md:text-4xl mb-4 md:mb-8 pl-1">Collaborate With Us!</h2>
           <div className="flex flex-col space-y-4">
-            <button className="flex items-center justify-between w-full bg-white rounded-lg p-4 shadow-lg text-darktext font-nunito">
+            <a href="https://wa.me/628111329911" className="flex items-center justify-between w-full bg-white rounded-lg p-4 shadow-lg text-darktext font-nunito">
               <span className="flex items-center">
                 <div className='mr-2'>
                   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -31,8 +31,8 @@ const CollaborateWithUs = () => {
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="36" viewBox="0 0 20 36" fill="none">
                 <path d="M1 0.999999L19 18L1 35" stroke="#272525" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </button>
-            <button className="flex items-center justify-between w-full bg-white rounded-lg p-4 shadow-lg text-darktext font-nunito">
+            </a>
+            <a href="https://wa.me/628111329911" className="flex items-center justify-between w-full bg-white rounded-lg p-4 shadow-lg text-darktext font-nunito">
               <span className="flex items-center">
                 <div className='mr-2'>
                   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -55,7 +55,7 @@ const CollaborateWithUs = () => {
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="36" viewBox="0 0 20 36" fill="none">
                 <path d="M1 0.999999L19 18L1 35" stroke="#272525" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>

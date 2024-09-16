@@ -5,8 +5,10 @@ import React from 'react';
 import { Carousel } from "flowbite-react";
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 const Component = () => {
+  const t = useTranslations("HomePage")
   const router = useRouter()
   let images = [
     "/slide-pads/1.jpg",
@@ -21,7 +23,7 @@ const Component = () => {
     <div className='bg-cream'>
       <div className="max-w-screen-2xl m-auto px-6 py-12 md:px-14 md:py-20 flex justify-between md:flex-row flex-col">
         <div className='flex flex-col gap-5 md:w-3/6'>
-          <p className="w-[80%] m-auto md:my-6 md:mx-0 my-4 md:w-full text-center md:text-left text-darkpurple whitespace-pre-wrap font-quicksand font-bold md:text-[56px] text-xl md:w-[75%]" style={{ lineHeight: '120%' }}>{'Best Cloth\nFeminine Pads\nFor Your Miss V'}</p>
+          <p className="w-[80%] m-auto md:my-6 md:mx-0 my-4 md:w-full text-center md:text-left text-darkpurple whitespace-pre-wrap font-quicksand font-bold md:text-[56px] text-xl md:w-[75%]" style={{ lineHeight: '120%' }}>{t('best-title')}</p>
           <div className='hidden md:flex flex-col gap-5'>
             <div className='flex items-center gap-2'>
               <div className='bg-darkpurple p-2.5 rounded-full'>
@@ -36,7 +38,7 @@ const Component = () => {
                   </defs>
                 </svg>
               </div>
-              <p className='font-2xl'>Certified Chlorine-Free</p>
+              <p className='font-2xl'>{t("certified")}</p>
             </div>
             <div className='flex items-center gap-2'>
               <div className='bg-darkpurple p-2.5 rounded-full'>
@@ -57,7 +59,7 @@ const Component = () => {
                   </defs>
                 </svg>
               </div>
-              <p className='font-2xl'>Non Irritant, Soft On Skin</p>
+              <p className='font-2xl'>{t("non-irritant")}</p>
             </div>
             <div className='flex items-center gap-2'>
               <div className='bg-darkpurple p-2.5 rounded-full'>
@@ -75,10 +77,10 @@ const Component = () => {
                   </defs>
                 </svg>
               </div>
-              <p className='font-2xl'>Durable & Reusable</p>
+              <p className='font-2xl'>{t("durable")}</p>
             </div>
             <div className='flex gap-3.5 items-center mt-4'>
-              <button onClick={() => router.push(`/products`)} className='bg-darkpurple text-yellow font-2xl rounded-full px-5 py-3 '>Shop Now</button>
+              <button onClick={() => router.push(t("link"))} className='bg-darkpurple text-yellow font-2xl rounded-full px-5 py-3 '>Shop Now</button>
               <div onClick={() => router.push(`/why-menstrual-pads-or-cups`)} className='cursor-pointer flex gap-1.5 items-center'>
                 <p className='text-darkpurple font-2xl'>Learn More</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
@@ -86,7 +88,6 @@ const Component = () => {
                   <path d="M1 1L7 8L0.999999 15" stroke="#272525" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-
             </div>
           </div>
         </div>

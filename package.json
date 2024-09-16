@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^1.7.7",
+    "datakund": "^1.1.9",
     "flowbite-react": "^0.10.1",
     "js-cookie": "^3.0.5",
     "next": "14.2.7",
@@ -19,6 +20,7 @@
     "react-cookie": "^7.2.0",
     "react-dom": "^18",
     "react-slick": "^0.30.2",
+    "scraper-instagram": "^1.0.17",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

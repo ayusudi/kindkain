@@ -8,7 +8,12 @@
     "socialmedia": "Keep Updated With Us",
     "socialmedia-subtitle": "Follow our Instagram to receive updates and our latest news.",
     "testimonial": "What Our Customers Say",
-    "testimonial-subtitle": "Whether you use our products for health or environmental reasons, there are so many benefits of switching to reusables."
+    "testimonial-subtitle": "Whether you use our products for health or environmental reasons, there are so many benefits of switching to reusables.",
+    "best-title": "Best Cloth\nFeminine Pads\nFor Your Miss V",
+    "certified": "Certified Chlorine-Free",
+    "non-irritant": "Non Irritant, Soft On Skin",
+    "durable": "Durable & Reusable",
+    "link": "/products/kindkain-menstrual-pad"
   },
   "Top5": {
     "products": [
@@ -141,5 +146,19 @@
   },
   "WAPage": {
     "text": "Hello please inform us regarding your question or product inquiry. We will respond to you as soon as possible."
+  },
+  "ProductWarrantyPage": {
+    "textbold": "Every purchase of KindKain\nmenstrual pad comes with\n1 year of snap button warranty.",
+    "text": "If your KindKain menstrual pad button is not working properly, and the defect  is not caused by inappropriate use or a product accident that occurred outside of KindKain's control.",
+    "title": "You can apply for button repair by:",
+    "bullet1": "Contacting us via",
+    "bullet2": "Submit a report by providing us these information\n",
+    "bullet2itallic": "Name:\nActive WhatsApp Number:\nPurchase Invoice Attachment (from Marketplace):\nName of product and quantity of product that needs reparation:\nVideo of the defect product:",
+    "bullet3": "After completing our validation process (1-2 working days), we will inform you our address so you can send the product(s) to us. Please clean (wash) your menstrual pad first, and send it in a safe packaging.",
+    "bullet4": "After we are done with the reparation (3-5 working days since we receive the products), we will send back the menstrual pad to your address.",
+    "title-terms": "Warranty and delivery fee terms:",
+    "terms1": "Reports received within or equal to 30 days from the date of purchase will receive free button repairs and free two-way shipping.",
+    "terms2": "Reports received 31 days to 365 days from the date of purchase will receive free button repairs. Shipping costs are borne by the buyer.",
+    "terms3": "Reports received 366 days to 1095 days from the date of purchase, buttons can be repaired at a cost of IDR 15,000 per menstrual pad. Shipping costs are borne by the buyer."
   }
 }
