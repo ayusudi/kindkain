@@ -37,10 +37,7 @@ export default function HomePage(value) {
       status: false
     }
   ])
-  const fetchData = () => {
-    let result = getProducts(cookies)
-    setData(result)
-  }
+
   useEffect(() => {
     let temp = [...categoriesFilter]
     if (cookies.categories?.length) {
@@ -53,8 +50,12 @@ export default function HomePage(value) {
       })
       setCategoriesFilter(temp)
     }
+    const fetchData = () => {
+      let result = getProducts(cookies)
+      setData(result)
+    }
     fetchData()
-  }, [cookies])
+  }, [categoriesFilter, cookies, cookies.categories])
 
   return (
     <section className='bg-cream'>

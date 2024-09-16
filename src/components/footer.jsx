@@ -48,7 +48,7 @@ export default function Component() {
     if (first) {
       setFirst(false)
     }
-  }, [])
+  }, [first])
   const movePage = (title) => {
     setCookie("categories", title)
     router.push(`/products`)

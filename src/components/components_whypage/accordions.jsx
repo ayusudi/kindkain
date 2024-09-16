@@ -62,14 +62,14 @@ export default function Component() {
             {t('a3')}
           </p>
           <br />
-          <a className="text-semibold text-darkpurple underline capitalize" href="https://youtu.be/6ExPI-6d7H8?si=XHXvJhyyAhLTF34G" target="_blank" rel="noopener noreferrer">( Video Youtube "{t("q3")}" )</a>
+          <a className="text-semibold text-darkpurple underline capitalize" href="https://youtu.be/6ExPI-6d7H8?si=XHXvJhyyAhLTF34G" target="_blank" rel="noopener noreferrer">( Video Youtube )</a>
         </Accordion.Content>
       </Accordion.Panel>
       <Accordion.Panel theme={accordion}>
         <Accordion.Title theme={accordion.title}>{t('table.q')}</Accordion.Title>
         <Accordion.Content theme={accordion.content}>
           <div className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] m-auto relative">
-            <Image fill src="/size.png" className="rounded-xl" />
+            <Image alt="size" fill src="/size.png" className="rounded-xl" />
           </div>
           <table className="mt-6 w-full border-collapse border border-gray-300">
             <thead>
@@ -125,7 +125,7 @@ export default function Component() {
             {t('a5')}
           </p>
           <br />
-          <a className="text-semibold text-darkpurple underline capitalize" href="https://youtu.be/6ExPI-6d7H8?si=XHXvJhyyAhLTF34G" target="_blank" rel="noopener noreferrer">( Video Youtube "{t("q3")}" )</a>
+          <a className="text-semibold text-darkpurple underline capitalize" href="https://youtu.be/6ExPI-6d7H8?si=XHXvJhyyAhLTF34G" target="_blank" rel="noopener noreferrer">( Video Youtube )</a>
         </Accordion.Content>
       </Accordion.Panel>
       <Accordion.Panel theme={accordion}>
