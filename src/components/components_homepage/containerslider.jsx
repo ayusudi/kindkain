@@ -11,7 +11,48 @@ import { useEffect, useState } from 'react';
 
 const TrendingSlider = () => {
   const [cookie] = useCookies()
-  const [data, setData] = useState([])
+  const [data, setData] = useState([
+    {
+      "id": "1",
+      "title": "KindKain Kapas Kain Wajah Cuci Pakai Ulang",
+      "slug": "kindkain-kapas-kain-wajah-cuci-pakai-ulang",
+      "price": "IDR 16.000 - 45.000",
+      "photo": "https://drive.usercontent.google.com/download?id=1H864e3aQyzBofuOwYAVJmxSmJjbo7n5k",
+      "category": "Bath & Personal Care",
+      "startPrice": 16000,
+      "bestselling": true
+    },
+    {
+      "id": "4",
+      "title": "KindKain Pembalut Kain Wanita Cuci Pakai Ulang",
+      "slug": "kindkain-pembalut-kain-wanita-cuci-pakai-ulang",
+      "price": "IDR 38.000 - 78.000",
+      "photo": "https://drive.usercontent.google.com/download?id=1yJqzOioWqphq9h5trN4uCPBv0T9nz7nD",
+      "category": "Feminine Care",
+      "startPrice": 38000,
+      "bestselling": true
+    },
+    {
+      "id": "5",
+      "title": "KindKain Sisipan Pembalut Kain Cuci Pakai Ulang",
+      "slug": "kindkain-sisipan-pembalut-kain-cuci-pakai-ulang",
+      "price": "IDR 15.000",
+      "photo": "https://drive.usercontent.google.com/download?id=17izJzH9dlx2mmxsvO55czn1pupWXiaKu",
+      "category": "Feminine Care",
+      "startPrice": 15000,
+      "bestselling": true
+    },
+    {
+      "id": "8",
+      "title": "KindKain Kantong Wet Bag Waterproof Pakai Ulang",
+      "slug": "kindkain-kantong-wet-bag-waterproof-pakai-ulang",
+      "price": "IDR 52.000 - 199.000",
+      "photo": "https://drive.usercontent.google.com/download?id=1zWAfe5X8P3mugW1Uk1ftwRwx6kV6AXni",
+      "category": "Travel & Grocery",
+      "startPrice": 52000,
+      "bestselling": true
+    }
+  ])
   const router = useRouter()
   const settings = {
     infinite: true,
@@ -32,7 +73,7 @@ const TrendingSlider = () => {
   useEffect(() => {
     let result = getBestSelling(cookie)
     setData(result)
-  }, [cookie])
+  }, [])
 
   return (
     <div className="bg-cream">

@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRouter } from 'next/navigation';
 import { useCookies } from 'react-cookie';
-import getBestSelling from './getBestSelling';
 import { useEffect, useState } from 'react';
 
 const Component = () => {
