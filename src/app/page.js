@@ -4,7 +4,7 @@ import TextBanner from "@/components/components_homepage/textbanner"
 import ContainerSlider from "@/components/components_homepage/containerslider"
 import ContainerGrid from "@/components/components_homepage/containergrid"
 import ContainerSliderOne from "@/components/components_homepage/containersliderone"
-import ContainerVideo from "@/components/components_homepage/containervideo"
+import ContainerTestimonial from "@/components/components_homepage/containertestimonial"
 import ContainerInstagram from "@/components/components_homepage/containerinstagram"
 import ContainerCollaborate from '@/components/components_homepage/containercollaborate';
 import ReachOut from '@/components/reachout';
@@ -16,7 +16,7 @@ export default function HomePage(locale) {
       <ContainerSlider />
       <ContainerGrid />
       <ContainerSliderOne />
-      <ContainerVideo />
+      <ContainerTestimonial />
       <ContainerInstagram />
       <ContainerCollaborate />
       <ReachOut />

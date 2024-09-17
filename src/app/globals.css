@@ -171,3 +171,8 @@ body {
     background-position: 100% 50%;
   }
 }
+
+.darkgray .slick-prev:before,
+.darkgray .slick-next:before {
+  color: rgb(198, 198, 198) !important
+}

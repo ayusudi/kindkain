@@ -138,7 +138,7 @@ export default function Component({ categoriesFilter, data, setData }) {
   }
 
   return (
-    <div className='w-[300px] hidden md:flex md:flex-col'>
+    <div className='w-[300px] md:flex md:flex-col'>
       <div className='flex flex-col md:gap-8 px-5 border-r-[1px] border-[#CCC2BA] my-3'>
         <div >
           <div className='flex justify-between items-center mb-3'>
