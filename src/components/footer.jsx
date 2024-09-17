@@ -117,7 +117,7 @@ export default function Component() {
                     <Footer.Link href="/partnership">Partnership</Footer.Link>
                     <Footer.Link href="/international-shipping">International Shipping</Footer.Link>
                     <Footer.Link href="/product-warranty">Product Warranty</Footer.Link>
-                    <Footer.Link href="#">Sustainability</Footer.Link>
+                    <Footer.Link href="/sustainability">Sustainability</Footer.Link>
                   </Footer.LinkGroup>
                 </div>
                 <div>
