@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react';
-import axios from "axios"
 import { useCookies } from 'react-cookie';
 
 function ComponentOption({ name, status, clickMethod }) {
@@ -71,7 +70,6 @@ export default function Component({ categoriesFilter, data, setData }) {
   const clickSortBy = async (name) => {
     let temp = [...sortBy]
     let tempData = [...data]
-    console.log(name);
     if (name === "All") {
       const resetSortBy = temp.map(option => ({ ...option, status: false }));
       tempData.sort((a, b) => +a.id - +b.id)
@@ -103,6 +101,11 @@ export default function Component({ categoriesFilter, data, setData }) {
     const applySort = () => {
       const activeSorts = temp.filter(option => option.status)
 
+      if (temp[0].status) {
+        tempData = tempData.filter(a => a.bestselling)
+      }
+
+
       // Apply sorting based on active options
       activeSorts.forEach(option => {
         switch (option.name) {
@@ -122,14 +125,16 @@ export default function Component({ categoriesFilter, data, setData }) {
             break
         }
       })
+      return activeSorts
     }
 
     toggleStatus(name)
-    applySort()
-
+    let activeSorts = applySort()
     setData(tempData)
-    setAllSortBy(false)
     setSortBy(temp)
+
+    if (activeSorts.length) setAllSortBy(false)
+    else setAllSortBy(true)
   }
 
   return (

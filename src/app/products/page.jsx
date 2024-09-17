@@ -11,6 +11,7 @@ export default function HomePage(value) {
   const [cookies] = useCookies();
   const [index, setIndex] = useState(6)
   const [data, setData] = useState([])
+  const [dataShow, setDataShow] = useState([])
   let [categoriesFilter, setCategoriesFilter] = useState([
     {
       name: "Feminine Care",
@@ -53,9 +54,10 @@ export default function HomePage(value) {
     const fetchData = () => {
       let result = getProducts(cookies)
       setData(result)
+      setDataShow(result)
     }
     fetchData()
-  }, [categoriesFilter, cookies, cookies.categories])
+  }, [cookies])
 
   return (
     <section className='bg-cream'>
@@ -63,7 +65,7 @@ export default function HomePage(value) {
         <p className='px-5 py-5 text-[15px] font-quicksand'>Home  /  <span className='text-darkpurple'>Browse Product</span></p>
       </div>
       <div className='max-w-screen-2xl m-auto flex flex-col md:flex-row md:px-5 pb-2 md:pb-20'>
-        <Sidebar categoriesFilter={categoriesFilter} setData={setData} data={data} />
+        <Sidebar categoriesFilter={categoriesFilter} setData={setDataShow} data={data} />
         <div className='flex flex-col flex-grow'>
           <div className='pt-4 md:pt-0 pl-4 xl:pl-10 2xl:pl-14 w-3/6 md:w-full text-[22px] md:text-[40px] font-quicksand font-bold text-darkpurple mb-3'>
             <p>Browse <br className='flex md:hidden' />Our Products</p>
@@ -71,7 +73,7 @@ export default function HomePage(value) {
           </div>
           <div className='grid grid-cols-2 md:grid-cols-3 gap-4 flex-grow mx-4 md:mx-5'>
             {
-              data.filter((el, i) => i < index).map((el, i) => (
+              dataShow.filter((el, i) => i < index).map((el, i) => (
                 <Link href={'/products/' + el.slug} key={i} className='cursor-pointer mb-3 flex flex-col items-center '>
                   <div className='w-[168px] md:w-[300px] flex flex-col gap-2 md:gap-3'>
                     <div className='relative w-[168px] h-[168px] md:w-[300px] md:h-[300px] animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400 rounded-xl' style={{ aspectRatio: '1/1' }}>
@@ -84,7 +86,7 @@ export default function HomePage(value) {
               ))
             }
             {
-              index < data.length ? (<div onClick={() => setIndex(index + 6)} className='cursor-pointer hover:bg-darkpurple hover:text-white h-12 col-span-2 md:col-span-3 pl-6 text-[24px] text-center border border-1 rounded-full py-1.5 font-quicksand text-gray mb-6 mt-10'>
+              index < dataShow.length ? (<div onClick={() => setIndex(index + 6)} className='cursor-pointer hover:bg-darkpurple hover:text-white h-12 col-span-2 md:col-span-3 pl-6 text-[24px] text-center border border-1 rounded-full py-1.5 font-quicksand text-gray mb-6 mt-10'>
                 <p>Load More</p>
               </div>) : <></>
             }

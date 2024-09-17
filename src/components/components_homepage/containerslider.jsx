@@ -1,15 +1,17 @@
 
 "use client"
-import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useCookies } from 'react-cookie';
+import getBestSelling from './getBestSelling';
+import { useEffect, useState } from 'react';
 
 const TrendingSlider = () => {
-  const t = useTranslations("Top5.products")
+  const [cookie] = useCookies()
+  const [data, setData] = useState([])
   const router = useRouter()
   const settings = {
     infinite: true,
@@ -27,6 +29,11 @@ const TrendingSlider = () => {
     ]
   };
 
+  useEffect(() => {
+    let result = getBestSelling(cookie)
+    setData(result)
+  }, [cookie])
+
   return (
     <div className="bg-cream">
       <div className='max-w-screen-2xl m-auto px-6 py-10 md:pr-0 md:pl-14 md:py-20 flex flex-col gap-4 md:gap-6'>
@@ -36,16 +43,16 @@ const TrendingSlider = () => {
         </div>
         <div className='w-full trending'>
           <Slider {...settings}>
-            {new Array(4).fill('').map((e, i) => {
-              let slug = t(`${i}.slug`)
-              let photo = t(`${i}.photo`).toString()
+            {data.map((e, i) => {
+              let slug = e.slug
+              let photo = e.photo
               return (
                 <div onClick={() => router.push(`/products/${slug}`)} key={i} className="cursor-pointer trending-slider__item w-[150px] h-[150px] mx-auto pr-3 md:pr-12">
                   <div style={{ position: 'relative', aspectRatio: "1/1" }} className='flex w-[150px] h-[150px] md:w-[300px] md:h-[300px] animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400'>
-                    <Image fill sizes='(max-width: 300px) 100vw' className='rounded-lg' src={photo} alt={t(`${i}.title`)} />
+                    <Image fill sizes='(max-width: 300px) 100vw' className='rounded-lg' src={photo} alt={e.id} />
                   </div>
-                  <p style={{ lineHeight: "145%", letterSpacing: 0.33 }} className="h-[58px] text-md line-clamp-3 md:text-xl md:line-clamp-2 font-bold my-2 md:my-4 text-sm font-nunito text-darktext">{t(`${i}.title`)}</p>
-                  <p className="font-nunito text-sm md:text-xl self-end justify-self-end dark:text-[#000000] text-[#000000]">IDR {t(`${i}.price`)}</p>
+                  <p style={{ lineHeight: "145%", letterSpacing: 0.33 }} className="h-[58px] text-md line-clamp-3 md:text-xl md:line-clamp-2 font-bold my-2 md:my-4 text-sm font-nunito text-darktext">{e.title}</p>
+                  <p className="font-nunito text-sm md:text-xl self-end justify-self-end dark:text-[#000000] text-[#000000]">{e.price}</p>
                 </div>
               )
             })}
