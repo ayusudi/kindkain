@@ -13,8 +13,8 @@ export default function HomePage() {
       <div className='font-nunito flex justify-center flex-col pb-20 gap-6 pt-6 md:pt-0'>
         <Image alt='banner-why' src="/banner-why.png" width="900" height="100" className='w-11/12 md:w-full max-w-screen-2xl m-auto h-auto' />
         <div className='max-w-screen-2xl m-auto'>
-          <div className="m-auto flex flex-col gap-10 md:py-12  w-10/12 ">
-            <div className='flex flex-col md:flex-row w-full justify-between items-center gap-6'>
+          <div className="m-auto flex flex-col gap-10 md:py-12 ">
+            <div className='flex flex-col md:flex-row md:w-10/12 justify-between items-center gap-6 mx-auto'>
               <div style={{ aspectRatio: "1/1" }} className='relative md:w-[555px] w-full h-auto'>
                 <Image sizes='(max-width: 555px) 100vw' fill src="/infographic/1.jpg" alt="KindKain" className="rounded-lg shadow-md animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400" />
               </div>
@@ -26,7 +26,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className='flex flex-col md:flex-row w-full justify-between items-center gap-6 mt-4 md:mt-0'>
+            <div className='flex flex-col md:flex-row md:w-10/12 justify-between items-center gap-6 mt-4 md:mt-0 mx-auto'>
               <div style={{ aspectRatio: "1/1" }} className='relative  w-full md:w-[555px] h-auto'>
                 <Image sizes='(max-width: 555px) 100vw' fill src="/infographic/2.jpg" alt="KindKain" className="rounded-lg shadow-md animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400" />
               </div>
@@ -38,16 +38,16 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="text-center flex flex-col gap-8 md:py-10 md:py-12">
+
+            <div className="w-10/12 m-auto text-center flex flex-col gap-8 md:py-10 md:py-12">
               <Image alt='lebih-hemat' className='m-auto' src="/lebih-hemat.png" width="60" height="60" />
               <div className="flex items-center justify-center space-x-2">
                 <div className="text-darkpurple text-2xl md:text-5xl font-bold">{t('economical')}</div>
               </div>
-              <p className="text-base md:text-[20px] text-gray md:w-5/6 m-auto text-xl whitespace-pre">
+              <p className="text-base md:text-[20px] text-gray md:w-5/6 m-auto text-xl whitespace-prewrap">
                 {t('economical-text1')}<span className='text-darkpurple font-bold'>{t('economical-textbold1')}</span>{t('economical-text2')}{'\n'}{t('economical-text3')}<span className='text-darkpurple font-bold'>{t('economical-textbold2')}</span> {t('economical-text4')}
               </p>
 
-              {/* Pricing Cards */}
               <div className="text-left flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                 <div className="flex flex-col gap-1.5 bg-white border border-[#8F8C8A] rounded-lg p-8 shadow-md w-full md:w-1/3">
                   <h3 className="font-semibold text-darktext text-2xl">{t('disposable-bold')}</h3>

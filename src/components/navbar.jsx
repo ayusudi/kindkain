@@ -21,13 +21,13 @@ const intl = {
       },
       "placement": "-4px"
     },
-    "base": "z-10 w-fit divide-y overflow-hidden  rounded shadow focus:outline-none",
+    "base": "z-10 w-fit divide-y overflow-hidden rounded shadow focus:outline-none",
     "content": "text-sm text-gray-700",
     "divider": "my-0 h-0",
     "header": "block px-4 py-2 text-sm text-gray-700 ",
     "hidden": "invisible opacity-0",
     "item": {
-      "base": "hover:bg-darkpurple  hover:text-white flex w-full cursor-pointer items-center justify-start px-4 py-2 text-sm text-gray-700 focus:outline-none ",
+      "base": "hover:bg-darkpurple flex w-full cursor-pointer items-center justify-start px-4 py-2 text-sm text-gray-700 focus:outline-none ",
       "icon": "mr-2 h-4 w-4"
     },
     "style": {
@@ -69,7 +69,7 @@ const intl2 = {
     },
     "target": "w-full"
   },
-  "inlineWrapper": "bg-white m-auto w-[100px] text-black rounded-full focus:outline-none focus:ring-0 font-medium text-sm px-5 py-2.5 text-center inline-flex items-center justify-between"
+  "inlineWrapper": "bg-white m-auto w-[100px] text-black rounded-full focus:outline-none focus:ring-0 font-medium text-sm px-5 text-center inline-flex items-center justify-between"
 }
 const shop = {
   "arrowIcon": "ml-2 h-4 w-4",
@@ -101,11 +101,11 @@ const shop = {
     },
     "target": "w-full"
   },
-  "inlineWrapper": "bg-darkpurple text-white hover:text-yellow rounded-full focus:outline-none focus:ring-0 font-medium text-sm px-5 py-2.5 text-center inline-flex items-center "
+  "inlineWrapper": "py-2.5 bg-darkpurple text-white hover:text-yellow rounded-full focus:outline-none focus:ring-0 font-medium text-sm px-5 text-center inline-flex items-center "
 }
 const object = {
   "root": {
-    "base": "bg-white px-2 py-2.5 px-4 md:px-14 md:py-6 2xl:px-0",
+    "base": "bg-white px-0 md:px-14 2xl:px-0 md:py-0",
     "rounded": {
       "on": "rounded",
       "off": ""
@@ -127,14 +127,14 @@ const object = {
   },
   "collapse": {
     "base": "w-full md:block md:w-auto",
-    "list": "mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium",
+    "list": "mt-2 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium",
     "hidden": {
       "on": "hidden",
       "off": ""
     }
   },
   "link": {
-    "base": "cursor-pointer block py-2 pl-3 pr-4 md:p-0 font-nunito text-base",
+    "base": "cursor-pointer block md:pl-3 md:pr-4 md:p-0 font-nunito text-base hover:bg-darkpurple hover:text-white md:hover:bg-transparent md:hover:text-darkpurple",
     "active": {
       "on": "",
       "off": "text-gray-700 hover:bg-gray-50 "
@@ -143,7 +143,7 @@ const object = {
   },
   "toggle": {
     "base": "inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-none md:hidden",
-    "icon": "h-6 w-6 shrink-0 !text-darkpurple dark:text-darkpurple"
+    "icon": "h-6 w-6 shrink-0 !text-darkpurple dark:text-darkpurple ml-2"
   }
 }
 
@@ -220,25 +220,25 @@ export function Component({ locale }) {
           <Navbar.Brand as={Link} href="https://kindkain.vercel.app">
             <Image sizes="(max-width: 154px)" fill src="/logo.png" alt="Kindkain Logo" className="h-8 mr-6 ml-2 2xl:ml-0" />
           </Navbar.Brand>
-          <div onClick={openNow} className="p-2 flex md:hidden">
+          <div onClick={openNow} className="p-2 flex md:hidden my-2.5 mr-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
               <path d="M20.6819 6.66667H17.6454L16.9983 2.78333C16.8679 2.19578 16.5815 1.65466 16.1696 1.21743C15.7577 0.780191 15.2356 0.463162 14.6587 0.3C14.0791 0.112709 13.4754 0.0116376 12.8667 0H9.14989C8.54118 0.0116376 7.93744 0.112709 7.35787 0.3C6.781 0.463162 6.25888 0.780191 5.84695 1.21743C5.43503 1.65466 5.14867 2.19578 5.01828 2.78333L4.37116 6.66667H1.33467C1.20399 6.66587 1.07496 6.6961 0.95811 6.75488C0.841258 6.81367 0.739885 6.89935 0.66225 7.00495C0.584615 7.11055 0.532915 7.23308 0.511361 7.36255C0.489807 7.49202 0.49901 7.62478 0.538219 7.75L3.65767 18.25C3.81648 18.7572 4.13217 19.2004 4.55887 19.5151C4.98558 19.8298 5.50106 19.9997 6.03044 20H15.9861C16.5127 19.9961 17.0244 19.8247 17.4478 19.5102C17.8712 19.1958 18.1844 18.7545 18.3423 18.25L21.4618 7.75C21.5006 7.62612 21.51 7.49484 21.4893 7.36664C21.4686 7.23844 21.4184 7.11687 21.3427 7.01163C21.2669 6.90639 21.1677 6.82039 21.053 6.7605C20.9383 6.70061 20.8112 6.66847 20.6819 6.66667ZM6.06363 6.66667L6.66097 3.05C6.72645 2.75471 6.87836 2.48583 7.09716 2.27793C7.31597 2.07003 7.59167 1.93261 7.88884 1.88333C8.29702 1.75333 8.7218 1.68167 9.14989 1.66667H12.8667C13.2998 1.68 13.7295 1.75333 14.1443 1.88333C14.4415 1.93261 14.7172 2.07003 14.936 2.27793C15.1548 2.48583 15.3067 2.75471 15.3722 3.05L15.9529 6.66667H5.99725H6.06363Z" fill="#301C51" />
             </svg>
           </div>
           <Navbar.Collapse>
             <Navbar.Link as={Link} href="/" active>
-              <p className="text-center font-nunito">About Us</p>
+              <p className="md:py-8 py-2.5 text-center font-nunito md:text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">About Us</p>
             </Navbar.Link>
             <Navbar.Link as={Link} href="/why-menstrual-pads-or-cups">
-              <p className="text-center font-nunito">Why Menstrual Pads or Cups?</p>
+              <p className="md:py-8 py-2.5 text-center font-nunito md:text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">Why Menstrual Pads or Cups?</p>
             </Navbar.Link>
             <Navbar.Link className="cursor-pointer" onClick={toBrowseProduct}>
-              <p className="text-center font-nunito">Browse Products</p>
+              <p className="md:py-8 py-2.5 text-center font-nunito md:text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">Browse Products</p>
             </Navbar.Link>
             <Navbar.Link as={Link} href="/partnership">
-              <p className="text-center font-nunito">Partnership</p>
+              <p className="md:py-8 py-2.5 text-center font-nunito md:text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">Partnership</p>
             </Navbar.Link>
-            <div className="md:hidden text-center font-nunito flex gap-1.5 m-auto justify-center py-1">
+            <div className="w-full py-2.5 md:hidden text-center font-nunito flex gap-1.5 m-auto justify-center py-1 md:text-black hover:bg-darkpurple hover:text-white">
               <div >Language : </div>
               <div onClick={() => changeLang('EN')} className={locale == 'en' ? "underline" : ''}>EN</div>
               <p>/</p>
