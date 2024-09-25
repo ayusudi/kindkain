@@ -216,12 +216,19 @@ export function Component({ locale }) {
       }
       <div className="h-fit w-full bg-cream shadow-md z-10 sticky top-0 ">
         <Navbar theme={object} fluid className="max-w-[1440px] bg-cream  m-auto">
-          <Navbar.Toggle />
-          <Navbar.Brand as={Link} href="https://kindkain.vercel.app">
-            <Image sizes="(max-width: 154px)" fill src="/logo.png" alt="Kindkain Logo" className="h-8 mr-6 ml-2 2xl:ml-0" />
-          </Navbar.Brand>
-          <div onClick={openNow} className="p-2 flex md:hidden my-2.5 mr-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+          <div className="flex items-center">
+            <Navbar.Toggle />
+            <Navbar.Brand as={Link} href="https://kindkain.vercel.app">
+              <Image sizes="(max-width: 154px)" fill src="/logo.png" alt="Kindkain Logo" className="h-8 mr-6 ml-2 2xl:ml-0" />
+            </Navbar.Brand>
+          </div>
+
+          <div className="p-2 flex md:hidden my-2.5 mr-2 items-center gap-2">
+            <Dropdown placement="bottom" theme={intl} inline={true} label={locale}>
+              <Dropdown.Item onClick={() => changeLang('EN')} className="hover:text-white">EN</Dropdown.Item>
+              <Dropdown.Item onClick={() => changeLang('ID')} className="hover:text-white">ID</Dropdown.Item>
+            </Dropdown>
+            <svg onClick={openNow} xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
               <path d="M20.6819 6.66667H17.6454L16.9983 2.78333C16.8679 2.19578 16.5815 1.65466 16.1696 1.21743C15.7577 0.780191 15.2356 0.463162 14.6587 0.3C14.0791 0.112709 13.4754 0.0116376 12.8667 0H9.14989C8.54118 0.0116376 7.93744 0.112709 7.35787 0.3C6.781 0.463162 6.25888 0.780191 5.84695 1.21743C5.43503 1.65466 5.14867 2.19578 5.01828 2.78333L4.37116 6.66667H1.33467C1.20399 6.66587 1.07496 6.6961 0.95811 6.75488C0.841258 6.81367 0.739885 6.89935 0.66225 7.00495C0.584615 7.11055 0.532915 7.23308 0.511361 7.36255C0.489807 7.49202 0.49901 7.62478 0.538219 7.75L3.65767 18.25C3.81648 18.7572 4.13217 19.2004 4.55887 19.5151C4.98558 19.8298 5.50106 19.9997 6.03044 20H15.9861C16.5127 19.9961 17.0244 19.8247 17.4478 19.5102C17.8712 19.1958 18.1844 18.7545 18.3423 18.25L21.4618 7.75C21.5006 7.62612 21.51 7.49484 21.4893 7.36664C21.4686 7.23844 21.4184 7.11687 21.3427 7.01163C21.2669 6.90639 21.1677 6.82039 21.053 6.7605C20.9383 6.70061 20.8112 6.66847 20.6819 6.66667ZM6.06363 6.66667L6.66097 3.05C6.72645 2.75471 6.87836 2.48583 7.09716 2.27793C7.31597 2.07003 7.59167 1.93261 7.88884 1.88333C8.29702 1.75333 8.7218 1.68167 9.14989 1.66667H12.8667C13.2998 1.68 13.7295 1.75333 14.1443 1.88333C14.4415 1.93261 14.7172 2.07003 14.936 2.27793C15.1548 2.48583 15.3067 2.75471 15.3722 3.05L15.9529 6.66667H5.99725H6.06363Z" fill="#301C51" />
             </svg>
           </div>
@@ -238,17 +245,11 @@ export function Component({ locale }) {
             <Navbar.Link as={Link} href="/partnership">
               <p className="md:py-8 py-2.5 text-center font-nunito md:text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">Partnership</p>
             </Navbar.Link>
-            <div className="w-full py-2.5 md:hidden text-center font-nunito flex gap-1.5 m-auto justify-center py-1 md:text-black hover:bg-darkpurple hover:text-white">
-              <div >Language : </div>
-              <div onClick={() => changeLang('EN')} className={locale == 'en' ? "underline" : ''}>EN</div>
-              <p>/</p>
-              <div onClick={() => changeLang('ID')} className={locale == 'id' ? "underline" : ''}>ID</div>
-            </div>
           </Navbar.Collapse>
           <div className="hidden xl:flex items-center gap-3">
             <Dropdown placement="bottom" theme={intl} inline={true} label={locale}>
-              <Dropdown.Item onClick={() => changeLang('EN')}>EN</Dropdown.Item>
-              <Dropdown.Item onClick={() => changeLang('ID')}>ID</Dropdown.Item>
+              <Dropdown.Item onClick={() => changeLang('EN')} className="hover:text-white">EN</Dropdown.Item>
+              <Dropdown.Item onClick={() => changeLang('ID')} className="hover:text-white">ID</Dropdown.Item>
             </Dropdown>
             <Dropdown placement="bottom" theme={shop} inline={true} label={(
               <span className="flex items-center justify-center gap-2.5"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="currentColor">

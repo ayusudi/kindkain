@@ -152,7 +152,7 @@ export default function Component({ categoriesFilter, data, setData }) {
 
   return (
     <div className='w-[300px] md:flex md:flex-col'>
-      <div className='flex flex-col md:gap-8 px-5 border-r-[1px] border-[#CCC2BA] my-3 min-h-[75vh]'>
+      <div className='flex flex-col gap-8 px-5 border-r-[1px] border-[#CCC2BA] my-3 min-h-[75vh]'>
         <div >
           <div className='flex justify-between items-center'>
             <p className='font-quicksand font-semibold text-[20px]'>Category</p>

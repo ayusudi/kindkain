@@ -166,6 +166,9 @@ export default function Component() {
           <p className="whitespace-pre-wrap mb-2 text-gray">
             {t('a10')}
           </p>
+          <div className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] mx-auto my-4 relative">
+            <Image alt="photored" fill src="/photored.png" className="rounded-xl" />
+          </div>
         </Accordion.Content>
       </Accordion.Panel>
       <Accordion.Panel theme={accordion}>
