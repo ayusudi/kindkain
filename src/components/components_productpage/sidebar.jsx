@@ -45,6 +45,7 @@ export default function Component({ categoriesFilter, data, setData }) {
   ])
   const clickStatusCategory = async (name) => {
     if (name === "All") {
+      setCookie('categories', "")
       setCategories([
         {
           name: "Feminine Care",
@@ -71,7 +72,6 @@ export default function Component({ categoriesFilter, data, setData }) {
           status: false
         }
       ])
-      setCookie('categories', "")
     } else {
       let temp = [...categories]
       let choosen = temp.find(el => el.name === name)
@@ -179,7 +179,7 @@ export default function Component({ categoriesFilter, data, setData }) {
                             <div key={el.name} className='cursor-pointer bg-[#EAEAEA] py-1 px-2.5 border border-[#BBBBBB] rounded-2xl flex items-center gap-2 justify-center'>
                               <p className='font-nunito text-[16px] text-gray'>{el.name}</p>
                               <svg onClick={() => clickStatusCategory(el.name)} xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                                <path d="M10.5 10.5L0.5 0.5M10.5 0.5L0.5 10.5" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.5 10.5L0.5 0.5M10.5 0.5L0.5 10.5" stroke="#707070" strokeLinecap="round" strokeLinejoin="round" />
                               </svg>
                             </div>
                           )
