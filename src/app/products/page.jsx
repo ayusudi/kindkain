@@ -9,7 +9,7 @@ import getProducts from './getProducts';
 import { Drawer, Sidebar } from "flowbite-react";
 
 export default function HomePage(value) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClose = () => setIsOpen(false);
 
