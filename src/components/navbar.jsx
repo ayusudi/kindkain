@@ -60,7 +60,7 @@ const shop = {
     "header": "block px-4 py-2 text-sm text-gray-700 ",
     "hidden": "invisible opacity-0",
     "item": {
-      "base": "hover:bg-darkpurple  hover:text-white flex w-full cursor-pointer items-center justify-start px-4 py-2 text-sm text-gray-700 focus:outline-none ",
+      "base": "hover:text-white flex w-full cursor-pointer items-center justify-start px-4 py-2 text-sm text-gray-700 focus:outline-none",
       "icon": "mr-2 h-4 w-4 "
     },
     "style": {
