@@ -203,16 +203,16 @@ export function Component({ locale }) {
           </div>
           <Navbar.Collapse>
             <Navbar.Link as={Link} href="/" active>
-              <p className="md:py-8 py-2.5 text-center font-nunito text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">About Us</p>
+              <p className="md:py-8 py-2.5 text-center font-nunito text-black hover:text-white md:hover:text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">About Us</p>
             </Navbar.Link>
             <Navbar.Link as={Link} href="/why-menstrual-pads-or-cups">
-              <p className="md:py-8 py-2.5 text-center font-nunito text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">Why Menstrual Pads or Cups?</p>
+              <p className="md:py-8 py-2.5 text-center font-nunito text-black hover:text-white md:hover:text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">Why Menstrual Pads or Cups?</p>
             </Navbar.Link>
             <Navbar.Link className="cursor-pointer" onClick={toBrowseProduct}>
-              <p className="md:py-8 py-2.5 text-center font-nunito text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">Browse Products</p>
+              <p className="md:py-8 py-2.5 text-center font-nunito text-black hover:text-white md:hover:text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">Browse Products</p>
             </Navbar.Link>
             <Navbar.Link as={Link} href="/partnership">
-              <p className="md:py-8 py-2.5 text-center font-nunito text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">Partnership</p>
+              <p className="md:py-8 py-2.5 text-center font-nunito text-black hover:text-white md:hover:text-black md:hover:font-bold md:hover:text-darkpurple md:border-b-4 md:border-transparent md:hover:border-darkpurple hover:bg-darkpurple md:hover:bg-transparent">Partnership</p>
             </Navbar.Link>
           </Navbar.Collapse>
           <div className="hidden xl:flex items-center gap-3">
