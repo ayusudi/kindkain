@@ -31,7 +31,7 @@ const intl = {
       "icon": "mr-2 h-4 w-4"
     },
     "style": {
-      "dark": "bg-cream text-white",
+      "dark": "bg-cream text-gray-900",
       "light": " bg-cream text-gray-900",
       "auto": "bg-cream text-gray-900"
     },
@@ -39,38 +39,7 @@ const intl = {
   },
   "inlineWrapper": "bg-white w-[85px] text-black rounded-full focus:outline-none focus:ring-0 font-medium text-sm px-5 py-2.5 text-center inline-flex items-center justify-between"
 }
-const intl2 = {
-  "arrowIcon": "ml-2 h-4 w-4",
-  "content": "py-0 m-0 focus:outline-none m-auto",
-  "floating": {
-    "target": "w-full",
-    "animation": "transition-opacity",
-    "arrow": {
-      "base": "absolute z-10 h-2 w-2 rotate-45",
-      "style": {
-        "light": "bg-cream",
-        "auto": "bg-cream "
-      },
-      "placement": "-4px"
-    },
-    "base": "m-auto z-10 w-fit divide-y overflow-hidden  rounded shadow focus:outline-none",
-    "content": "text-sm text-gray-700",
-    "divider": "my-0 h-0",
-    "header": "block px-4 py-2 text-sm text-gray-700 ",
-    "hidden": "invisible opacity-0",
-    "item": {
-      "base": "hover:bg-darkpurple  hover:text-white flex w-full cursor-pointer items-center justify-start px-4 py-2 text-sm text-gray-700 focus:outline-none ",
-      "icon": "mr-2 h-4 w-4"
-    },
-    "style": {
-      "dark": "bg-cream text-white",
-      "light": " bg-cream text-gray-900",
-      "auto": "bg-cream text-gray-900"
-    },
-    "target": "w-full"
-  },
-  "inlineWrapper": "bg-white m-auto w-[100px] text-black rounded-full focus:outline-none focus:ring-0 font-medium text-sm px-5 text-center inline-flex items-center justify-between"
-}
+
 const shop = {
   "arrowIcon": "ml-2 h-4 w-4",
   "content": "py-0 m-0 focus:outline-none",
