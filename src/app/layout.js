@@ -5,7 +5,6 @@ import { getLocale, getMessages } from 'next-intl/server';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import AnimatedButton from "@/components/animatedbutton";
-import Head from "next/head";
 
 const quicksand = Quicksand({
   subsets: ['latin'],
