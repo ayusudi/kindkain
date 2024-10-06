@@ -47,7 +47,6 @@ export default function HomePage() {
     <section className='bg-cream'>
       <div className='max-w-screen-2xl m-auto'>
         <div className='flex justify-center flex-col md:px-16 pb-20 gap-6'>
-          <Image alt='grey-image' src="/product-warranty.png" width="300" height="300" className='w-full' />
           <div className='w-11/12 md:w-full py-8 mb-12 md:mb-24 text-base md:text-[24px] m-auto md:px-10 flex flex-col gap-10 md:gap-[80px] text-gray font-nunito'>
             <p style={{ lineHeight: "120%", textTransform: "capitalize" }} className='font-quicksand font-bold text-darkpurple text-3xl md:text-[56px]'>International Shipping</p>
             <p className='text-darktext font-quicksand font-bold text-xl md:text-4xl whitespace-pre-wrap ' style={{ lineHeight: "141%", letterSpacing: 0.96, textTransform: "capitalize", }}>{t('textbold')}</p>

@@ -8,8 +8,8 @@ export default function ProductWarrantyPage() {
     <section className='bg-cream'>
       <div className='max-w-screen-2xl m-auto'>
         <div className='flex justify-center flex-col md:px-16 md:pb-20 gap-2 md:gap-6'>
-          <Image alt='grey' src="/product-warranty.png" width="300" height="300" className='w-full' />
-          <div className='py-8 mb-24 text-[18px] md:text-[24px] m-auto px-6 md:px-10 flex flex-col gap-12 text-gray font-nunito'>
+          {/* <Image alt='grey' src="/product-warranty.png" width="300" height="300" className='w-full' /> */}
+          <div className='py-9 mb-24 text-[18px] md:text-[24px] m-auto px-6 md:px-10 flex flex-col gap-12 text-gray font-nunito'>
             <p style={{ lineHeight: "120%", textTransform: "capitalize", whiteSpace: "pre-wrap" }} className='font-quicksand font-bold text-darkpurple text-3xl md:text-[56px]'>{t('textbold')}</p>
             <p className='whitespace-pre-wrap'>{t('text')}</p>
             <div>
