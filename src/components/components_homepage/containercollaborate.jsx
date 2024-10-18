@@ -1,7 +1,9 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
 const CollaborateWithUs = () => {
+  const t = useTranslations("Revisi");
   return (
     <div className="bg-cream">
       <div className="max-w-screen-2xl m-auto flex flex-col md:flex-row items-center justify-between py-10 px-6 md:px-14 md:py-24">
@@ -15,10 +17,10 @@ const CollaborateWithUs = () => {
         </div>
         <div className="w-full md:w-1/2 mt-6 md:mt-0 md:ml-12 flex flex-col py-2 md:py-0">
           <p className="text-darkpurple font-quicksand font-bold text-sm md:text-xl mb-2 pl-1">
-            LOVE OUR PRODUCT?
+            {t("LOVE OUR PRODUCT?")}
           </p>
           <h2 className="text-darktext font-quicksand font-bold text-2xl md:text-4xl mb-4 md:mb-8 pl-1">
-            Collaborate With Us!
+            {t("Collaborate With Us!")}
           </h2>
           <div className="flex flex-col space-y-4">
             <a
@@ -48,7 +50,7 @@ const CollaborateWithUs = () => {
                     />
                   </svg>
                 </div>
-                Become Our Stockist
+                {t("Become Our Stockist")}
               </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +110,7 @@ const CollaborateWithUs = () => {
                     </defs>
                   </svg>
                 </div>
-                Become Our Affiliators On Marketplaces
+                {t("Become Our Affiliators On Marketplaces")}
               </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
