@@ -189,7 +189,7 @@ export default function Component() {
                       FAQ
                     </Footer.Link>
                     <Footer.Link href="/partnership">
-                      {t("Partnership2")}
+                      {t("Partnership")}
                     </Footer.Link>
                     <Footer.Link href="/international-shipping">
                       {t("International Shipping")}
