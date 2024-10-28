@@ -123,7 +123,7 @@ const TrendingSlider = () => {
                   >
                     {e.title}
                   </p>
-                  <p className="font-nunito text-sm md:text-xl self-end justify-self-end dark:text-[#000000] text-[#000000]">
+                  <p className="font-nunito text-sm md:text-xl self-end dark:text-[#000000] text-[#000000]">
                     {e.price}
                   </p>
                 </div>
