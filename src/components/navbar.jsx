@@ -230,15 +230,15 @@ export function Component({ locale }) {
             >
               <Dropdown.Item
                 onClick={() => changeLang("EN")}
-                className="hover:text-white"
+                className="text-black hover:text-white"
               >
-                EN
+                <p className="text-inherit"> EN</p>
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => changeLang("ID")}
-                className="hover:text-white"
+                className="text-black hover:text-white"
               >
-                ID
+                <p className="text-inherit"> ID</p>
               </Dropdown.Item>
             </Dropdown>
             <svg
@@ -288,13 +288,13 @@ export function Component({ locale }) {
                 onClick={() => changeLang("EN")}
                 className="text-black hover:text-white"
               >
-                EN
+                <p className="text-inherit"> EN</p>
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => changeLang("ID")}
                 className="text-black hover:text-white"
               >
-                ID
+                <p className="text-inherit"> ID</p>
               </Dropdown.Item>
             </Dropdown>
             <Dropdown
@@ -328,7 +328,7 @@ export function Component({ locale }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     href={el.link}
-                    className="flex gap-4 w-full p-4 items-center hover:text-black"
+                    className="flex gap-4 w-full p-4 items-center text-black hover:bg-darkpurple hover:text-white"
                     key={el.name}
                   >
                     <Image
@@ -338,11 +338,11 @@ export function Component({ locale }) {
                       alt="toko"
                       className="rounded"
                     />
-                    <div className="flex-grow flex flex-col items-start">
-                      <p className="font-quicksand text-sm  hover:text-black">
+                    <div className="flex-grow flex flex-col items-start text-intherit">
+                      <p className="font-quicksand text-sm  text-intherit">
                         {t("Shop At")}
                       </p>
-                      <p className="font-quicksand font-semibold text-base  hover:text-black">
+                      <p className="font-quicksand font-semibold text-base  text-intherit">
                         {el.name}
                       </p>
                     </div>

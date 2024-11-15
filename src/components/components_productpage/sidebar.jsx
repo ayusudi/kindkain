@@ -144,8 +144,6 @@ export default function Component({ categoriesFilter, data, setData }) {
     if (name === "All") {
       const resetSortBy = temp.map((option) => ({ ...option, status: false }));
       tempData.sort((a, b) => +a.id - +b.id);
-      console.log(tempData);
-
       setAllSortBy(true);
       setSortBy(resetSortBy);
       setData(tempData);

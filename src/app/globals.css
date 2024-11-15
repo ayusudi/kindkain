@@ -8,17 +8,8 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
-
 }
 
 @layer utilities {
@@ -27,21 +18,18 @@ body {
   }
 }
 
-
-
 .trending-slider__title {
-  color: #4A2F75;
-  font-family: 'Nunito', sans-serif;
+  color: #4a2f75;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
   margin: 0;
 }
 
 .trending-slider__subtitle {
   color: #333;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bold;
 }
-
 
 .trending-slider__image-placeholder {
   background-color: #ccc;
@@ -50,19 +38,17 @@ body {
   border-radius: 10px;
 }
 
-
 .trending-slider__item-title {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #333;
 }
-
 
 .trending-slider__browse-more {
   margin-top: 20px;
   padding: 10px;
   border-radius: 20px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
   cursor: pointer;
 }
@@ -94,13 +80,11 @@ body {
 
 /* Untuk ukuran medium dan ke atas */
 @media (min-width: 768px) {
-
   .slick-prev:before,
   .slick-next:before {
     font-size: 48px !important;
   }
 }
-
 
 .accordion-group {
   border-radius: 4px;
@@ -151,7 +135,6 @@ body {
   outline: none;
 }
 
-
 .animated-background {
   background-size: 400%;
 
@@ -161,7 +144,6 @@ body {
 }
 
 @keyframes animation {
-
   0%,
   100% {
     background-position: 0% 50%;
@@ -174,5 +156,5 @@ body {
 
 .darkgray .slick-prev:before,
 .darkgray .slick-next:before {
-  color: rgb(198, 198, 198) !important
+  color: rgb(198, 198, 198) !important;
 }
