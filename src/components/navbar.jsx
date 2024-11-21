@@ -335,7 +335,7 @@ export function Component({ locale }) {
                       src={el.img}
                       width="41"
                       height="41"
-                      alt="toko"
+                      alt={"kindkain " + el.name}
                       className="rounded"
                     />
                     <div className="flex-grow flex flex-col items-start text-intherit">

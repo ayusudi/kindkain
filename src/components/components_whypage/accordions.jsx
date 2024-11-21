@@ -200,7 +200,7 @@ export default function Component() {
           <p className="whitespace-pre-wrap mb-2 text-gray">{t("a10")}</p>
           <div className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] mx-auto my-4 relative">
             <Image
-              alt="photored"
+              alt="kindkain-product"
               fill
               src="/photored.png"
               className="rounded-xl"
@@ -223,6 +223,22 @@ export default function Component() {
       <Accordion.Panel theme={accordion}>
         <Accordion.Title theme={accordion.title}>{t("q13")}</Accordion.Title>
         <Accordion.Content theme={accordion.content}>
+          <div className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] mx-auto my-2 relative">
+            <Image
+              alt="kindkain-reason-1"
+              fill
+              src="/why-kindkain/1.jpg"
+              className="rounded-xl"
+            />
+          </div>
+          <div className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] mx-auto my-2 relative">
+            <Image
+              alt="kindkain-reason-2"
+              fill
+              src="/why-kindkain/2.jpg"
+              className="rounded-xl"
+            />
+          </div>
           <p className="whitespace-pre-wrap mb-2 text-gray">{t("a13")}</p>
         </Accordion.Content>
       </Accordion.Panel>

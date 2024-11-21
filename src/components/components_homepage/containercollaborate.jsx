@@ -11,7 +11,7 @@ const CollaborateWithUs = () => {
           <Image
             fill
             src="/product.jpg"
-            alt="Collaboration"
+            alt="Collaboration with KindKain"
             className="rounded-lg object-cover"
           />
         </div>
