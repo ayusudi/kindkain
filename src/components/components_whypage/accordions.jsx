@@ -72,7 +72,12 @@ export default function Component() {
         </Accordion.Title>
         <Accordion.Content theme={accordion.content}>
           <div className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] m-auto relative">
-            <Image alt="size" fill src="/size.png" className="rounded-xl" />
+            <Image
+              alt="size"
+              fill
+              src="/size.png"
+              className="rounded-xl animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
+            />
           </div>
           <table className="mt-6 w-full border-collapse border border-gray-300">
             <thead>
@@ -203,7 +208,7 @@ export default function Component() {
               alt="kindkain-product"
               fill
               src="/photored.png"
-              className="rounded-xl"
+              className="rounded-xl animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
             />
           </div>
         </Accordion.Content>
@@ -228,7 +233,7 @@ export default function Component() {
               alt="kindkain-reason-1"
               fill
               src="/why-kindkain/1.jpg"
-              className="rounded-xl"
+              className="rounded-xl animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
             />
           </div>
           <div className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] mx-auto my-2 relative">
@@ -236,7 +241,7 @@ export default function Component() {
               alt="kindkain-reason-2"
               fill
               src="/why-kindkain/2.jpg"
-              className="rounded-xl"
+              className="rounded-xl animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
             />
           </div>
           <p className="whitespace-pre-wrap mb-2 text-gray">{t("a13")}</p>

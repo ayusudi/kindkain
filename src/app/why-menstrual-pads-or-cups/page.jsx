@@ -16,7 +16,7 @@ export default function HomePage() {
           src="/banner-why.png"
           width="900"
           height="100"
-          className="w-11/12 md:w-full max-w-screen-2xl m-auto h-auto"
+          className="w-11/12 md:w-full max-w-screen-2xl m-auto h-auto animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
         />
         <div className="max-w-screen-2xl m-auto">
           <div className="m-auto flex flex-col gap-10 md:py-12 ">
@@ -35,10 +35,11 @@ export default function HomePage() {
               </div>
               <div className="w-[300px] md:w-[580px] flex items-center md:items-start flex-col gap-6">
                 <Image
-                  alt="lebih-sehat KindKain"
+                  alt="lebih-sehat kindkian"
                   src="/lebih-sehat.png"
                   width="60"
                   height="60"
+                  className="animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
                 />
                 <div className="font-quicksand text-darkpurple text-2xl md:text-5xl font-bold">
                   {t("healthier")}
@@ -67,6 +68,7 @@ export default function HomePage() {
                   src="/lebih-ramah.png"
                   width="60"
                   height="60"
+                  className="animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
                 />
                 <div className="font-quicksand text-darkpurple text-center md:text-left text-2xl md:text-5xl font-bold">
                   {t("environmentally")}
@@ -84,7 +86,7 @@ export default function HomePage() {
             <div className="w-10/12 m-auto text-center flex flex-col gap-8 md:py-10 md:py-12">
               <Image
                 alt="lebih-hemat KindKain"
-                className="m-auto"
+                className="m-auto animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
                 src="/lebih-hemat.png"
                 width="60"
                 height="60"
