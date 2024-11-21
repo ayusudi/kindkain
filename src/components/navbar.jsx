@@ -210,7 +210,7 @@ export function Component({ locale }) {
         >
           <div className="flex items-center">
             <Navbar.Toggle />
-            <Navbar.Brand as={Link} href="https://kindkain.vercel.app">
+            <Navbar.Brand as={Link} href="https://kindkain.id">
               <Image
                 sizes="(max-width: 154px)"
                 fill

@@ -162,7 +162,7 @@ export default function Component() {
           <br />
           <a
             className="text-semibold text-darkpurple underline capitalize"
-            href="https://youtu.be/6ExPI-6d7H8?si=XHXvJhyyAhLTF34G"
+            href="https://youtube.com/shorts/zBCuwTSXMas?si=e-UwZ5ufE-DVc4hA"
             target="_blank"
             rel="noopener noreferrer"
           >

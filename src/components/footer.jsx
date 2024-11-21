@@ -64,7 +64,7 @@ export default function Component() {
             <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
               <div className="flex flex-col gap-1 md:gap-3 mb-8 md:mb-0">
                 <Footer.Brand
-                  href="https://kindkain.vercel.app"
+                  href="https://kindkain.id"
                   src="/logo-white.png"
                   alt="Kindkain"
                 />
