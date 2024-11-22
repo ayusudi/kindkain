@@ -73,7 +73,7 @@ export default function Component() {
         <Accordion.Content theme={accordion.content}>
           <div className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] m-auto relative">
             <Image
-              alt="size"
+              alt="Size Chart Pembalut Kain KindKain"
               fill
               src="/size.png"
               className="rounded-xl animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
@@ -205,7 +205,7 @@ export default function Component() {
           <p className="whitespace-pre-wrap mb-2 text-gray">{t("a10")}</p>
           <div className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] mx-auto my-4 relative">
             <Image
-              alt="kindkain-product"
+              alt="Wetbag Kindkan"
               fill
               src="/photored.png"
               className="rounded-xl animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
@@ -230,7 +230,7 @@ export default function Component() {
         <Accordion.Content theme={accordion.content}>
           <div className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] mx-auto my-2 relative">
             <Image
-              alt="kindkain-reason-1"
+              alt="Pembalut KindKain vs Merek Lain"
               fill
               src="/why-kindkain/1.jpg"
               className="rounded-xl animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
@@ -238,7 +238,7 @@ export default function Component() {
           </div>
           <div className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] mx-auto my-2 relative">
             <Image
-              alt="kindkain-reason-2"
+              alt="Pembalut KindKain 100% Original & Bersertifikat Bebas Klorin"
               fill
               src="/why-kindkain/2.jpg"
               className="rounded-xl animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"

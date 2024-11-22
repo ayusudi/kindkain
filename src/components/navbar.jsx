@@ -215,7 +215,7 @@ export function Component({ locale }) {
                 sizes="(max-width: 154px)"
                 fill
                 src="/logo.png"
-                alt="Kindkain Logo"
+                alt="KindKain Pembalut Kain & Menstrual Cup Untuk Kesehatan Wanita"
                 className="h-8 mr-6 ml-2 2xl:ml-0"
               />
             </Navbar.Brand>
@@ -335,7 +335,10 @@ export function Component({ locale }) {
                       src={el.img}
                       width="41"
                       height="41"
-                      alt={"kindkain " + el.name}
+                      alt={
+                        "KindKain Pembalut Kain & Menstrual Cup Untuk Kesehatan Wanita " +
+                        el.name
+                      }
                       className="rounded"
                     />
                     <div className="flex-grow flex flex-col items-start text-intherit">

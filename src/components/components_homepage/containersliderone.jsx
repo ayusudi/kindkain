@@ -184,7 +184,10 @@ const Component = () => {
                     fill
                     sizes="(max-width:100vw) 100vw"
                     src={el}
-                    alt={i}
+                    alt={
+                      "KindKain Pembalut Kain & Menstrual Cup Untuk Kesehatan Wanita " +
+                      i
+                    }
                   />
                 </div>
               );

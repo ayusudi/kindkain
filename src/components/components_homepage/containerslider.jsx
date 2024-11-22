@@ -114,7 +114,10 @@ const TrendingSlider = () => {
                       sizes="(max-width: 300px) 100vw"
                       className="rounded-lg"
                       src={photo}
-                      alt={e.id}
+                      alt={
+                        "KindKain Pembalut Kain & Menstrual Cup Untuk Kesehatan Wanita " +
+                        e.id
+                      }
                     />
                   </div>
                   <p

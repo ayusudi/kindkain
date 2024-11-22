@@ -10,7 +10,7 @@ export default function HomePage() {
       <div className="max-w-screen-2xl m-auto">
         <div className="flex justify-center flex-col md:px-16 md:pb-20 gap-2 md:gap-6">
           {/* <Image alt='grey-image' src="/product-warranty.png" width="300" height="300" className='w-full' /> */}
-          <div className="w-11/12 md:w-full py-8 mb-12 md:mb-24 text-[24px] m-auto md:px-10 flex flex-col gap-10 md:gap-20 text-gray font-nunito">
+          <article className="w-11/12 md:w-full py-8 mb-12 md:mb-24 text-[24px] m-auto md:px-10 flex flex-col gap-10 md:gap-20 text-gray font-nunito">
             <div>
               <p
                 style={{
@@ -56,7 +56,7 @@ export default function HomePage() {
                 {t("text")}
               </p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>

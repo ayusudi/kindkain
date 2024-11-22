@@ -80,7 +80,7 @@ export default function Component({ openModal, setOpenModal, product }) {
                   src="/ecommerce/shopee.jpg"
                   width="44"
                   height="44"
-                  alt="kindkain-shopee"
+                  alt="Shopee KindKain Pembalut Kain"
                   className="rounded"
                 />
                 <div className="flex-grow">
@@ -101,7 +101,7 @@ export default function Component({ openModal, setOpenModal, product }) {
                   src="/ecommerce/tokopedia.jpg"
                   width="44"
                   height="44"
-                  alt="kindkain-tokopedia"
+                  alt="Tokopedia KindKain Pembalut Kain"
                   className="rounded"
                 />
                 <div className="flex-grow">
@@ -122,7 +122,7 @@ export default function Component({ openModal, setOpenModal, product }) {
                   src="/ecommerce/tiktok.jpg"
                   width="44"
                   height="44"
-                  alt="kindkain-tiktok"
+                  alt="TikTok KindKain Pembalut Kain"
                   className="rounded"
                 />
                 <div className="flex-grow">
@@ -143,7 +143,7 @@ export default function Component({ openModal, setOpenModal, product }) {
                   src="/ecommerce/lazada.png"
                   width="44"
                   height="44"
-                  alt="kindain-lazada"
+                  alt="Lazada KindKain Pembalut Kain"
                   className="rounded"
                 />
                 <div className="flex-grow">

@@ -10,9 +10,9 @@ export default function HomePage() {
 
   return (
     <section className="bg-cream">
-      <div className="font-nunito flex justify-center flex-col pb-20 gap-6 pt-6 md:pt-0">
+      <article className="font-nunito flex justify-center flex-col pb-20 gap-6 pt-6 md:pt-0">
         <Image
-          alt="kindkain-healthier"
+          alt="Pembalut Kain dan Cawan Menstruasi"
           src="/banner-why.png"
           width="900"
           height="100"
@@ -29,13 +29,13 @@ export default function HomePage() {
                   sizes="(max-width: 555px) 100vw"
                   fill
                   src="/infographic/1.jpg"
-                  alt="KindKain-stay-active"
+                  alt="Sanitary Pads KindKain"
                   className="rounded-lg shadow-md animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
                 />
               </div>
               <div className="w-[300px] md:w-[580px] flex items-center md:items-start flex-col gap-6">
                 <Image
-                  alt="lebih-sehat kindkian"
+                  alt="Pembalut Kain Lebih Sehat"
                   src="/lebih-sehat.png"
                   width="60"
                   height="60"
@@ -58,13 +58,13 @@ export default function HomePage() {
                   sizes="(max-width: 555px) 100vw"
                   fill
                   src="/infographic/2.jpg"
-                  alt="KindKain"
+                  alt="Pembalut Kain Lebih Sehat"
                   className="rounded-lg shadow-md animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
                 />
               </div>
               <div className="w-[300px] md:w-[580px] flex items-center md:items-start flex-col gap-6">
                 <Image
-                  alt="lebih-ramah KindKain"
+                  alt="Pembalut Kain KindKain Aman dan Ramah Lingkungan"
                   src="/lebih-ramah.png"
                   width="60"
                   height="60"
@@ -85,7 +85,7 @@ export default function HomePage() {
 
             <div className="w-10/12 m-auto text-center flex flex-col gap-8 md:py-10 md:py-12">
               <Image
-                alt="lebih-hemat KindKain"
+                alt="Pembalut Kain KindKain Aman, Ramah Lingkungan dan Hemat"
                 className="m-auto animated-background bg-gradient-to-r from-zinc-200 via-zinc-200 to-zinc-400"
                 src="/lebih-hemat.png"
                 width="60"
@@ -154,8 +154,8 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="bg-nude" id="faq">
+      </article>
+      <article className="bg-nude" id="faq">
         <div className="max-w-screen-2xl m-auto flex flex-col py-20 ">
           <div className="w-10/12 mx-auto">
             <p className="w-full text-[40px] font-bold text-darkpurple font-quicksand pb-4">
@@ -164,7 +164,7 @@ export default function HomePage() {
             <Accordion />
           </div>
         </div>
-      </div>
+      </article>
     </section>
   );
 }

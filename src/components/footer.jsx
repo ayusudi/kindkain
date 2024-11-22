@@ -66,7 +66,7 @@ export default function Component() {
                 <Footer.Brand
                   href="https://kindkain.id"
                   src="/logo-white.png"
-                  alt="Kindkain"
+                  alt="KindKain Pembalut Kain & Menstrual Cup Untuk Kesehatan Wanita"
                 />
                 <p className="text-md max-w-[310px] md:max-w-[280px] md:text-xl font-quicksand whitespace-pre-wrap tracking-wider leading-7">
                   {t("footerText")}
