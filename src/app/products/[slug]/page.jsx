@@ -68,7 +68,7 @@ export default function RootLayout({ params }) {
                 <Image
                   sizes="(max-width: 300px) 100vw"
                   src={product.photo}
-                  alt="product"
+                  alt="product-kindkain"
                   fill
                   className="aspect-square w-full h-full rounded-lg"
                 />
