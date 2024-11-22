@@ -5,6 +5,7 @@ import { getLocale, getMessages } from "next-intl/server";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import AnimatedButton from "@/components/animatedbutton";
+import { Analytics } from "@vercel/analytics/react"
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default async function RootLayout({ children }) {
           <AnimatedButton />
           <Footer />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
